@@ -1,0 +1,185 @@
+h1 {
+  color: #ffffff;
+  font: 700 34.67px "usual", sans-serif;
+}
+h2 {
+  color: #ffffff;
+  font: 700 32px "usual", sans-serif;
+  text-align: center;
+}
+h3 {
+  color: #143857;
+  font: 700 21.33px "usual", sans-serif;
+  text-align: center;
+}
+.banner .bx-text {
+  color: #ffffff;
+  font: 400 34.93px "usual", sans-serif;
+  text-align: center;
+}
+.bg-topmenu ul li a {
+  color: #ffffff;
+  font: 400 16px / 32px "usual", sans-serif;
+  padding: 0 25px;
+}
+.bg-topmenu ul li:first-child a {
+  padding: 0 10px 0 30px;
+}
+.bg-topmenu ul li:last-child a {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bottom-boxes .bottom-bx-titletext {
+  color: #ffffff;
+  font: 400 24px / 48px "usual", sans-serif;
+}
+.bottom-boxes .bottom-bx-btns-text {
+  color: #acacac;
+  font: 400 23.68px "usual", sans-serif;
+  text-transform: uppercase;
+}
+.button {
+  color: #ffffff;
+  font: 700 18.67px "usual", sans-serif;
+  text-transform: uppercase;
+}
+.driver-info {
+  color: #696969;
+  font: 400 17.33px "usual", sans-serif;
+}
+.driver-info-wrap .quote-text {
+  color: #ae1f23;
+  font: 400 17.33px "usual", sans-serif;
+}
+.footer {
+  color: #ffffff;
+  font: 400 17.33px "usual", sans-serif;
+}
+.hire-title {
+  text-align: center;
+}
+.MPStyle_LargeBlueFont {
+  color: #143857;
+  font: 700 21.33px "usual", sans-serif;
+}
+.MPStyle_BlueSignature {
+  color: #143857;
+  font: 400 13.33px "usual", sans-serif;
+}
+nav #Default ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+nav #Default > ul > li {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/019af3d6-8b8d-4565-968d-cb883ce5b700/menu-arrow.png') no-repeat 0 5px;
+  float: left;
+  margin: 0 5px;
+  position: relative;
+}
+nav #Default > ul > li a {
+  color: #acacac;
+  font: 400 17px "usual", sans-serif;
+  padding: 10px 18px 10px 25px;
+}
+nav #Default > ul > li a:hover {
+    background: #143857;
+}
+nav #Default > ul > li > ul {
+    background: #e2e2e2;
+    border: 1px solid #b7b8bb;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 32px;
+}
+nav #Default > ul > li:hover ul {
+    display: block;
+}
+nav #Default ul ul li {
+    background: none;
+    float: left;
+    margin: 0;
+    width: 300px;
+}
+nav #Default > ul > li:nth-child(2) > ul {
+    left: -50%;
+    width: 100%;
+}
+nav #Default > ul > li:nth-child(2) > ul > li {
+    width: 50%;
+}
+nav #Default > ul > li:nth-child(2) > ul > li a {
+    color: red;
+}
+nav #Default > ul > li:nth-child(2) > ul > li ul {
+    border-right: 1px solid #b7b8bb;
+}
+nav #Default > ul > li:nth-child(2) > ul > li ul li {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+nav #Default > ul > li:nth-child(2) > ul > li ul li a {
+    color: #acacac;
+}
+nav #Default ul ul li:hover {
+    background: none;
+}
+nav #Default ul ul li a:hover {
+    background: none;
+    color: #143857;
+}
+.need-cdl .text {
+    color: #ffffff;
+}
+.need-cdl .stats-button a {
+    color: #ffffff;
+}
+.quote-title .road-title {
+  color: #ffffff;
+  font: 700 28px / 48px "usual", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-title .title {
+  text-align: center;
+}
+.phone-number {
+  color: #244c72;
+  font: 700 18.67px "usual", sans-serif;
+}
+.search-text {
+  float: left;
+  font: 700 32px / 32px "usual", sans-serif;
+  padding: 0 0 10px 0;
+}
+.service-area .title {
+  color: #ffffff;
+  font: 700 37.33px "usual", sans-serif;
+}
+.stats .stats-number {
+  color: #ffffff;
+  font: 700 73.07px "usual", sans-serif;
+}
+.stats .stats-text {
+  color: #ffffff;
+  font: 400 24px "usual", sans-serif;
+  text-transform: uppercase;
+}
+.statistics .driver-text-wrap .quote-text {
+    color: #ffffff;
+}
+.top-boxes .top-bx-titletext {
+  color: #ffffff;
+  font: 400 25.33px "usual", sans-serif;
+}
+.top-boxes .top-bx-btns-text {
+  color: #ffffff;
+  font: 400 16pt "usual", sans-serif;
+  text-transform: uppercase;
+}
+.top-boxes .top-bx-btns-text a {
+    color: #ffffff;
+}

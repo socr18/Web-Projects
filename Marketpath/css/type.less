@@ -1,0 +1,338 @@
+/* Site Colors */
+@bg: #004576;
+@bg-gray: #ebebeb;
+@blue-header: #122355;
+@blue-blog: #014272;
+@facebook-blue: #3a579a;
+@googleplus-orange: #d34a32;
+@gray: #7e8da3;
+@instagram-red: #cf5857;
+@linkedin-blue: #3d7ab8;
+@orange: #ee7f34;
+@rss-orange: #d86700;
+@twitter-blue: #5ba2dc;
+@youtube-red: #c11f16;
+@white: #ffffff;
+
+/* Font Types */
+@frutiger: 'FrutigerNeue1450W01-Reg';
+
+/* General Type Styles */
+
+html,
+body {
+    background: @bg;
+    font-size: 100%;
+}
+
+body {
+    color: @bg;
+    font: 300 16px / 24px @frutiger;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+}
+
+h1 {
+    color: @white;
+    font: 700 32px @frutiger;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h2 {
+    color: @bg;
+    font: 700 24px / 18.667px @frutiger;
+    text-transform: uppercase;
+    width: 100%;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h3 {
+    color: @bg;
+    font: 700 21.33px @frutiger;
+    margin: 25px 0;
+    text-transform: uppercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h4 {
+    color: @orange;
+    font: 700 24px @frutiger;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 2.5rem 0;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h5 {
+    color: @white;
+    font: 700 24px @frutiger;
+    margin: 0 0 1.0rem 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+button, .button, #Submit_0-1,.MPStyle_OrangeButton {
+    color: @white;
+    font: 700 16px @frutiger;
+    text-transform: lowercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+/* Site Specific Styles*/
+.banner-services a {
+    color: @white;
+    font: 400 22px @frutiger;
+}
+
+.blogwrap {
+
+    .blog-descr {
+        color: @blue-blog;
+        font: 300 13.33px @frutiger;
+    }
+
+    .blog-readmore {
+        text-align: center;
+    }
+
+    .blog-title {
+        color: @blue-blog;
+        font: 700 16px @frutiger;
+        margin: 2.0rem 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.flex-area {
+    text-align: center;
+
+    .flex-text {
+        text-align: left;
+    }
+}
+
+footer {
+    color: @white;
+    font: 300 16px @frutiger;
+
+    a {
+        color: @white;
+    }
+
+    .contact-wrap {
+
+        a {
+            color: @orange;
+        }
+    }
+
+    .social {
+
+        .icon {
+
+            a {
+                background: @orange;
+                color: @bg;
+                height: 35px;
+                font-size: 20px;
+                width: 35px;
+            }
+        }
+    }
+}
+nav {
+    ul {
+        font: 300 18.67px @frutiger;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #Default {
+        float: right;
+        position: relative;
+        top: 15%;
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    color: @white;
+                    padding: 0 20px;
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    &.sd-menu {
+
+        a {
+            color: @white;
+        }
+
+        ul {
+            float: left;
+            width: 66.666%;
+
+            & > li:nth-child(1),& > li:nth-child(3) {
+                    padding: 0 0.9375em 0 0;
+                }
+
+            & > li:nth-child(2),& > li:nth-child(4) {
+                    padding: 0 0.9375em;
+                }
+
+            li {
+                border-right: 1px solid @white;
+                float: left;
+                width: 50%;
+
+                a {
+                    font: 700 28px / 36px @frutiger;
+                    float: left;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+            }
+
+            ul {
+                margin: 0 0 0.9375em 0;
+                padding: 0;
+                display: flex;
+                flex-flow: wrap;
+
+                li {
+                    border: none;
+                    float: left;
+                    padding: 0!important;
+                    width: 100%;
+                    flex: 1 1 100%;
+
+                    a {
+                        font: 18.67px / 36px @frutiger;
+                        text-transform: none;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.new-cms {
+    color: @white;
+    text-align: center;
+}
+
+.ourwork {
+    text-align: center;
+
+    h2 {
+        display: inline-block;
+        margin: 30px 0;
+        vertical-align: middle;
+        width: 18%;
+    }
+}
+
+.sd-close {
+    color: @white;
+    float: right;
+    text-align: right;
+
+    .fa {
+        border: 1px solid @white;
+        cursor: pointer;
+        padding: 3px 0 3px 3px;
+    }
+}
+
+.sd-menu-form {
+
+    .sd-form-title {
+        color: @white;
+        float: left;
+        font: 700 28px / 36px @frutiger;
+        margin: 0 0 0.9375em 0;
+        text-transform: uppercase;
+    }
+
+    form {
+
+        input {
+            color: @white;
+        }
+
+        input[type='submit'] {
+            font: 700 16px @frutiger;
+            text-transform: lowercase;
+        }
+    }
+}
+.social {
+    text-align: center;
+
+    .icon {
+
+        a {
+            color: @white;
+            display: block;
+            font-size: 25px;
+            padding: 5px 0;
+        }
+    }
+}
+
+.web-services {
+    text-align: center;
+
+    .webdesign, .webapp, .cms, .marketing  {
+
+        a {
+            color: @white;
+            font: 300 18.67px @frutiger;
+
+            &:hover {
+                font: 700 18.67px @frutiger;
+            }
+        }
+    }
+}
+
+.web-title {
+    margin: 0 auto;
+
+    h3 {
+        border: 2px solid @white;
+        float: left;
+        padding: 10px 15px;
+        text-align: center;
+        width: 39%;
+    }
+}

@@ -1,0 +1,408 @@
+.banner .bx-text {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  width: 400px;
+}
+.bg-blue {
+  background: #143857;
+}
+.bg-box-gray {
+  background: #f7f7f7;
+  float: left;
+}
+.blog {
+  background: #143857;
+}
+.blog-wrap {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/1156d0e8-f22b-4052-9a9d-21b182830e93/bg-blog.png') no-repeat 0 -37px;
+  background-size: cover;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.blog-wrap article {
+  display: flex;
+  float: left;
+  width: 50%;
+}
+.blog-wrap article:first-child {
+  padding: 0 0.9375em 0 0;
+}
+.blog-wrap article .blog-img {
+  float: left;
+}
+.blog-wrap article .blog-text-wrap {
+  background: #ffffff;
+  float: left;
+  padding: 15px;
+}
+.bottom {
+  position: relative;
+  top: -10px;
+}
+.bottom-boxes {
+  background: #ffffff;
+}
+.bottom-boxes .clients {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.bottom-boxes .bottom-bx-buttons {
+  text-align: center;
+}
+.bottom-boxes .bottom-bx-img {
+  float: left;
+  padding: 8px 0.9375em 0 0;
+  width: 20%;
+}
+.bottom-boxes .bottom-bx-img img {
+    max-height: 46px;
+    width: auto!important;
+}
+.bottom-boxes .bottom-bx-text {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/8665810b-637d-4488-8b97-3e543ead485d/quotes.png') no-repeat 0 1.875em;
+  float: left;
+  padding: 1.875em 0.9375em;
+  width: 100%;
+}
+.bottom-boxes .bottom-bx-text-img {
+  padding: 1.875em 0.9375em;
+  width: 100%;
+}
+.bottom-boxes .bottom-bx-title {
+  background: #204c73;
+  overflow: hidden;
+  padding: 5px 40px;
+}
+.bottom-boxes .become-driver .bottom-bx-title {
+  background: #143857;
+}
+.bottom-boxes .bottom-bx-titletext {
+  float: left;
+  width: 80%;
+}
+.btns-wrap {
+    text-align: center;
+}
+.button {
+  background: #a20e0e;
+  padding: 10px 15px;
+}
+.content {
+  background: #f7f7f7;
+  float: left;
+}
+.customer-quote {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/5d175ada-67e2-43c4-925e-3bf4036d88b4/bg-customerquote.png') no-repeat;
+  background-size: cover;
+  float: left;
+}
+.driver-spotlight {
+  background: #ffffff;
+}
+.driver-spotlight .driver-info-wrap {
+  background: #f7f7f7;
+  padding: 20px;
+}
+.driver-spotlight .driver-info-wrap .driver-img {
+  float: left;
+  padding: 0 1.875em 0 0;
+  width: 30%;
+}
+.driver-spotlight .title {
+  background: #204c73;
+  margin: 0 auto;
+  text-align: center;
+}
+.driver-spotlight .title .portal-spotlight-title {
+  display: inline-block;
+  margin: 0 auto;
+  min-width: 30%;
+  text-align: center;
+}
+.driver-spotlight .title .title-icon {
+  float: left;
+  padding: 0 0.9375em;
+}
+.driver-spotlight .title .title-text {
+  float: left;
+}
+.driver-text-wrap {
+  float: left;
+  width: 100%;
+}
+.driver-text-wrap .driver-info {
+  float: left;
+  width: 100%;
+}
+.driver-text-wrap .quote-left {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.driver-text-wrap .quote-text {
+  float: left;
+  width: 100%;
+}
+.driver-text-wrap .quote-right {
+  float: left;
+  padding: 0 0 0 0.9375em;
+}
+.empty-blue {
+  background: #143857;
+  overflow: hidden;
+  padding: 20px 0 0 0;
+}
+.empty-blue.bg-lt-blue {
+  background: #204c73;
+}
+.empty-white {
+  background: #f7f7f7;
+  overflow: hidden;
+  padding: 20px 0 0 0;
+}
+.flex {
+  display: flex;
+}
+.float-left {
+  float: left;
+}
+.float-left .empty-blue:last-child {
+  background: #143857;
+}
+.footer {
+  padding: 40px 0;
+}
+.header {
+  background: #ffffff;
+  border-top: 10px solid #a20e0e;
+  position: relative;
+}
+.hire-wrap {
+  background: #ffffff;
+}
+.hire-wrap .hire-title {
+  background: #143857;
+  float: left;
+}
+.hire-wrap .hire-text {
+  background: #f7f7f7;
+  padding: 50px 0.9375em 0 0.9375em;
+}
+.inside-banner p {
+  margin: 0;
+  padding: 0;
+}
+.inside-banner img {
+  height: auto!important;
+  width: 100%!important;
+}
+.inside-content {
+  background: #ffffff;
+}
+.leaders,
+.become-driver {
+  float: left;
+  position: relative;
+}
+.leaders {
+  padding: 0 0.9375em 0 0;
+}
+.logo {
+  float: left;
+  padding: 35px 0.9375em 10px 0;
+  position: relative;
+}
+.menu {
+  float: left;
+  position: relative;
+}
+.menu .topmenu {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/b3c9b552-7199-453a-9b59-87721696859e/bg-topmenu.png') no-repeat top right;
+  float: right;
+  position: relative;
+  right: 0;
+  top: -10px;
+}
+.menu .topmenu .bg-topmenu {
+  float: right;
+  position: relative;
+}
+.menu .topmenu .bg-topmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu .topmenu .bg-topmenu ul li {
+  float: left;
+}
+.menu .phone {
+  float: right;
+  position: relative;
+}
+.menu .phone .phone-image {
+  float: right;
+  padding: 5px 10px 0 0;
+  position: relative;
+}
+.menu .phone .phone-number {
+  float: right;
+  position: relative;
+}
+.nav {
+  float: left;
+  position: relative;
+}
+.need-cdl {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/30e7f2b1-b29c-4630-97dc-a52694c9072d/cdl_header.png') no-repeat;
+  background-size: cover;
+  padding: 0 0 20px 0;
+}
+.need-cdl .stats-button {
+    float: none;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+.page-title {
+  border-top: 1px solid #ffffff;
+}
+.padding-right {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.photos-road {
+  background: url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/20ad3250-fa50-42b1-b10c-9b996bf2c908/bg-roadphoto.png') no-repeat;
+  background-size: cover;
+}
+.photos-road .photo {
+  margin: 0 auto;
+}
+.photos-road .photo img {
+  border: 1px solid #204c73;
+}
+.service-area {
+  background: #ffffff;
+}
+.service-area .title {
+  background: #204c73;
+  margin: 0 auto;
+  text-align: center;
+}
+.service-area .content {
+  background: #f7f7f7;
+  padding: 50px 0.9375em 0.9375em 0;
+}
+.statistics {
+  background: #ffffff url('https://az480170.vo.msecnd.net/895317b4-3e55-4d49-b792-340ff026c160/img/prd/4d878205-a2e6-4185-97eb-28a7b0ad16db/bg-statistics.png') no-repeat;
+  background-size: cover;
+  border-bottom: 10px solid #a20e0e;
+  border-top: 10px solid #a20e0e;
+}
+.statistics .blue.padding-right,
+.statistics .blue.float-left {
+  position: relative;
+  top: 10px;
+}
+.statistics .white.padding-right,
+.statistics .white.float-left {
+  position: relative;
+  top: -10px;
+}
+.statistics .title {
+  text-align: center;
+}
+.stats {
+  padding: 50px 0.9375em 0.9375em 0;
+}
+.stats .stats-img {
+  float: left;
+  padding: 20px 10px 0 0;
+  width: 25%;
+}
+.stats .stats-number {
+  float: left;
+  width: 75%;
+}
+.stats .stats-number p {
+  margin: 0;
+  padding: 0;
+}
+.stats .stats-text {
+  float: left;
+  width: 100%;
+}
+.stats-button {
+  float: left;
+  margin: 10px auto;
+  text-align: center;
+}
+.title {
+  padding: 30px 0;
+}
+.top {
+  position: relative;
+  top: 10px;
+}
+.top-boxes {
+  background: #ffffff;
+  overflow: hidden;
+}
+.top-boxes .become-driver .top-bx-buttons .top-bx-btns-img {
+  width: 36%;
+}
+.top-boxes .become-driver .top-bx-buttons .top-bx-btns-text {
+  padding: 27.5px 10px;
+  width: 64%;
+}
+.top-boxes .top-bx-img {
+  float: left;
+  padding: 8px 0.9375em 0 0;
+  width: 20%;
+}
+.top-boxes .top-bx-text {
+  float: left;
+  padding: 1.875em;
+}
+.top-boxes .top-bx-title {
+  background: #204c73;
+  overflow: hidden;
+  margin: 0 0 30px 0;
+  padding: 0 20px 20px 40px;
+}
+.top-boxes .become-driver .top-bx-title {
+  background: #143857;
+}
+.top-boxes .top-bx-titletext {
+  float: left;
+  width: 80%;
+}
+.top-bx-buttons {
+  float: left;
+  padding: 0 1.875em 10px 1.875em;
+  width: 100%;
+}
+.top-bx-buttons .top-bx-btns-img {
+  float: left;
+  overflow: hidden;
+  width: 40%;
+}
+.top-bx-buttons .top-bx-btns-img img {
+  width: 100%!important;
+  height: auto!important;
+}
+.top-bx-buttons .top-bx-btns-img p {
+  margin: 0;
+  padding: 0;
+}
+.top-bx-buttons .top-bx-btns-text {
+  background: #a20e0e;
+  float: left;
+  padding: 6px 10px;
+  width: 60%;
+}
+.top-bx-buttons .top-bx-btns-text p {
+  padding: 0;
+  margin: 0;
+}

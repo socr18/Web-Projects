@@ -1,0 +1,160 @@
+/* -------------------------------------------------------------------
+    TABLE OF CONTENTS
+----------------------------------------------------------------------
+    1 -- Forms
+    2 -- Editor Classes
+    3 -- MP Custom Styles
+----------------------------------------------------------------------
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+1 -- Forms
+------------------------------------------------------------------- */
+.mp-form-wrapper {
+    width: 100%;
+}
+
+.mp-form-field {
+    padding: 0;
+    float: none;
+    clear: both;
+}
+
+.mp-form input[type="text"],
+.mp-form input[type="email"],
+.mp-form input[type="password"],
+.mp-form input[type="search"],
+.mp-form textarea {
+    clear: both;
+    float: none;
+    display: block;
+}
+
+.mp-form-field-label,
+.mp-form-field-group-item-label {
+    float: left;
+    margin: 0 4px 4px 0;
+    font-size: 16px;
+}
+
+.mp-form-field-required {
+    float: left;
+    color: #a52f36;
+}
+
+input.mp-form-field-text,
+.mp-form-field-input textarea {
+    width: 100%;
+}
+
+.mp-form-field-group-item {
+    width: 50%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+
+/* -------------------------------------------------------------------
+2 -- Editor Classes
+------------------------------------------------------------------- */
+.MPStyle_FloatImageLeft {
+    display: block;
+    overflow: hidden;
+    float: left;
+    clear: left;
+    margin: 6px 15px 6px 0;
+}
+
+.MPStyle_FloatImageRight {
+    display: block;
+    overflow: hidden;
+    float: right;
+    clear: right;
+    margin: 6px 0 6px 15px;
+}
+
+.MPStyle_BlockLevelImage {
+    display: block;
+    float: none;
+    overflow: hidden;
+    clear: both;
+    margin: 0 0 10px 0;
+}
+
+
+
+/* -------------------------------------------------------------------
+3 -- MP Custom Styles
+------------------------------------------------------------------- */
+/* Marketpath Custom Styles */
+.MPStyle_SubMenu {
+    font-size: 18px;
+    color: #808285;
+}
+
+    .projectcat ul.MPStyle_SubMenu li:first-child {
+        border-right: none;
+        color: #333;
+    }
+
+    ul.MPStyle_SubMenu {
+        list-style: none;
+        width: 100%;
+        margin: 0 0 20px 0px;
+        padding: 0;
+        overflow: hidden;
+        line-height: 30px;
+    }
+
+    .MPStyle_SubMenu li {
+        float: left;
+        padding: 0 10px 0 0;
+        margin: 0 10px 0 0;
+        border-right: 2px solid #eeeeee;
+    }
+
+    .MPStyle_SubMenu li:last-child {
+        border-right: none;
+    }
+
+    .MPStyle_SubMenu a:hover {
+        text-decoration: none;
+        color: #808285;
+    }
+
+/* Search Styles */
+
+.mp-search-results-item {
+    margin: 5px 15px 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    float: left;
+    clear: both;
+    border-bottom: 1px solid #f8f8f8;
+}
+.mp-search-results-item a {
+    text-decoration: none;
+}
+.mp-search-results-item-image {
+    float: left;
+    padding: 0px 26px 0px 0px;
+}
+.mp-search-results-item-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.mp-search-results-item-pricesale {
+    display: none;
+}
+#mp-search-results-summary {
+    color: #164B82;
+    margin: 10px 5px;
+}
+#mp-search-results-summary-query {
+    margin-bottom: 10px;
+}
+.mp-search-results-item-url {
+    margin-top: 15px;
+    }

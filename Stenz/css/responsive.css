@@ -1,0 +1,231 @@
+/* -------------------------------------------------------------------
+    TABLE OF CONTENTS
+----------------------------------------------------------------------
+    1 -- CSS for mobile & tablet
+    2 -- CSS for mobile view
+    3 -- CSS for tablet views & smaller screens
+----------------------------------------------------------------------
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+1. CSS catch-all for anything tablet sized and below
+------------------------------------------------------------------- */
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 1024px) {
+    .sitemap {display: block;}
+    .header .utility .nav {
+        display: none;
+    }
+
+    .header .utility {
+        padding: 0;
+    }
+
+    .social .mobileicon {
+        display: block;
+    }
+
+    .sitemap {
+        display: block;
+    }
+        .sitemap .nav ul {
+            margin: 0 15px;
+            padding: 0;
+            display: inline-block;
+            width: 90%;
+            position: relative;
+         }
+        .sitemap .nav ul li {
+            margin: 0 0 15px 0;
+            width: 100%;
+            float: left;
+            padding: 0;
+            list-style: none;
+        }
+        .sitemap .nav ul li a {
+            display: block;
+            background: #ffffff;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+         }
+        .sitemap .nav ul ul {
+            margin: 0;
+            padding: 0;
+            background: #eee;
+            width: 100%;
+            position: relative;
+         }
+        .sitemap .nav ul ul li {
+            margin: 0;
+            border-top: 1px solid #ccc;
+        }
+        .sitemap .nav ul ul li a {
+            font-size: 18px;
+            font-weight: 400;
+            background: #eee;
+            border: none;
+        }
+        .sitemap .nav ul ul ul li {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        .sitemap .nav ul ul ul li a {
+            font-size: 12px;
+            padding: 5px 10px;
+            margin: 0;
+         }
+        .sitemap .nav a:hover {
+            color: #8a8282;
+        }
+}
+
+
+/* -------------------------------------------------------------------
+2. CSS for phone sized view
+------------------------------------------------------------------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 767px) {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        float: none;
+    }
+
+    .logo img {
+        margin: 0 auto;
+    }
+
+    .header .utility {
+        float: left;
+        width: 100%;
+    }
+
+        .header .utility section {
+            float: none;
+        }
+
+    .social {
+        background: #dadada;
+        height: 50px;
+        padding: 10px 0;
+    }
+
+    .social-block .mobilename {
+        display: inline-block;
+    }
+
+    .social-block {
+        float: none;
+        text-align: center;
+    }
+
+    .social-block a {
+        background: none;
+        padding: 0;
+    }
+
+    .utility .social a:hover {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    .banner .title, .banner .next {
+        display: none;
+    }
+
+    .whatsnew img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 10px !important;
+    }
+
+    .content.inside ul li img,.content.inside p img {
+        margin: 15px auto!important;
+        max-width: 100%!important;
+        height: auto!important;
+    }
+
+    .feed {
+        font-size: 12px;
+    }
+
+    .feed article .blogdetail {
+        float: left;
+        width: 100%;
+    }
+
+    .feed article .img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 20px 0 0;
+    }
+
+    .feed article .blogdescription {
+        font-size: 16px;
+    }
+
+    .biodetails .close {
+        top: 0;
+        right: -48px;
+    }
+
+    .biodetails .close img {
+        width: 50%;
+    }
+
+    .wordleo p {
+        overflow: hidden;
+    }
+
+    .MPStyle_SubMenu li {
+        background: #eeeeee;
+        padding: 10px!important;
+        margin: 0 0 5px 0!important;
+        width: 100%;
+        text-align: center
+    }
+
+    .MPStyle_SubMenu, .MPStyle_SubMenu a:hover {
+        color: #808285!important;
+    }
+
+    .footer .label img {
+        width: 10%!important;
+        height: 10%!important;
+    }
+
+    .pikachoose {
+        width: 100%!important;
+    }
+
+    .pika-stage {
+        width: 100%!important;
+        height: auto!important;
+    }
+
+    .pika-stage .pika-stage-inner img {
+        left: 0!important;
+        top: 0!important;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+3 -- CSS for tablet & small screens
+------------------------------------------------------------------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+
+}
