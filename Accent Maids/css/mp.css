@@ -1,0 +1,60 @@
+/**********************************************************/
+/**  This area is for cms specific content styles        **/
+/**********************************************************/
+
+#MPCMSContent_inner .headerwrap .bgheader {
+    width: 80%;
+}
+
+#MPCalendarDateNav {
+  width: 100%;
+}
+
+#MPCalendarDateNavLeft {
+  float: left;
+  width: 100%;
+}
+
+#CalendarSelectDateWrapper {
+    width: 100%;
+  float: left;
+  clear: both;
+}
+
+#CalendarSelectDateWrapper select {
+  width: 35%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.ui-buttonset {
+  margin-right: 7px;
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+#MPButtonNext {
+    float: right;
+}
+
+.MPCalendarEntry {
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+}
+
+.MPCalendarEntryDay {
+  font-size: 20px;
+}
+
+.MPCalendarEntryDay,.MPCalendarEntryTitle,.MPCalendarEntryLocation,.MPCalendarEntryDescription,.MPCalendarEntryTime {
+  margin: 0 0 10px 0;
+}
+.ckeditor_contentArea {
+    background: #ffffff;
+}
+
+.ckeditor_contentArea td {
+    float: auto;
+    }
