@@ -142,13 +142,16 @@ ul.bxslider {
 /* HOME SLIDER SIZE */
 .bxslider li {
   position: relative;
+    top: -78px;
 }
 .bxslider .text {
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,.5);
+    bottom: 0;
   left: 0;
+    padding: 15px 25px;
   position: absolute;
   text-align: center;
-  top: 40%;
-  width: 100%;
 }
 
     /* Mobile Screen Size */
@@ -192,8 +195,6 @@ ul.bxslider {
 .bxslider .text h5,
 .bxslider .text h6,
 .bxslider .text .btitle {
-  color: #007bb7;
-  font: 700 36px "proxima-nova";
   margin: 0;
   padding: 0;
 }
