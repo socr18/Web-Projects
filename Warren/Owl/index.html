@@ -16,6 +16,10 @@
     <!-- Font Awesome -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <!-- Adobe Typekit -->
+    <script src="https://use.typekit.net/tnc2yre.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <!-- Marketpath CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
@@ -27,262 +31,239 @@
 <body>
 
     <header>
-        <div class="row">
-            <div class="large-12 head-top">
-                <div class="large-6 columns">
-                    <div class="logo"><img src="img/logo.png" alt="" /></div>
-                </div>
-                <div class="large-6 columns">
-                    <div class="contact-info flex">
-                        <div class="portal"><img src="img/FMH-portal.png" alt="" /></div>
-                        <div class="contact">
-                            <p><strong>Schedule an appointment</strong><br/>Contact - 704.864.5550</p>
+
+        <div class="bg-header">
+            <div class="row">
+                <div class="large-12">
+                    <div class="large-4 columns">
+                        <div class="social">
+                            <p>
+                                <i class="fa fa-facebook-square">&nbsp;</i>&nbsp;
+                                <i class="fa fa-twitter-square">&nbsp;</i>&nbsp;
+                                <i class="fa fa-google-plus-square">&nbsp;</i>&nbsp;
+                                <a href="#">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="logo"><p><a href="#"><img src="img/logo-owl.png" alt="" /></a></p></div>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="form search-wrap">
+                            <input type="search" placeholder="Search..." onclick="this.value='';return false;" onkeypress="if (event.keyCode == 13) MPGlobalSearch($('#searchSite').val(), 'global');" id="searchSite" />
+                            <div id="divSearchButton" class="button small" onclick="MPGlobalSearch($('#searchSite').val(), 'global');"></div>
+                            <i class="fa fa-search">&nbsp;</i>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Menu -->
-            <div class="large-12 columns">
-                <div class="menu-wrap">
+        <div class="nav">
+            <div class="row">
+                <div class="large-12 columns">
                     <nav>
                         <div id="Default">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Symptoms</a></li>
-                                <li><a href="#">Conditions</a></li>
-                                <li><a href="#">Treatments</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Patient Center</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Editorials</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                                <li><a href="#">Opinion</a></li>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Creative</a></li>
+                                <li><a href="#">Blogs</a></li>
                             </ul>
-                        </div>
-                        <div class="social-wrap">
-                            <p>
-                                <i class="fa fa-facebook-square">&nbsp;</i>
-                                <i class="fa fa-twitter-square">&nbsp;</i>
-                                <i class="fa fa-youtube-square">&nbsp;</i>
-                            </p>
                         </div>
                     </nav>
                 </div>
             </div>
-
         </div>
+
     </header>
 
     <main>
-        <!-- Gallery/Banner -->
-        <section>
-            <div class="banner">
-                <ul class="bxslider">
-                    <li>
-                        <a href="#">
-                        <img src="img/banner-1.png" alt="banner" />
-                            <div class="text"><h1><strong>Meet our staff:</strong> Spine Experts</h1></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Slider Carousel -->
+        <div class="hero">
             <div class="row">
-                <div class="large-5">
-                    <div class="experts">
-                        <div class="experts-img"><img src="img/lower-back.jpg" alt="" /></div>
-                        <div class="experts-area">
-                            <ul>
-                                <li><a href="#">Hand</a></li>
-                                <li><a href="#">Neck</a></li>
-                                <li><a href="#">Lower Back</a></li>
-                                <li><a href="#">Fractures</a></li>
-                                <li><a href="#">Arthritic Change</a></li>
-                            </ul>
-                        </div>
+                <div class="small-12 columns scrollers">
+                    <div class="scrollable carousel-stage" data-jcarousel="true">
+                        <ul class="items">
+                            <marketpath:token type="list-directoryentries" id="b091cb37-ad23-4d7a-8b6d-b58b00c6811d">
+                            <li class="slides1">
+                                <span class="homewgt1" data-id="%%homewgt%%">%%homewgt%%</span>
+                                <a href="%%homelink%%" target="%%hometarget%%" title="%%hometitle%%"><img src="%%homeimg%%" alt="%%hometitle%%" /></a>
+                            </li>
+                            </marketpath:token>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Information -->
-        <section>
-            <div class="information">
-                <div class="row">
-                    <div class="large-4 columns">
-                        <div class="about">
-                            <h2><strong>Dr. William Hunter, MD</strong> - OVER 2 DECADES OF MEDICAL EXPERIeNCE </h2>
-                            <p>Dr. William Hunter is a board-certified neurosurgeon with more than a decade of experience. A respected lecturer and teacher at Duke University, Dr. Hunter travels across the country to teach about minimally invasive techniques.</p>
-                        </div>
-                    </div>
-                    <div class="large-8 columns">
-                        <div class="large-12">
-                            <div class="large-6 info-wrap">
-                                <div class="info-img"><img src="img/non-invasive-surgery.png" alt="" /></div>
-                                <div class="info-text">
-                                    <h4>Non-invasive surgery</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus, leo sed imperdiet congue, eros velit ornare lorem, quis maximus nunc orci id ipsum. </p>
+                    <div class="vertical-scrolling carousel-navigation" data-jcarousel="true">
+                        <ul class="items">
+                            <marketpath:token type="list-directoryentries" id="b091cb37-ad23-4d7a-8b6d-b58b00c6811d">
+                            <li class="slides2">
+                                <span class="homewgt2" data-id="%%homewgt%%">%%homewgt%%</span>
+                                <div>
+                                <a href="%%homelink%%" target="%%hometarget%%">
+                                    <h5>%%hometitle%%</h5>
+                                    <div class="img"><img src="%%homeimg%%" alt="%%hometitle%%" /></div>
+                                    <p class="hero-caption">%%homecaption%%</p>
+                                    <strong>Read More <i class="fa fa-angle-right">&nbsp;</i></strong>
+                                </a>
                                 </div>
-                            </div>
-                            <div class="large-6 info-wrap">
-                                <div class="info-img"><img src="img/surgerical-options.png" alt="" /></div>
-                                <div class="info-text">
-                                    <h4>State of the art surgerical options</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus, leo sed imperdiet congue, eros velit ornare lorem, quis maximus nunc orci id ipsum. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="large-12">
-                            <div class="large-6 info-wrap">
-                                <div class="info-img"><img src="img/facilities.png" alt="" /></div>
-                                <div class="info-text">
-                                    <h4>Our Facilities</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus, leo sed imperdiet congue, eros velit ornare lorem, quis maximus nunc orci id ipsum. </p>
-                                </div>
-                            </div>
-                            <div class="large-6 info-wrap">
-                                <div class="info-img"><img src="img/appointment.png" alt="" /></div>
-                                <div class="info-text">
-                                    <h4>Schedule your appointment</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus, leo sed imperdiet congue, eros velit ornare lorem, quis maximus nunc orci id ipsum. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                <b class="arrow">&nbsp;</b>
+                            </li>
+                            </marketpath:token>
+                        </ul>
+                        <a class="controls prev-navigation" data-jcarouselcontrol="true"><i class="fa fa-angle-up">&nbsp;</i></a>
+                        <a class="controls next-navigation" data-jcarouselcontrol="true"><i class="fa fa-angle-down">&nbsp;</i></a>
 
-        <!-- News/Testimonials -->
-        <section>
-            <div class="news-wrap">
-                <div class="row">
-                    <!-- Blog/Feed -->
-                    <div class="large-6 columns">
-                        <div class="blog-feed">
-                            <h3>Latest News</h3>
-                            <div class="blog-wrap">
-                                <div class="blog-img"><img src="img/blog-1.jpg" alt="" /></div>
-                                <div class="blog-text-wrap">
-                                    <div class="blog-title">
-                                        <p>Herniated Disks: a Real Pain in the Back</p>
-                                    </div>
-                                    <div class="blog-descr">
-                                        <p>A herniated disk results when one of the small, spongy disks between your spinal vertebrae becomes damaged. These disks act as cushions between the vertebrae, absorbing shock and keeping the spine flexible.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-wrap">
-                                <div class="blog-img"><img src="img/blog-2.jpg" alt="" /></div>
-                                <div class="blog-text-wrap">
-                                    <div class="blog-title">
-                                        <p>Minimally Invasive Techniques for Lumbar Stenosis</p>
-                                    </div>
-                                    <div class="blog-descr">
-                                        <p>Lumbar stenosis is the gradual narrowing of the space where nerves pass through the spine. This narrowing can irritate the nerves branching out from the spinal cord, causing pain or numbness in the lower body.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonials -->
-                    <div class="large-6 columns">
-                        <div class="testimonials">
-                            <h3>Testimonials</h3>
-                            <div class="testimonial">
-                                <p><img src="img/quote.png" alt="" style="float: left; padding: 0 8px 0 0;" />I knew something had to be done, I couldn&#8217;t suffer with the pain. Since surgery with Dr. Hunter, I&#8217;m able to do everything I did before!</p>
-                            </div>
-                            <div class="quote-point"><img src="img/icon-quote-arrow.png" alt="" /></div>
-                            <div class="quote-name">
-                                <p><img src="img/pic-1.jpg" alt="" style="float:left; padding: 0 5px 0 0;" /><i>Betty Marshall, Bessemer NC</i></p>
-                            </div>
-                        </div>
-                        <div class="accolades">
-                            <h2>Accolades</h2>
-                            <p><img src="img/nbc.png" alt="" />
-                            <img src="img/nass.png" alt="" />
-                            <img src="img/scoliosis.png" alt="" />
-                            <img src="img/espn.png" alt="" />
-                            <img src="img/aans.png" alt="" /></p>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Meet Our Specialists -->
-        <section>
-            <div class="meet-specialist">
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="specialist-title">
-                            <h2>Meet Our <strong>Medical Specialists</strong></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+        <div class="row">
+        <div class="large-8 columns">
+
+            <section class="news">
+                <header>
+                    <h3>Editor's Picks:</h3>
+                </header>
+
+                <Marketpath:Token type="list-listentries" id="c65e140d-0dfa-4f76-9a81-1ea4a7e8824a" repeat="3">
+                <article class="row">
+                    <div class="large-12 columns padding">
+                        <div class="img"><img src="%%LIST-ENTRY-IMAGE-URL%%" /></div>
+                        <div class="text">
+                            <a href="%%LIST-ENTRY-FULL-URL%%">%%LIST-ENTRY-TITLE%% &nbsp;<i class="fa fa-angle-right">&nbsp;</i></a>
+                            <time>%%LIST-ENTRY-DATE-ENTRY%%&nbsp;</time>
+                            <div class="content">%%LIST-ENTRY-HTML%% &nbsp;</div>
                         </div>
+                        <br clear="all" />
                     </div>
-                </div>
-                <div class="row">
-                    <div class="large-12">
-                        <div class="large-4 columns">
-                            <div class="bio-wrap">
-                                <div class="bio-img"><img src="img/drhunter.jpg" alt="" /></div>
-                                <div class="bio-title">
-                                    <p><strong>Dr. William Hunter</strong><br/>MD, FAANS - Physician</p>
-                                </div>
-                            </div>
+                </article>
+                   </Marketpath:Token>
+
+            </section>
+
+             <section class="multimedia">
+                <header>
+                    <h3>Photo Galleries & Multi-media</h3>
+                </header>
+
+                <Marketpath:Token type="list-listentries" id="c65e140d-0dfa-4f76-9a81-1ea4a7e8824a" repeat="3">
+                <article class="row">
+                    <div class="large-12 columns padding">
+                        <div class="img"><img src="%%LIST-ENTRY-IMAGE-URL%%" /></div>
+                        <div class="text">
+                            <a href="%%LIST-ENTRY-FULL-URL%%">%%LIST-ENTRY-TITLE%% &nbsp;<i class="fa fa-angle-right">&nbsp;</i></a>
+                            <time>%%LIST-ENTRY-DATE-ENTRY%%&nbsp;</time>
+                            <div class="content">%%LIST-ENTRY-HTML%% &nbsp;</div>
                         </div>
-                        <div class="large-4 columns">
-                            <div class="bio-wrap">
-                                <div class="bio-img"><img src="img/m-wilkinson.jpg" alt="" /></div>
-                                <div class="bio-title">
-                                    <p><strong>Megan H. Wlkinson</strong><br/>ACNP-BC - Nurse Practitioner</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="large-4 columns">
-                            <div class="bio-wrap">
-                                <div class="bio-img"><img src="img/d-howell.jpg" alt="" /></div>
-                                <div class="bio-title">
-                                    <p><strong>Danielle Howell</strong><br/>PA-C - Physician Assistant</p>
-                                </div>
-                            </div>
-                        </div>
+                        <br clear="all" />
                     </div>
-                </div>
-            </div>
-        </section>
+                </article>
+                   </Marketpath:Token>
+
+            </section>
+
+        </div>
+
+        <div class="large-4 columns">
+            <aside>
+                <section class="right">
+                    <header>
+                        <h4>Sponsored By</h4>
+                    </header>
+                    <section class="padding">
+                        <p><img src="https://az480170.vo.msecnd.net/0975b797-d19b-4bf5-a32f-b341aca3a157/img/orig/f7b4b9cb-9f53-40f8-9016-8952961ce869/dr-cushenberry.jpg" width="100" height="100" /></p>
+                    </section>
+                </section>
+
+                <section class="right">
+                    <header>
+                        <h4>View Latest Issue of the Owl</h4>
+                    </header>
+                    <section class="padding">
+                        <Marketpath:ContentArea ID="ContentArea15" />
+                    </section>
+                </section>
+
+                <section class="calendar">
+                    <header>
+                        <h4>Calendar <i class="fa fa-calendar">&nbsp;</i></h4>
+                    </header>
+
+                    <marketpath:token type="list-calendarentries" id="0d82969e-bce9-4685-bd62-babcf4bc4499" repeat="3" orderby="next">
+                        <article class="padding">
+                            <span class="date-start">%%CALENDARENTRY-START-DATE%%</span>
+                            <span class="date-end">%%CALENDARENTRY-END-DATE%%</span>
+                            <time class="cal-box cal-box01">
+                                <b>&nbsp;
+                                    <em class="one">&nbsp;</em>
+                                    <em class="two">&nbsp;</em>
+                                </b>
+                                <h6></h6>
+                                <h5></h5>
+                            </time>
+                             <time class="cal-box cal-box02">
+                                <b>&nbsp;
+                                    <em class="one">&nbsp;</em>
+                                    <em class="two">&nbsp;</em>
+                                </b>
+                                <h6></h6>
+                                <span>to</span>
+                                <h5></h5>
+                            </time>
+                            <p>
+                                <a href="%%CALENDAR-FULL-URL%%" class="date-title">%%CALENDARENTRY-TITLE%%</a>
+                                <span class="date-desc">%%CALENDARENTRY-DESCRIPTION%%</span>
+                                <a href="%%CALENDAR-FULL-URL%%">Read More <i class="fa fa-angle-right">&nbsp;</i></a>
+                            </p>
+                        </article>
+                    </marketpath:token>
+
+                    <footer>
+                        <a href="http://www.warren.k12.in.us/calendar/events">See All Events <i class="fa fa-angle-right">&nbsp;</i></a>
+                    </footer>
+                </section>
+
+            </aside>
 
     </main>
 
 
     <footer>
         <div class="row">
-            <div class="large-12">
+            <div class="large-12 flex">
                 <!-- Footer Address -->
                 <div class="large-4 columns">
                     <div class="address">
-                        <h5>Refer a Patient</h5>
-                        <p>Office Hours: M-F 8:00AM - 5:00PM</p>
-                        <p>704.864.5550<br/>
-                            2555 Court Drive, Suite 400<br/>
-                            Gastonia, NC 28054</p>
-                        <p>
-                            <i class="fa fa-facebook-square">&nbsp;</i>
-                            <i class="fa fa-twitter-square">&nbsp;</i>
-                            <i class="fa fa-youtube-square">&nbsp;</i>
-                        </p>
+                        <p><img src="img/WCHS_logo.png" alt="" /></p>
+                        <p>9500 E. 16th Street indianapolis, in 46229<br/>317.532.6200</p>
                     </div>
                 </div>
                 <!-- Awards -->
                 <div class="large-4 columns">
                     <div class="awards">
-                        <p><img src="img/top-10.png" alt="" style="text-align: center;"/></p>
-                        <p><img src="img/better-way-back.png" alt="" style="text-align: center;margin: 10px 10px 0 0;" /></p>
+                        <ul>
+                            <li><a href="#">Editorial Policy</a></li>
+                            <li><a href="#">Meet the Staff</a></li>
+                            <li><a href="#">Staff Blog</a></li>
+                            <li><a href="#">Contact the OWl Staff</a></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- Newsletter Sign-Up -->
                 <div class="large-4 columns">
-                    <div class="newsletter-signup">
-                        <h5><img src="img/icon-newsletter.png" alt="" style="float: left;margin: 0 10px 0 0;" /> Sign up to receive our newsletter</h5>
-                        <p><span class="button">Sign Up Now</span></p>
-                        <h5><img src="img/icon-hippa.png" alt="" style="float: left;margin: 0 10px 0 0;" /> HIPPA Compliant</h5>
+                    <div class="connect-with">
+                        <h4>Connect with us</h4>
+                        <p>
+                            <i class="fa fa-facebook-square">&nbsp;</i>
+                            <i class="fa fa-twitter-square">&nbsp;</i>
+                            <i class="fa fa-youtube-square">&nbsp;</i>
+                        </p>
                     </div>
                 </div>
             </div>

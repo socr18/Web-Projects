@@ -5,7 +5,7 @@
 @white: #ffffff;
 
 /* Fonts */
-@font-franklin: 'URWFranklinGothicW01-De_927750';
+@font-brandon: "brandon-grotesque",sans-serif;
 
 /* General Type Styles */
 
@@ -16,7 +16,7 @@ body {
 
 body {
     color: @font;
-    font: 300 16px / 24px @font-franklin;
+    font: 300 16px / 24px @font-brandon;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     color: #012543;
-    font: 40px @font-franklin;
+    font: 40px @font-brandon;
     margin: 0 0 2rem 0;
     text-transform: uppercase;
 
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
     color: @heading-blue;
-    font: 38px @font-franklin;
+    font: 38px @font-brandon;
     text-transform: uppercase;
     width: 100%;
 
@@ -47,7 +47,7 @@ h2 {
 
 h3 {
     color: @heading-blue;
-    font: 32px @font-franklin;
+    font: 32px @font-brandon;
     margin: 25px 0;
     text-transform: uppercase;
 
@@ -58,7 +58,7 @@ h3 {
 
 h4 {
     color: @heading-blue;
-    font: 24px @font-franklin;
+    font: 24px @font-brandon;
     text-transform: uppercase;
     margin: 0 0 2.5rem 0;
 
@@ -69,79 +69,48 @@ h4 {
 
 h5 {
     color: @white;
-    font: 32px @font-franklin;
+    font: 32px @font-brandon;
     margin: 0 0 1.0rem 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-button, .button {
-    background: @button-blue;
-    color: @white;
-    font: 21.33px / 21.333px @font-franklin;
-    text-transform: uppercase;
-
-    /* Mobile Screen Size */
-    @media screen and (max-width: 640px) {
-    }
+a {
+    color: #404040;
 }
 
 /* Site Specific Styles*/
-.bio-title {
-    color: #8e8e8e;
-    font: 22px @font-franklin;
+.bg-header {
+
+    .social {
+        color: #404040;
+        font: 700 21.33px @font-brandon;
+        text-transform: uppercase;
+    }
+}
+
+label {
+    font-size: .875em;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    margin-bottom: .1875em;
+}
+
+.logo {
     text-align: center;
-
-    strong {
-        font: 22px @font-franklin;
-    }
 }
 
-.blog-title {
-    color: #012543;
-    font: 21.33px @font-franklin;
-
-    p {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.blog-descr {
-    color: #585858;
-    font: 16px @font-franklin;
-
-    p {
-        margin: 0;
-        padding: 0;
-    }
-}
-.contact {
-    color: #ffffff;
-    font: 24px / 32px @font-franklin;
-    text-transform: uppercase;
-
-    strong {
-        font: 21.33px / 32px @font-franklin;
-    }
-}
-
-footer {
-    color: #ffffff;
-}
-
-.info-text {
-    h4 {
-        padding: 0;
-        margin: 0;
-    }
-
-    color: #8d8d8d;
-    font: 16px / 16px @font-franklin;
-}
-
-nav {
-    float: left;
+.nav {
+    background: rgba(64,64,64,1);
+    background: -moz-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64,64,64,1)), color-stop(100%, rgba(43,43,43,1)));
+    background: -webkit-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+    background: -o-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+    background: -ms-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+    background: linear-gradient(to bottom, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#2b2b2b', GradientType=0 );
 
     ul {
         list-style: none;
@@ -149,34 +118,79 @@ nav {
         padding: 0;
 
         li {
-            border-right: 1px solid #e1e1e1;
             float: left;
-            padding: 6px 0;
+            position: relative;
 
             a {
-                color: @heading-blue;
-                font: 21.33px / 32px @font-franklin;
-                padding: 10px;
+                color: #ffffff;
+                float: left;
+                font: 300 20px @font-brandon;
+                padding: 10px 25px;
+                text-transform: uppercase;
+            }
 
-                &:hover {
-                    background-color: #4bb0dc;
-                    color: @white;
+            ul {
+                display: none;
+                left: 0;
+                position: absolute;
+                top: 45px;
+
+                li {
+                    width: 250px;
+
+                    a {
+                        font: 300 18px @font-brandon;
+                        text-transform: capitalize;
+                    }
                 }
             }
+
+            &:hover {
+                background: rgba(64,64,64,1);
+            }
+
+            &:hover ul {
+                display: block;
+            }
+        }
+
+    }
+}
+
+.news,.multimedia {
+    background: #ededed;
+    float: left;
+    margin: 20px 0 0 0;
+    width: 100%;
+
+    header {
+        background: #dddddd;
+        padding: 10px 20px;
+        text-transform: uppercase;
+
+        h3 {
+            color: #000000;
+            font: 700 24px @font-brandon;
+            margin: 0;
         }
     }
 }
 
-.quote-name {
-    color: #585858;
-    font: 300 14.67px @font-franklin;
-}
+.right {
+    background: #ededed;
+    float: left;
+    margin: 20px 0 0 0;
+    width: 100%;
 
-.specialist-title {
-    text-align: center;
-}
+    header {
+        background: #dddddd;
+        padding: 10px 20px;
+        text-transform: uppercase;
 
-.social-wrap .fa {
-    color: #012543;
-    font-size: 26px;
+        h4 {
+            color: #3e3e3e;
+            font: 700 20px @font-brandon;
+            margin: 0;
+        }
+    }
 }

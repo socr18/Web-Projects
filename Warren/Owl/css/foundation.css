@@ -58,10 +58,11 @@ body {
   font-size: 100%; }
 
 body {
-  background: #0d1d35;
-  color: #585858;
+  background: #3b3b3b;
+  color: #3e3e3e;
   cursor: auto;
-  font-family: 'URWFranklinGothicW01-De_927750';
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -126,7 +127,7 @@ select {
 .row {
   margin: 0 auto;
   width: 100%;
-  max-width: 1210px;
+  max-width: 1165px;
    }
   .row:before, .row:after {
     content: " ";
@@ -1155,7 +1156,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: inherit;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
