@@ -86,38 +86,12 @@
         <!-- Slider Carousel -->
         <div class="hero">
             <div class="row">
-                <div class="small-12 columns scrollers">
-                    <div class="scrollable carousel-stage" data-jcarousel="true">
-                        <ul class="items">
-                            <marketpath:token type="list-directoryentries" id="b091cb37-ad23-4d7a-8b6d-b58b00c6811d">
-                            <li class="slides1">
-                                <span class="homewgt1" data-id="%%homewgt%%">%%homewgt%%</span>
-                                <a href="%%homelink%%" target="%%hometarget%%" title="%%hometitle%%"><img src="%%homeimg%%" alt="%%hometitle%%" /></a>
-                            </li>
-                            </marketpath:token>
-                        </ul>
-                    </div>
-
-                    <div class="vertical-scrolling carousel-navigation" data-jcarousel="true">
-                        <ul class="items">
-                            <marketpath:token type="list-directoryentries" id="b091cb37-ad23-4d7a-8b6d-b58b00c6811d">
-                            <li class="slides2">
-                                <span class="homewgt2" data-id="%%homewgt%%">%%homewgt%%</span>
-                                <div>
-                                <a href="%%homelink%%" target="%%hometarget%%">
-                                    <h5>%%hometitle%%</h5>
-                                    <div class="img"><img src="%%homeimg%%" alt="%%hometitle%%" /></div>
-                                    <p class="hero-caption">%%homecaption%%</p>
-                                    <strong>Read More <i class="fa fa-angle-right">&nbsp;</i></strong>
-                                </a>
-                                </div>
-                                <b class="arrow">&nbsp;</b>
-                            </li>
-                            </marketpath:token>
-                        </ul>
-                        <a class="controls prev-navigation" data-jcarouselcontrol="true"><i class="fa fa-angle-up">&nbsp;</i></a>
-                        <a class="controls next-navigation" data-jcarouselcontrol="true"><i class="fa fa-angle-down">&nbsp;</i></a>
-
+                <div class="small-12 columns">
+                    <div class="banner-wrap">
+                        <div class="banner-img">
+                            <p><img src="img/landing-banner.png" alt="" /></p>
+                            <div class="page-title"><h1>Sports</h1></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,6 +146,58 @@
 
         <div class="large-4 columns">
             <aside>
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">Categories</a></li>
+                        <li><a href="#tab2">Popular</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                            <ul>
+                                <li><a href="#"><strong>Men’s Sports</strong></a>
+                                    <ul>
+                                        <li><a href="#">Baseball     (5)</a></li>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Cross Country</a></li>
+                                        <li><a href="#">Football</a></li>
+                                        <li><a href="#">Golf</a></li>
+                                        <li><a href="#">Soccer</a></li>
+                                        <li><a href="#">Swimming</a></li>
+                                        <li><a href="#">Tennis</a></li>
+                                        <li><a href="#">Track</a></li>
+                                        <li><a href="#">Volleyball</a></li>
+                                        <li><a href="#">Wrestling     (10)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><strong>Women’s Sports</strong></a>
+                                    <ul>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Cheerleading</a></li>
+                                        <li><a href="#">Cross Country</a></li>
+                                        <li><a href="#">Soccer     (11)</a></li>
+                                        <li><a href="#">Softball</a></li>
+                                        <li><a href="#">Swimming</a></li>
+                                        <li><a href="#">Tennis</a></li>
+                                        <li><a href="#">Track</a></li>
+                                        <li><a href="#">Volleyball     (9)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div id="tab2" class="tab">
+                            <p>Tab #2 content goes here!</p>
+                            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+                        </div>
+
+                    </div>
+                </div>
+
                 <section class="right">
                     <header>
                         <h4>Sponsored By</h4>
@@ -188,45 +214,6 @@
                     <section class="padding">
                         <Marketpath:ContentArea ID="ContentArea15" />
                     </section>
-                </section>
-
-                <section class="calendar">
-                    <header>
-                        <h4>Calendar <i class="fa fa-calendar">&nbsp;</i></h4>
-                    </header>
-
-                    <marketpath:token type="list-calendarentries" id="0d82969e-bce9-4685-bd62-babcf4bc4499" repeat="3" orderby="next">
-                        <article class="padding">
-                            <span class="date-start">%%CALENDARENTRY-START-DATE%%</span>
-                            <span class="date-end">%%CALENDARENTRY-END-DATE%%</span>
-                            <time class="cal-box cal-box01">
-                                <b>&nbsp;
-                                    <em class="one">&nbsp;</em>
-                                    <em class="two">&nbsp;</em>
-                                </b>
-                                <h6></h6>
-                                <h5></h5>
-                            </time>
-                             <time class="cal-box cal-box02">
-                                <b>&nbsp;
-                                    <em class="one">&nbsp;</em>
-                                    <em class="two">&nbsp;</em>
-                                </b>
-                                <h6></h6>
-                                <span>to</span>
-                                <h5></h5>
-                            </time>
-                            <p>
-                                <a href="%%CALENDAR-FULL-URL%%" class="date-title">%%CALENDARENTRY-TITLE%%</a>
-                                <span class="date-desc">%%CALENDARENTRY-DESCRIPTION%%</span>
-                                <a href="%%CALENDAR-FULL-URL%%">Read More <i class="fa fa-angle-right">&nbsp;</i></a>
-                            </p>
-                        </article>
-                    </marketpath:token>
-
-                    <footer>
-                        <h4><a href="http://www.warren.k12.in.us/calendar/events">See All Events</a></h4>
-                    </footer>
                 </section>
 
             </aside>
@@ -281,8 +268,19 @@
 
     <!-- Scripts -->
     <script src="https://az480170.vo.msecnd.net/1c435acd-fe5a-4129-8ec9-d83e8ea3bbad/docs/2aa6a00e-df53-4f59-afac-b8a468046fd9/foundation.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <script>
         $(document).foundation();
+
+        $(document).ready(function() {
+
+            $('.tab-links li').click(function() {
+                $('.tab-links li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
     </script>
 
 
