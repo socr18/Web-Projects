@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Mobile Break Points -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title></title>
+
+    <!-- HTML5 and CSS3 Recognition-->
+    <script src="https://az480170.vo.msecnd.net/7510c201-ffca-413f-b43a-c9e2fabe9be5/docs/ff7d18cc-926f-4b14-ad48-426a5ac48425/modernizr.js"></script>
+
+    <!-- Font.com Fonts -->
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/84593bd9-9039-42a7-bc02-75d14a9baeeb.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Adobe Typekit -->
+    <script src="https://use.typekit.net/tnc2yre.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Marketpath CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/type.css" />
+    <link rel="stylesheet" href="css/bxslider.css" />
+
+</head>
+<body>
+
+    <header>
+
+        <div class="bg-header">
+            <div class="row">
+                <div class="large-12">
+                    <div class="large-4 columns">
+                        <div class="social">
+                            <p>
+                                <i class="fa fa-facebook-square">&nbsp;</i>&nbsp;
+                                <i class="fa fa-twitter-square">&nbsp;</i>&nbsp;
+                                <i class="fa fa-google-plus-square">&nbsp;</i>&nbsp;
+                                <a href="#">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="logo"><p><a href="#"><img src="img/logo-owl.png" alt="" /></a></p></div>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="form search-wrap">
+                            <input type="search" placeholder="Search..." onclick="this.value='';return false;" onkeypress="if (event.keyCode == 13) MPGlobalSearch($('#searchSite').val(), 'global');" id="searchSite" />
+                            <div id="divSearchButton" class="button small" onclick="MPGlobalSearch($('#searchSite').val(), 'global');"></div>
+                            <i class="fa fa-search">&nbsp;</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="row">
+                <div class="large-12 columns">
+                    <nav>
+                        <div id="Default">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Editorials</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                                <li><a href="#">Opinion</a></li>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Creative</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Slider Carousel -->
+        <div class="hero">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="banner-wrap">
+                        <div class="banner-img">
+                            <p><img src="img/landing-banner.png" alt="" /></p>
+                            <div class="page-title"><h1>Sports</h1></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="large-8 columns">
+
+            <section class="news">
+                <header>
+                    <h3>Editor's Picks:</h3>
+                </header>
+
+                <Marketpath:Token type="list-listentries" id="c65e140d-0dfa-4f76-9a81-1ea4a7e8824a" repeat="3">
+                <article class="row">
+                    <div class="large-12 columns padding">
+                        <div class="img"><img src="%%LIST-ENTRY-IMAGE-URL%%" /></div>
+                        <div class="text">
+                            <a href="%%LIST-ENTRY-FULL-URL%%">%%LIST-ENTRY-TITLE%% &nbsp;<i class="fa fa-angle-right">&nbsp;</i></a>
+                            <time>%%LIST-ENTRY-DATE-ENTRY%%&nbsp;</time>
+                            <div class="content">%%LIST-ENTRY-HTML%% &nbsp;</div>
+                        </div>
+                        <br clear="all" />
+                    </div>
+                </article>
+                   </Marketpath:Token>
+
+            </section>
+
+             <section class="multimedia">
+                <header>
+                    <h3>Photo Galleries & Multi-media</h3>
+                </header>
+
+                <Marketpath:Token type="list-listentries" id="c65e140d-0dfa-4f76-9a81-1ea4a7e8824a" repeat="3">
+                <article class="row">
+                    <div class="large-12 columns padding">
+                        <div class="img"><img src="%%LIST-ENTRY-IMAGE-URL%%" /></div>
+                        <div class="text">
+                            <a href="%%LIST-ENTRY-FULL-URL%%">%%LIST-ENTRY-TITLE%% &nbsp;<i class="fa fa-angle-right">&nbsp;</i></a>
+                            <time>%%LIST-ENTRY-DATE-ENTRY%%&nbsp;</time>
+                            <div class="content">%%LIST-ENTRY-HTML%% &nbsp;</div>
+                        </div>
+                        <br clear="all" />
+                    </div>
+                </article>
+                   </Marketpath:Token>
+
+            </section>
+
+        </div>
+
+        <div class="large-4 columns">
+            <aside>
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">Categories</a></li>
+                        <li><a href="#tab2">Popular</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                            <ul>
+                                <li><a href="#"><strong>Men’s Sports</strong></a>
+                                    <ul>
+                                        <li><a href="#">Baseball     (5)</a></li>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Cross Country</a></li>
+                                        <li><a href="#">Football</a></li>
+                                        <li><a href="#">Golf</a></li>
+                                        <li><a href="#">Soccer</a></li>
+                                        <li><a href="#">Swimming</a></li>
+                                        <li><a href="#">Tennis</a></li>
+                                        <li><a href="#">Track</a></li>
+                                        <li><a href="#">Volleyball</a></li>
+                                        <li><a href="#">Wrestling     (10)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><strong>Women’s Sports</strong></a>
+                                    <ul>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Cheerleading</a></li>
+                                        <li><a href="#">Cross Country</a></li>
+                                        <li><a href="#">Soccer     (11)</a></li>
+                                        <li><a href="#">Softball</a></li>
+                                        <li><a href="#">Swimming</a></li>
+                                        <li><a href="#">Tennis</a></li>
+                                        <li><a href="#">Track</a></li>
+                                        <li><a href="#">Volleyball     (9)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div id="tab2" class="tab">
+                            <p>Tab #2 content goes here!</p>
+                            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <section class="right">
+                    <header>
+                        <h4>Sponsored By</h4>
+                    </header>
+                    <section class="padding">
+                        <p><img src="img/tie-dye-grill.jpg" /></p>
+                    </section>
+                </section>
+
+                <section class="right">
+                    <header>
+                        <h4>View Latest Issue of the Owl</h4>
+                    </header>
+                    <section class="padding">
+                        <img src="img/sept-owl.jpg" />
+                    </section>
+                </section>
+
+            </aside>
+
+    </main>
+
+
+    <footer>
+        <div class="row">
+            <div class="large-12 flex">
+                <!-- Footer Address -->
+                <div class="large-4 columns">
+                    <div class="address">
+                        <p><img src="img/WCHS_logo.png" alt="" /></p>
+                        <p>9500 E. 16th Street indianapolis, in 46229<br/>317.532.6200</p>
+                    </div>
+                </div>
+                <!-- Awards -->
+                <div class="large-4 columns">
+                    <div class="awards">
+                        <ul>
+                            <li><a href="#">Editorial Policy</a></li>
+                            <li><a href="#">Meet the Staff</a></li>
+                            <li><a href="#">Staff Blog</a></li>
+                            <li><a href="#">Contact the OWl Staff</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Newsletter Sign-Up -->
+                <div class="large-4 columns">
+                    <div class="connect-with">
+                        <h4>Connect with us</h4>
+                        <p>
+                            <i class="fa fa-facebook-square">&nbsp;</i>
+                            <i class="fa fa-twitter-square">&nbsp;</i>
+                            <i class="fa fa-youtube-square">&nbsp;</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <a name="sitemap">&nbsp;</a>
+                    <div class="sitemap">
+                        <nav class="nav"><Marketpath:Menu Version="2" Name="Default" ID="Default"></Marketpath:Menu></nav>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Scripts -->
+    <script src="https://az480170.vo.msecnd.net/1c435acd-fe5a-4129-8ec9-d83e8ea3bbad/docs/2aa6a00e-df53-4f59-afac-b8a468046fd9/foundation.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $(document).foundation();
+
+        $(document).ready(function() {
+
+            $('.tab-links li').click(function() {
+                $('.tab-links li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
+    </script>
+
+
+</body>
+</html>
