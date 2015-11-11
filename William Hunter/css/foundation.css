@@ -58,10 +58,10 @@ body {
   font-size: 100%; }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #0d1d35;
+  color: #585858;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'URWFranklinGothicW01-De_927750';
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -126,7 +126,7 @@ select {
 .row {
   margin: 0 auto;
   width: 100%;
-  max-width: 1272px;
+  max-width: 1210px;
    }
   .row:before, .row:after {
     content: " ";

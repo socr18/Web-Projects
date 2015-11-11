@@ -1,0 +1,182 @@
+/* Site Colors */
+@button-blue: #119eeb;
+@font: #585858;
+@heading-blue: #012543;
+@white: #ffffff;
+
+/* Fonts */
+@font-franklin: 'URWFranklinGothicW01-De_927750';
+
+/* General Type Styles */
+
+html,
+body {
+    font-size: 100%;
+}
+
+body {
+    color: @font;
+    font: 300 16px / 24px @font-franklin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+}
+
+h1 {
+    color: #012543;
+    font: 40px @font-franklin;
+    margin: 0 0 2rem 0;
+    text-transform: uppercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h2 {
+    color: @heading-blue;
+    font: 38px @font-franklin;
+    text-transform: uppercase;
+    width: 100%;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h3 {
+    color: @heading-blue;
+    font: 32px @font-franklin;
+    margin: 25px 0;
+    text-transform: uppercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h4 {
+    color: @heading-blue;
+    font: 24px @font-franklin;
+    text-transform: uppercase;
+    margin: 0 0 2.5rem 0;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+h5 {
+    color: @white;
+    font: 32px @font-franklin;
+    margin: 0 0 1.0rem 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+button, .button {
+    background: @button-blue;
+    color: @white;
+    font: 21.33px / 21.333px @font-franklin;
+    text-transform: uppercase;
+
+    /* Mobile Screen Size */
+    @media screen and (max-width: 640px) {
+    }
+}
+
+/* Site Specific Styles*/
+.bio-title {
+    color: #8e8e8e;
+    font: 22px @font-franklin;
+    text-align: center;
+
+    strong {
+        font: 22px @font-franklin;
+    }
+}
+
+.blog-title {
+    color: #012543;
+    font: 21.33px @font-franklin;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.blog-descr {
+    color: #585858;
+    font: 16px @font-franklin;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+.contact {
+    color: #ffffff;
+    font: 24px / 32px @font-franklin;
+    text-transform: uppercase;
+
+    strong {
+        font: 21.33px / 32px @font-franklin;
+    }
+}
+
+footer {
+    color: #ffffff;
+}
+
+.info-text {
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+
+    color: #8d8d8d;
+    font: 16px / 16px @font-franklin;
+}
+
+nav {
+    float: left;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-right: 1px solid #e1e1e1;
+            float: left;
+            padding: 6px 0;
+
+            a {
+                color: @heading-blue;
+                font: 21.33px / 32px @font-franklin;
+                padding: 10px;
+
+                &:hover {
+                    background-color: #4bb0dc;
+                    color: @white;
+                }
+            }
+        }
+    }
+}
+
+.quote-name {
+    color: #585858;
+    font: 300 14.67px @font-franklin;
+}
+
+.specialist-title {
+    text-align: center;
+}
+
+.social-wrap .fa {
+    color: #012543;
+    font-size: 26px;
+}
