@@ -103,6 +103,15 @@ a {
     }
 }
 
+.date-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.date-desc {
+    display: block;
+}
+
 footer {
     color: #ffffff;
     font: 300 12px / 16px @font-brandon;
@@ -138,6 +147,18 @@ label {
     text-align: center;
 }
 
+.mp-list-entry-list-title {
+    display: none;
+}
+
+.multimedia {
+    .article {
+        color: #3e3e3e;
+        font: 300 18.67px @font-brandon;
+        text-align: center;
+    }
+}
+
 .nav {
     background: rgba(64,64,64,1);
     background: -moz-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
@@ -152,6 +173,7 @@ label {
         list-style: none;
         margin: 0;
         padding: 0;
+        z-index: 100;
 
         li {
             float: left;
@@ -160,8 +182,8 @@ label {
             a {
                 color: #ffffff;
                 float: left;
-                font: 300 20px @font-brandon;
-                padding: 10px 25px;
+                font: 300 18px @font-brandon;
+                padding: 10px 17px;
                 text-transform: uppercase;
             }
 
@@ -212,6 +234,43 @@ label {
     }
 }
 
+.news {
+
+    .text {
+
+        .author {
+            color: #989898;
+            font: 400 13.33px / 16px @font-brandon;
+            padding: 0.4375em 0;
+        }
+
+        .readmore{
+            float: right;
+            padding: 0.4375em 0;
+
+            a {
+                color: #9b9b9b;
+                font: italic 700 16px @font-brandon;
+            }
+        }
+        .title {
+            color: #3e3e3e;
+            font: 700 21.33px @font-brandon;
+        }
+    }
+
+    .time {
+        color: #ffffff;
+        font: 700 13.33px @font-brandon;
+        line-height: .6em;
+        text-align: center;
+
+        .day {
+            font: 700 18.67px @font-brandon;
+            line-height: .8em;
+        }
+    }
+}
 .right, .calendar {
     background: #ededed;
     float: left;
@@ -229,6 +288,11 @@ label {
             margin: 0;
         }
     }
+
+}
+
+.staff {
+    text-align: center;
 }
 
 .tab a {

@@ -1,0 +1,219 @@
+<html>
+<head>
+	<style>
+	#container {
+		height: 500px;
+		min-width: 310px;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.loading {
+		margin-top: 10em;
+		text-align: center;
+		color: gray;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="http://code.highcharts.com/mapdata/countries/us/custom/us-all-mainland.js"></script>
+</head>
+
+<body>
+	<div id="container"></div>
+
+	<script>
+		var mapLocation = "countries/us/custom/us-all-mainland";
+		var baseVal = 5;
+		var stateColor = "#966";//"#B12616";//
+		var hoverColor = "#000";//"#FFF";//
+		var textColor = "#FFF";
+		var defaultURL = "http://www.google.com";
+		var svgMapLocation = "mapNoBackground.svg";
+
+		//20, 9, 763, 475
+		var bgWidth = 800 * 0.95375; //763
+		var bgHeight = 500 * 0.95; //475
+		var bgOffsetX = 20;
+		var bgOffsetY = 9;
+
+		$(function () {
+			var cityJSON = {
+				"type": "FeatureCollection",
+				"crs": { "type": "name", "properties": { "name": "oogityboogity" } },
+
+				"features": [
+					{ "type": "Feature", "properties": { "name": "Indianapolis" }, "geometry": { "type": "Point", "coordinates": [ 6500, 6860 ] } },
+					{ "type": "Feature", "properties": { "name": "St. Louis" }, "geometry": { "type": "Point", "coordinates": [ 5690, 6530 ] } },
+					{ "type": "Feature", "properties": { "name": "Chicago" }, "geometry": { "type": "Point", "coordinates": [ 6150, 7400 ] } },
+					{ "type": "Feature", "properties": { "name": "Laredo" }, "geometry": { "type": "Point", "coordinates": [ 3780, 3560 ] } },
+					{ "type": "Feature", "properties": { "name": "Atlanta" }, "geometry": { "type": "Point", "coordinates": [ 7125, 5325 ] } },
+					{ "type": "Feature", "properties": { "name": "Spartanburg" }, "geometry": { "type": "Point", "coordinates": [ 7650, 5720 ] } },
+					{ "type": "Feature", "properties": { "name": "Lafayette" }, "geometry": { "type": "Point", "coordinates": [ 6350, 7100 ] } }
+				]
+			};
+			var cities = Highcharts.geojson(cityJSON, 'mappoint');
+
+			// Prepare demo data
+			var data = [{
+				"hc-key": "us-in",
+				"value": baseVal,
+				"url": "http://www.bing.com"
+			}, {
+				"hc-key": "us-oh",
+				"value": baseVal
+			}, {
+				"hc-key": "us-il",
+				"value": baseVal
+			}, {
+				"hc-key": "us-ky",
+				"value": baseVal
+			}, {
+				"hc-key": "us-tn",
+				"value": baseVal
+			}, {
+				"hc-key": "us-tx",
+				"value": baseVal
+			}, {
+				"hc-key": "us-ga",
+				"value": baseVal
+			}, {
+				"hc-key": "us-fl",
+				"value": baseVal
+			}, {
+				"hc-key": "us-mo",
+				"value": baseVal
+			}, {
+				"hc-key": "us-pa",
+				"value": baseVal
+			}, {
+				"hc-key": "us-nc",
+				"value": baseVal
+			}, {
+				"hc-key": "us-sc",
+				"value": baseVal
+			},
+			];
+
+			$.each(data, function (i) {
+				//this.drilldown = this.properties['hc-key'];
+				this.value = 0; // Non-random bogus data
+				this.dataLabels = {
+					enabled: false,
+					format: '{point.name}'
+				};
+				this.prevOnClick = function () { this.onclick };
+				this.onclick = function (click) {
+					this.prevOnClick();
+					console.log(this);
+					var url = data[i].url;
+					if(!url || url == "")
+						url = defaultURL;
+
+					if(confirm("Are you sure you wish to navigate to the job listings for " + this.properties["name"]))
+					{
+						window.location = url;
+					}
+				}
+			});
+
+			// Initiate the chart
+			$('#container').highcharts('Map', {
+				title: {
+					text: ''//'TransCorr/Venture Logistics'
+				},
+
+				chart: {
+					backgroundColor: null,
+					resetZoomButton: {
+						enabled: false,
+						position: {
+							align: 'left',
+							verticalAlign: 'bottom'
+						}
+					}
+				},
+
+				subtitle: {
+					text: ''//'Coverage Map'
+				},
+
+				legend: {
+					enabled: false
+				},
+
+				mapNavigation: {
+					enabled: false,
+					buttonOptions: {
+						verticalAlign: 'bottom'
+					}
+				},
+
+				colorAxis: {
+					min: 0,
+					minColor: stateColor,
+					maxColor: stateColor,
+				},
+
+				tooltip: {
+					pointFormat: '{point.name}<br/>',
+					footerFormat: '<span style="font-size: 10px">(Click to choose)</span>'
+				},
+
+				series: [{
+					data: data,
+					mapData: Highcharts.maps[mapLocation],
+					joinBy: 'hc-key',
+					name: ' ',//'Random data',
+					states: {
+						hover: {
+							color: hoverColor,
+							lineColor: stateColor
+						}
+					},
+					dataLabels: {
+						enabled: false,
+						format: '{point.name}'
+					}
+				}, {
+					name: 'Separators',
+					type: 'mapline',
+					data: Highcharts.geojson(Highcharts.maps[mapLocation], 'mapline'),
+					color: 'silver',
+					showInLegend: false,
+					enableMouseTracking: false
+				},
+				{
+					name: 'Terminals',
+					type: 'mappoint',
+					data: cities,
+					color: 'black',
+					marker: {
+						radius: 2,
+						states: {
+							hover: {
+								enabled: false
+							}
+						}
+					},
+					dataLabels: {
+						align: 'left',
+						verticalAlign: 'middle'
+					},
+					animation: false,
+					tooltip: {
+						pointFormat: '{point.name}',
+						footerFormat: ' '
+					}
+				}
+				]
+			}, function (chart) { // on complete
+					$("path[fill='" + stateColor + "']").attr("fill-opacity", .30);
+					var img = chart.renderer.image(svgMapLocation, bgOffsetX, bgOffsetY, bgWidth, bgHeight).add();
+				}
+			);
+		});
+	</script>
+	</body>
+</html>

@@ -15,6 +15,7 @@
         p {
             margin: 0;
             padding: 0;
+            min-height: 75px;
         }
     }
 
@@ -78,8 +79,110 @@
     }
 }
 
+button, .button {
+    margin: 0 0 1.125em 1.125em;
+    padding: 0.4375em 1.875em;
+}
+
+.cal-box {
+    position: relative;
+    float: left;
+    display: block;
+    width: 80px;
+    height: 72px;
+    margin: 0 20px 10px 0;
+    background: #fff;
+
+    b {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        display: block;
+        height: 14px;
+        width: 100%;
+        background: #cf4343;
+
+        .one, .two {
+            position: absolute;
+            top: -6px;
+            width: 10px;
+            height: 10px;
+            background: #eee;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .one {
+            left: 10px;
+        }
+
+        .two {
+            right: 10px;
+        }
+    }
+
+    h6 {
+            position: absolute;
+            z-index: 4;
+            top: 14px;
+            left: 0px;
+            right: 0px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 30px;
+            font-size: 0.85em;
+            font-weight: bold;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #cf4343;
+            background: #f8f8f8;
+        }
+
+        h5 {
+            position: absolute;
+            z-index: 4;
+            top: 44px;
+            left: 0px;
+            right: 0px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 30px;
+            font-size: 1.4em;
+            font-weight: bold;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #cf4343;
+            background: #fff;
+        }
+}
+
+.calendar article {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #f8f8f8;
+    padding: 10px;
+}
+
 .calendar .fa {
     float: right;
+}
+
+.ckeditor_contentArea {
+    background: #ffffff;
+}
+
+.date-start, .date-end {
+    position: absolute;
+    left: -9999px;
 }
 
 footer {
@@ -87,13 +190,82 @@ footer {
     position: relative;
 }
 
+.hero-caption img {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.homewgt1, .homewgt2 {
+    display: none;
+}
+
+.inside {
+    margin: 0.9375em 0 0 0;
+}
+
+.items img {
+    width: 100%;
+}
+
 main {
     background: #ffffff;
     padding: 30px 0;
 }
 
+.multimedia {
+    .article {
+        padding: 0.9375em;
+
+        img {
+            height: auto!important;
+            width: 100%!important;
+        }
+    }
+}
+
+.news {
+
+    .content {
+        float: left;
+        height: 48px;
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            display: none;
+        }
+    }
+
+    .img {
+        float: left;
+        padding: 0 0.9375em 0 0;
+        position: relative;
+        width: 30%
+    }
+
+    &.landing {
+        margin: 0.9375em 0;
+    }
+
+    .text {
+        float: left;
+        width: 70%;
+    }
+
+    .time {
+        background-color: #f4c740;
+        left: 0;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+    }
+}
+
 .padding {
-    padding: 1.825em;
+    padding: 0.9375em 1.825em;
 }
 
 .scrollable {
@@ -104,6 +276,14 @@ main {
     width: 70%;
     height: 360px;
     background: #ffffff;
+
+    .items {
+        position: absolute;
+        width: 100%;
+        clear: both;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .scrollers {
@@ -111,6 +291,22 @@ main {
     overflow: hidden;
     width: 100%;
     height: 360px;
+}
+
+.sitemap {
+    display: none;
+}
+
+.staff {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.9375em 0 0.4375em;
+
+    img {
+        height: auto!important;
+        padding: 0.9375em 0.9375em 0 0.9375em;
+        width: 100%!important;
+    }
 }
 
 /*----- Tabs -----*/
@@ -190,7 +386,7 @@ main {
     top: 0px;
     width: 30%;
     height: 360px;
-    background: #f9cf4e;
+    background: #dddddd;
 
     .controls {
         position: absolute;
@@ -248,7 +444,7 @@ main {
             left: -20px;
             width: 100px;
             height: 100px;
-            background: url(../img/slide-arrow.png) no-repeat 0 0;
+            background: url(https://az480170.vo.msecnd.net/a230a2f5-82bf-438d-9d1b-1d7bd16065dd/img/prd/601dd0c0-877c-4460-adf8-6c88b11ebb83/slide-arrow.png) no-repeat 0 0;
         }
 
         div {
