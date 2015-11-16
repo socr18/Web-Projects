@@ -22,6 +22,17 @@
   background: #f9fdfd;
   padding: 20px 0;
 }
+.calendar-wrap {
+  float: left;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+.calendar-wrap .cal-date {
+  background-color: #f0f0f0;
+  float: left;
+  padding: 5px;
+  margin: 0 10px 0 0;
+}
 .content-boxes .bx-img {
   border: 10px solid #e8e8e8;
 }
@@ -38,6 +49,24 @@
 }
 footer {
   padding: 20px 0;
+}
+.grant-logo {
+  float: left;
+  padding: 0.9375em;
+  width: 20%;
+}
+.grant-logo img {
+  width: 100%!important;
+  height: auto!important;
+}
+.grant-recipients {
+  border: 10px solid #f0f0f0;
+  float: left;
+  margin: 0 0 20px 0;
+}
+.header-padding {
+  background: #ffffff;
+  padding: 61px;
 }
 .header-section {
   background: #ffffff;
@@ -67,6 +96,17 @@ footer {
   margin: 0;
   padding: 0;
 }
+.inside-content {
+  background: #ffffff;
+}
+.inside-content ul {
+  list-style: none;
+}
+.inside-content ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
 .logo p {
   margin: 0;
   padding: 0;
@@ -74,9 +114,33 @@ footer {
 .MPStyle_BlueText {
   color: #015395;
 }
+.orange-button {
+  background: #ed8422;
+  padding: 20px;
+  width: 100%;
+}
+.orange-button p {
+  margin: 0;
+  padding: 0;
+}
 .our-partners {
   background: #f9fdfd;
 }
 .page-content {
   background: #f9fdfd;
+}
+.past-events {
+  background: #f9fdfd;
+  padding: 0 0 15px 0;
+}
+.past-events .past-wrap {
+  background: #e8e8e8;
+  margin: 0 0.9375em;
+}
+.past-events .past-event-img {
+  border: 10px solid #e8e8e8;
+}
+.past-events .past-event-desc {
+  background: #e8e8e8;
+  padding: 10px;
 }

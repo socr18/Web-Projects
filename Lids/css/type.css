@@ -37,9 +37,10 @@ h4 {
   /* Mobile Screen Size */
 }
 h5 {
+  color: #015395;
+  font: 700 25px "aktiv-grotesk";
   margin: 0 0 1.0rem 0;
   padding: 0;
-  text-transform: uppercase;
 }
 a {
   color: #404040;
@@ -59,6 +60,26 @@ a {
 }
 .bx-txt a {
   color: #f9fdfd;
+}
+.calendar-wrap {
+  color: #000000;
+}
+.calendar-wrap a {
+  color: #000000;
+}
+.calendar-wrap .cal-day {
+  font-size: 25px;
+  text-align: center;
+}
+.calendar-wrap .cal-location {
+  font-size: 16px;
+}
+.calendar-wrap .cal-month {
+  font-size: 13px;
+  text-align: center;
+}
+.calendar-wrap .cal-title {
+  font-size: 24px;
 }
 #divSearchButton .fa {
   font-size: 14px;
@@ -141,6 +162,42 @@ footer .social-icons .fa {
 }
 .nav ul li:hover ul {
   display: block;
+}
+.orange-button {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-title h1 {
+  color: #015395;
+}
+.past-event-desc {
+  text-align: center;
+}
+.past-event-desc .past-title {
+  color: #015395;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.past-event-desc .past-desc {
+  font-size: 16px;
+}
+.past-event-desc .read-more {
+  background-color: #ed8422;
+  margin: 0 auto;
+  width: 40%;
+}
+.past-event-desc .read-more a {
+  color: #ffffff;
+  display: block;
+  padding: 10px 15px;
+}
+.side-menu {
+  background: #f0f0f0;
+  margin: 20px 0 0 0;
+  padding: 30px;
 }
 .social-icons a {
   color: #ed8422;
