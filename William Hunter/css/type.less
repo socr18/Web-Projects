@@ -5,18 +5,14 @@
 @white: #ffffff;
 
 /* Fonts */
-@font-franklin: 'URWFranklinGothicW01-De_927750';
+@font-franklin: 'URWFranklinGothicW01-Bk_927768';
+@font-headers: 'URWFranklinGothicW01-Me_927747';
 
 /* General Type Styles */
 
-html,
 body {
-    font-size: 100%;
-}
-
-body {
-    color: @font;
-    font: 300 16px / 24px @font-franklin;
+    color: #8d8d8d;
+    font: 16px / 24px @font-franklin;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     color: #012543;
-    font: 40px @font-franklin;
+    font: 40px @font-headers;
     margin: 0 0 2rem 0;
     text-transform: uppercase;
 
@@ -36,7 +32,7 @@ h1 {
 
 h2 {
     color: @heading-blue;
-    font: 38px @font-franklin;
+    font: 38px @font-headers;
     text-transform: uppercase;
     width: 100%;
 
@@ -47,7 +43,7 @@ h2 {
 
 h3 {
     color: @heading-blue;
-    font: 32px @font-franklin;
+    font: 32px @font-headers;
     margin: 25px 0;
     text-transform: uppercase;
 
@@ -58,7 +54,7 @@ h3 {
 
 h4 {
     color: @heading-blue;
-    font: 24px @font-franklin;
+    font: 24px @font-headers;
     text-transform: uppercase;
     margin: 0 0 2.5rem 0;
 
@@ -69,13 +65,13 @@ h4 {
 
 h5 {
     color: @white;
-    font: 32px @font-franklin;
+    font: 32px @font-headers;
     margin: 0 0 1.0rem 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-button, .button {
+button, .button, .MPStyle_BlueButton {
     background: @button-blue;
     color: @white;
     font: 21.33px / 21.333px @font-franklin;
@@ -140,6 +136,12 @@ footer {
     font: 16px / 16px @font-franklin;
 }
 
+.MPStyle_LandingTitle, .MPStyle_LandingTitle a {
+    color: #012543;
+    font: 24px / 24px @font-franklin;
+    text-transform: uppercase;
+}
+
 nav {
     float: left;
 
@@ -164,6 +166,20 @@ nav {
                 }
             }
         }
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+.page-heading {
+    h1 {
+        background: #3f9bd5;
+        color: #f3f3f3;
+        font: 28px / 32px @font-headers;
+        margin: 0;
+        padding: 20px;
     }
 }
 

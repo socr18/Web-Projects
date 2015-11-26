@@ -1148,7 +1148,7 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-button, .button {
+button, .button,.MPStyle_BlueButton {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
@@ -1169,9 +1169,9 @@ button, .button {
   border-color: #007095;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
-  button:hover, button:focus, .button:hover, .button:focus {
+  button:hover, button:focus, .button:hover, .button:focus,.MPStyle_BlueButton:focus {
     background-color: #007095; }
-  button:hover, button:focus, .button:hover, .button:focus {
+  button:hover, button:focus, .button:hover, .button:focus,.MPStyle_BlueButton:hover,.MPStyle_BlueButton:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
     background-color: #e7e7e7;
