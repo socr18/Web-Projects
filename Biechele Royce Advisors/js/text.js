@@ -68,4 +68,32 @@ $( document ).ready(function () {
             $('.slideset li.active').fadeIn('slow');
         }, function() {}
     );
+
+
+if (document.cookie.indexOf('wauguid') != -1) {
+$('.memberslogin').show();
+$('.memberslogout').hide();
+ }
+
+if (document.cookie.indexOf('wauguid') >= 0) {
+$('.memberslogout').show();
+}
+
+        });
+
+
+function deleteCookies() {
+
+   var allcookies = document.cookie.split(";");
+
+   for (var i = 0; i < allcookies.length; i++) {
+        var cookie = allcookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+
+    window.location.replace("/");
+
+}
 });

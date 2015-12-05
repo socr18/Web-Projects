@@ -58,10 +58,10 @@ body {
   font-size: 100%; }
 
 body {
-  background: #015395;
-  color: #000;
+  background: #dededd;
+  color: #333333;
   cursor: auto;
-  font-family: "aktiv-grotesk",sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -126,7 +126,7 @@ select {
 .row {
   margin: 0 auto;
   width: 100%;
-  max-width: 1165px;
+  max-width: 1096px;
    }
   .row:before, .row:after {
     content: " ";
