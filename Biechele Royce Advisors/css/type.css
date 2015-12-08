@@ -103,6 +103,10 @@ a {
 .icons {
   text-align: right;
 }
+.left-content h1 {
+  color: #444445;
+  text-transform: none;
+}
 .MPStyle_BlueButton {
   -webkit-appearance: none;
   -moz-appearance: none;
