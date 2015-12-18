@@ -207,8 +207,12 @@ ul.bxslider {
 }
 .bxslider img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 100%!important;
+  height: auto!important;
+}
+.bxslider p {
+    margin: 0;
+    padding: 0;
 }
 .bx-pager {
   display: none;

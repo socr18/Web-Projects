@@ -42,12 +42,24 @@ aside {
 .bx-header {
   border: 1px solid #ffffff;
 }
+.case-study {
+  float: left;
+  margin: 30px 0 0 0;
+}
+.case-study .text {
+  background: #efeeee;
+  float: left;
+  padding: 25px 40px;
+}
 .dark-blue {
   background: #3c5a77;
 }
 .detail-boxes {
   background: #f0efef;
   padding: 30px 0;
+}
+.flex {
+  display: flex;
 }
 footer {
   padding: 30px 0;
@@ -62,6 +74,9 @@ footer {
 }
 .left-content {
   padding: 30px 0;
+}
+.ltblue {
+  background: #97c0e6;
 }
 .logo {
   float: left;
@@ -95,6 +110,41 @@ footer {
 .questions .txt-wrap {
   float: left;
   width: 70%;
+}
+.serve {
+  float: left;
+  padding: 20px 0.9375em 10px 0;
+}
+.serve:last-child {
+  padding: 20px 0 10px 0;
+}
+.serve .text {
+  background: #efeeee;
+  padding: 10px;
+}
+.serve .title {
+  min-height: 78px;
+  padding: 15px;
+}
+.serve .title img {
+  float: right;
+  margin: 3px 0 0 0;
+}
+.serve .title.ltblue img {
+  margin: 15px 0 0 0;
+}
+.serve-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.serve-content ul li {
+  background: url(img/checkmark.png) no-repeat;
+  float: left;
+  min-width: 50%;
+  padding: 0 0 0 57px;
+  line-height: 57px;
+  vertical-align: middle;
 }
 .top-border {
   border-top: 3px solid #f0eeee;
