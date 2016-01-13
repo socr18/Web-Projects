@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="handlebars-v4.0.5.js"></script>
+    <style>
+        .hidden {
+            visibility:hidden;
+        }
+
+        .visible {
+            visibility:visible;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!--1. I know what I want to accomplish financially. __       __
+    2. I have outlined my financial plans on paper. __       __
+    3.  I understand and am comfortable with the risk associated with my investments. __       __
+    4. I’m certain that myself or my parents are comfortably covered in the event of a need for long term care.  __       __
+    5.          I fully understand the impact of inflation on retirement income. __       __
+    6. I am confident with my investment choices. __       __
+    7. I’m taking full advantage of alternative investments. __       __
+    8.        I’m certain that if I died prematurely, my family would be financially safe.
+    9.        I am confident I’m taking full advantage of investments to help me pay less taxes.
+    10. My investments are coordinated with my estate plan. __       __
+
+
+    Link to:
+    1.  Estate & Retirement Planning
+    2.  Estate & Retirement planning
+    3.  Wealth Management.
+    4.  Insurance Planning
+    5.  Estate & Retirement planning
+    6.  Wealth management
+    7.  Alternative investments
+    8.  Insurance planning
+    9.  Custom portfolios
+    10. Estate & Retirement planning-->
+
+    <script id="question-template" type="text/x-handlebars-template">
+        <div class="question {{Visible}}" id="question-{{Index}}">
+            <div>
+                <span class="" id="">{{Index}}. </span>
+                <span class="" id="">{{Text}}</span>
+            </div>
+            <span class="" id="">Yes <input type="radio" value="1" name="question-rdo-{{Index}}" id="question-rdo-{{Index}}-yes" onclick="SetResult(this.value, {{Index}})" /></span>
+            <span class="" id="">No <input type="radio" value="0" name="question-rdo-{{Index}}" id="question-rdo-{{Index}}-no" onclick="SetResult(this.value, {{Index}})" /></span>
+            <span class="" id=""></span>
+        </div>
+    </script>
+
+    <div id="bob">
+
+
+    </div>
+    <div id="buttonHolder" class="hidden">
+        <input type="button" value="Tally Results" onclick="TallyResults();" />
+    </div>
+
+    <script>
+        var threshold1Min = 0;
+        var threshold1Max = 3;
+        var threshold2Min = 4;
+        var threshold2Max = 7;
+        var threshold3Min = 8;
+        var threshold3Max = 10;
+
+        var threshold1URL = "1";
+        var threshold2URL = "2";
+        var threshold3URL = "3";
+        var defaultURL = "def";
+
+        var questions = [
+            new Question("I know what I want to accomplish financially."),
+            new Question("I have outlined my financial plans on paper."),
+            new Question("I understand and am comfortable with the risk associated with my investments."),
+            new Question("I’m certain that myself or my parents are comfortably covered in the event of a need for long term care."),
+            new Question("I fully understand the impact of inflation on retirement income."),
+            new Question("I am confident with my investment choices."),
+            new Question("I’m taking full advantage of alternative investments."),
+            new Question("I’m certain that if I died prematurely, my family would be financially safe."),
+            new Question("I am confident I’m taking full advantage of investments to help me pay less taxes."),
+            new Question("My investments are coordinated with my estate plan."),
+        ];
+
+        LoadQuestions();
+
+        function TallyResults() {
+            try {
+                var checks = $("input:checked");
+
+                var tally = 0;
+                for (var n = 0; n < checks.length; n++) {
+                    var value = checks[n].value;
+                    tally += parseFloat(value);
+                    console.log(value);
+                }
+
+                console.log(tally);
+
+                if (tally >= threshold1Min && tally <= threshold1Max) {
+                    alert(threshold1URL);
+                }
+                else if (tally >= threshold2Min && tally <= threshold2Max) {
+                    alert(threshold2URL);
+                }
+                else if (tally >= threshold3Min && tally <= threshold3Max) {
+                    alert(threshold3URL);
+                }
+                else {
+                    alert(defaultURL);
+                }
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+
+        function SetResult(val, index) {
+            try {
+                if (index < questions.length) {
+                    $("#question-" + (index + 1)).removeClass("hidden");
+                }
+                else {
+                    $("#buttonHolder").removeClass("hidden");
+                }
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+
+        function LoadQuestions() {
+            try {
+                var source = $("#question-template").html();
+                var template = Handlebars.compile(source);
+
+                questions[0].Visible = "visible";
+
+                for (var n = 0; n < questions.length; n++) {
+                    questions[n].Index = n + 1;
+                    var html = template(questions[n]);
+
+                    $("#bob").append(html);
+                }
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+
+        function Question(text) {
+            this.Text = text;
+            this.Index = 0;
+            this.Visible = "hidden";
+        };
+    </script>
+</body>
+
+</html>
