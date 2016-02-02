@@ -1,0 +1,366 @@
+.address {
+  float: left;
+}
+.awards {
+  background: #ffffff;
+  padding: 10px 0 0 0;
+}
+.awards .award-logos {
+  background: url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/f62fffbb-85e8-4dfb-bdd4-c8625dda1572/bg-line-bottom.png') right bottom repeat-x;
+  padding: 0 0 10px 0;
+}
+.banner {
+  border-bottom: 2px solid #000000;
+}
+.banner img {
+  height: auto!important;
+  width: 100%!important;
+}
+.banner .banner-img {
+  position: relative;
+}
+.banner .banner-img p {
+  margin: 0;
+  padding: 0;
+}
+.banner .banner-text {
+  bottom: 10%;
+  position: absolute;
+  right: 10%;
+}
+@media screen and (max-width: 965px) {
+    .banner .banner-text {
+        bottom: 0;
+        padding: 0 0.9375em;
+        right: 0;
+        width: 100%;
+    }
+}
+.bottommenu {
+  float: left;
+}
+.ckeditor_contentArea {
+    background: #ffffff;
+}
+.client-img {
+  float: left;
+}
+.client-img img {
+  height: auto!important;
+  width: 100%!important;
+}
+.client-referrals {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/orig/5133aab2-0182-4e63-bb78-8805567b74e1/whoweservescales_bg.jpg') left top no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.client-text {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.client-text ul {
+  float: left;
+  list-style: none;
+}
+.client-text ul li {
+  background: url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/8d594685-f29d-4820-bfb4-5d5cb54c8468/li-checkmark.png') no-repeat;
+  float: left;
+  padding: 0 0 10px 35px;
+  width: 100%;
+}
+.employee-contact {
+  background: #f1f1f1;
+  float: left;
+  width: 100%;
+}
+.employee-contact .employee-pic p {
+  margin: 0;
+  padding: 0;
+}
+.employee-contact .employee-pic img {
+  height: auto!important;
+  outline: 1px solid #f1f1f1;
+  outline-offset: -15px;
+  width: 100%!important;
+}
+.employee-stats ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.employee-stats ul li {
+  background: url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/eef4bf6e-5ea7-45eb-9e1f-5e1baae5203e/li-checkmark.png') no-repeat;
+  float: left;
+  padding: 0 0 10px 35px;
+  width: 100%;
+}
+.employee-wrap {
+  background: #ffffff;
+  padding: 10px 0 0 0;
+}
+.firm-img {
+  float: left;
+  padding: 0 0.9375em 1.875em 0;
+  width: 15%;
+}
+.firm-text-wrap {
+  float: left;
+  padding: 0 0 1.875em 0;
+  width: 85%;
+}
+.flex {
+  display: flex;
+}
+footer {
+  background: url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/bb3ee809-fb23-40ee-a992-a2a6a8d9f6c0/bg-line-titles.png') left top repeat-x;
+  padding: 30px 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-section {
+  background: none;
+  overflow: hidden;
+  z-index: 10;
+}
+@media screen and (max-width: 965px) {
+    .header-section {
+        background: rgb(0,0,0);
+        background: rgba(0,0,0,.5);
+    }
+}
+.in-the-news {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/orig/31a82156-dd48-41e8-8be3-e0169cac644e/outcomes_bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.inside-practice {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/orig/3cf96c1e-576a-44a9-a625-4cd1023b5242/insidescales_bg.jpg') top left no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.inside-practice .inside-practice-text {
+  border-right: 1px solid #d6d6d6;
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.logo p {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 965px) {
+    .logo {
+        text-align: center;
+    }
+    .logo img {
+        height: auto!important;
+        width: 70%!important;
+    }
+}
+.matters {
+  float: left;
+  width: 100%;
+}
+.matters ul {
+  float: left;
+  list-style: none;
+}
+.matters ul li {
+  background: url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/8d594685-f29d-4820-bfb4-5d5cb54c8468/li-checkmark.png') no-repeat;
+  float: left;
+  padding: 0 0 10px 35px;
+  width: 100%;
+}
+@media screen and (max-width: 965px) {
+    .mobile-padding {
+        padding: 160px 0 0 0;
+    }
+}
+.mp-list-entry {
+    border-bottom: 1px solid #d8d8d8;
+    float: left;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+.mp-list-entry-posted-info {
+    display: none;
+}
+.mp-list-entry-sharing-floater-right {
+    float: right;
+    width: 100%;
+}
+#MPCMSContent_inner .banner,
+#MPCMSContent_inner footer {
+  padding: 200px 0;
+}
+.my-5 {
+  width: 20%;
+}
+.news-title {
+  float: left;
+  padding: 20px 0;
+  width: 100%;
+}
+.news-wrap {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.news-wrap:last-child {
+  padding: 0;
+}
+.news-wrap .news-img {
+  border: 2px solid #25455f;
+  border-radius: 50%;
+  height: auto!important;
+  float: left;
+  overflow: hidden;
+  width: 23%!important;
+}
+.news-wrap .news-title {
+  float: left;
+  padding: 0 0 0 0.9375em;
+  width: 76%;
+}
+.practice-area {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/bc69db42-e860-4060-b54c-3dfab6c76222/bg-practice-area.png') right bottom no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+.practice-area-content {
+  float: left;
+  width: 100%;
+}
+.practice-area-page {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/7aca0a23-e240-47b0-b096-7e9de3cce550/bg-practiceareapage.png') no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+.practice-icon {
+  float: left;
+  padding: 0 0.4375em 0 0;
+  width: 20%;
+}
+.practice-icon img {
+  height: auto!important;
+  width: 100%!important;
+}
+.practice-area-icon {
+  width: 100%;
+}
+.practice-text {
+  float: left;
+  width: 80%;
+}
+.programs {
+  float: left;
+  padding: 0 0.9375em 0 0;
+}
+.programs .program-img {
+  border: 4px solid #25455f;
+  border-radius: 50%;
+  height: auto!important;
+  float: left;
+  margin: 0 0.9375em 0 0;
+  overflow: hidden;
+  width: 35%!important;
+}
+.programs .program-img p {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+.programs .program-img img {
+  height: 100%!important;
+  width: auto!important;
+}
+.programs .program-details {
+  float: left;
+  width: 65%;
+}
+.right-column {
+  float: left;
+  padding: 0 0 0 0.9375em;
+}
+.right-column .news-wrap {
+  float: left;
+  padding: 0 0 0.9375em 0;
+  width: 100%;
+}
+.right-column .news-wrap .news-feed {
+  float: left;
+  padding: 0 0 0.4375em 0;
+  width: 100%;
+}
+.right-column .news-wrap .news-feed .news-checkmark {
+  float: left;
+  width: 7%;
+}
+.right-column .news-wrap .news-feed .news-title {
+  float: left;
+  width: 93%;
+}
+.see-all {
+  float: left;
+  width: 100%;
+}
+.supplier-program {
+  background: #ffffff;
+  padding: 20px 0;
+}
+.team {
+  float: left;
+  padding: 0.9375em 0.9375em 0.9375em 0;
+}
+.team:nth-child(3),
+.team:nth-child(6) {
+  padding: 0.9375em 0;
+}
+.team .team-img {
+  float: left;
+  min-height: 190px;
+  padding: 0 0.9375em 0 0;
+}
+.team .team-img p {
+  margin: 0;
+  padding: 0;
+}
+.team .team-img img {
+  height: auto!important;
+  outline: 1px solid #ffffff;
+  outline-offset: -10px;
+  width: 100%!important;
+}
+.team .team-detail {
+  float: left;
+  padding: 30px 0 0 0;
+}
+.top-cases {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/5f2bbf07-ddf8-4f07-82d3-8c5b51358bfa/bg-topcases.png') no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.who-we-are {
+  background: #ffffff;
+  padding: 10px 0 0 0;
+}
+.who-we-serve {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/1f2c73fe-5147-436d-bda0-047259c9ac88/bg-why-matters.png') right top no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.why-matters {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/efae725f-ed29-4f93-88ce-f8a45cf4bd16/bg-why-matters.png') right top no-repeat;
+  padding: 10px 0 0 0;
+}
+.why-it-matters {
+  background: #ffffff url('https://az480170.vo.msecnd.net/134bd2e8-0d29-4d59-bc88-c4df9be576ce/img/prd/cc4749ac-468d-4447-a373-f55967dde3fd/bg-whyitmatters.png') left top no-repeat;
+  background-size: cover;
+  padding: 10px 0 0 0;
+}
+.why-text p {
+  float: left;
+  width: 100%;
+}

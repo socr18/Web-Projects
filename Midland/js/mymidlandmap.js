@@ -1,78 +1,112 @@
-<div id="property-map" class="property-map"></div>
+<!-- Banner/Gallery -->
 
-        <div class="search-filter">
-            <div class="search-form">
-                <div class="filter-title">Filter Results</div>
-                <form>
-                    <!--<label>Property Type:</label><br/>
-                    <input type="checkbox" name="development" value="development"> Development<br/>
-                    <input type="checkbox" name="acquisition" value="acquisition"> Acquisition<br/>
-                    <input type="checkbox" name="sold" value="sold"> Sold<br/>-->
-                    <label>Sale Type:</label><br/>
-                    <input type="checkbox" id="forSale" name="forsale" value="For Sale" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Sale<br/>
-                    <input type="checkbox" id="forLease" name="forlease" value="For Lease" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Lease<br/>
-                    <input type="checkbox" name="forsalelease" value="" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Sale or Lease<br/>
-                    <input type="hidden" id="sale-type" value="" />
-                    <label>State:</label><br/>
-                    <select id="state-drop" name="state-drop" onchange="SetFilters()" style="color:#000">
-                        <option value="">--All States--</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="DC">District Of Columbia</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="KY">Kentucky</option>
-                        <option value="LA">Louisiana</option>
-                        <option value="ME">Maine</option>
-                        <option value="MD">Maryland</option>
-                        <option value="MA">Massachusetts</option>
-                        <option value="MI">Michigan</option>
-                        <option value="MN">Minnesota</option>
-                        <option value="MS">Mississippi</option>
-                        <option value="MO">Missouri</option>
-                        <option value="MT">Montana</option>
-                        <option value="NE">Nebraska</option>
-                        <option value="NV">Nevada</option>
-                        <option value="NH">New Hampshire</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="NM">New Mexico</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="ND">North Dakota</option>
-                        <option value="OH">Ohio</option>
-                        <option value="OK">Oklahoma</option>
-                        <option value="OR">Oregon</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="RI">Rhode Island</option>
-                        <option value="SC">South Carolina</option>
-                        <option value="SD">South Dakota</option>
-                        <option value="TN">Tennessee</option>
-                        <option value="TX">Texas</option>
-                        <option value="UT">Utah</option>
-                        <option value="VT">Vermont</option>
-                        <option value="VA">Virginia</option>
-                        <option value="WA">Washington</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                    </select>
-                    <button onclick="SetFilters()">Apply Filter</button>
-                </form>
-            </div>
+    <div class="banner">
+        <div class="banner-img">
+            <a href="#"><Marketpath:ContentArea ID="ContentArea1" /></a>
+                <div class="inside-bannerwrap">
+                    <div class="row flex">
+                        <div class="large-12 columns">
+                            <div class="inside-banner-txt"><Marketpath:ContentArea ID="ContentArea2" /></div>
+                        </div>
+                    </div>
+                </div>
         </div>
-    <script title="Midland Atlantic Code">
+    </div>
+
+<!-- Main Content -->
+
+
+<div class="page-content">
+
+    <div class="row">
+
+        <!-- Left Side Main Content -->
+
+        <div class="large-12 medium-12 columns">
+
+            <main>
+                <h2>Coming Soon</h2>
+                <!-- Dev Acquisition-->
+                <div class="large-6 medium-6 columns">
+                    <div class="content"><Marketpath:ContentArea ID="ContentArea3" /></div>
+                </div>
+                <div class="large-6 medium-6 columns">
+                    <div class="map-text"><Marketpath:ContentArea ID="ContentArea4" /></div>
+                    <div id="property-map" class="dev-property-map"></div>
+
+                        <!--<div class="search-filter">
+                            <div class="search-form">
+                                <div class="filter-title">Filter Results</div>
+                                <form>
+                                    <label>Property Type:</label><br/>
+                                    <input type="checkbox" id="Development"  name="development" value="Development" onclick="SetFilterValue(this.value, 'property-type', this.checked)"> Development<br/>
+                                    <input type="checkbox" id="Acquisition" name="acquisition" value="Acquisition" onclick="SetFilterValue(this.value, 'property-type', this.checked)"> Acquisition<br/>
+                                    <input type="checkbox" id="Sold" name="sold" value="Sold" onclick="SetFilterValue(this.value, 'property-type', this.checked)"> Sold<br/>
+                                    <label>Sale Type:</label><br/>
+                                    <input type="checkbox" id="forSale" name="forsale" value="For Sale" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Sale<br/>
+                                    <input type="checkbox" id="forLease" name="forlease" value="For Lease" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Lease<br/>
+                                    <input type="checkbox" name="forsalelease" value="" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"> For Sale or Lease<br/>
+                                    <input type="hidden" id="sale-type" value="" />
+                                    <label>State:</label><br/>
+                                    <select id="state-drop" name="state-drop" onchange="SetFilters()" style="color:#000">
+                                        <option value="">--All States--</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">District Of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                    <button onclick="SetFilters()">Apply Filter</button>
+                                </form>
+                            </div>
+                        </div>-->
+                    <script title="Midland Atlantic Code">
         /////////////////////////////////////////////////////////////////
         ///* Begin Midland Atlantic *///
         /////////////////////////////////////////////////////////////////
@@ -80,7 +114,7 @@
 
         //TODO: Come up with some better exception handling
         function SetFilterValue(val, hdn, checked) {
-            var pieces = $("#" + hdn).val().split(',');
+            var pieces = $("#" + hdn).val().split('|');
 
             var index = pieces.indexOf(val);
 
@@ -96,9 +130,9 @@
             if(checked)
                 pieces.push(val);
 
-            var newVal = pieces.join(',');
+            var newVal = pieces.join('|');
 
-            if (newVal[0] == ",") {
+            if (newVal[0] == "|") {
                 newVal = newVal.substr(1, newVal.length - 1);
             }
 
@@ -124,13 +158,27 @@
                 conditions.push(new PropertyAttribute("property-type", propType, false, true)); //Only show developed options or something
             }
 
+            var stZoom = parseInt('');
+
             if (state != "" && state != null) {
                 conditions.push(new PropertyAttribute("state", state));
+
+                //Set center of map
+                geocoder = new google.maps.Geocoder();
+
+                geocoder.geocode({ 'address': state }, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+                            stZoom = '8';
+                        }
+                    });
             }
 
             ClearMarkers();
 
             RenderMap(conditions);
+
+            map.setZoom(stZoom);
 
             ResultsUpdate();
         }
@@ -193,11 +241,13 @@
 
             GetMapEntries();
 
-            baseConditions.push(new PropertyAttribute("sale-type", "", false, true, true));
+            baseConditions.push(new PropertyAttribute("property-type", "Sold", false, true, true));
+            baseConditions.push(new PropertyAttribute("sale-type", "", true, false, true));
 
             RenderMap(null, 8);
 
             ResultsUpdate();
+
         }
 
         function AdvancedMidlandMap() {
@@ -205,9 +255,12 @@
 
             GetMapEntries();
 
+            baseConditions.push(new PropertyAttribute("property-type", "", true, false, true));
+
             RenderMap(null, 6);
 
             ResultsUpdate();
+
         }
 
         /////////////////////////////////////////////////////////////////
@@ -225,9 +278,9 @@
 
         function GetIcon(address) {
             //Customer specific logic
-            var saleOnly = "http://www.propertypigeon.co.uk/content/images/for-sale-icon-small.gif";
-            var leaseOnly = "http://www.propertypigeon.co.uk/content/images/for-rent-icon-small.gif";
-            var both = "http://2.bp.blogspot.com/-6APSO8qI3kE/U-7FHBtnr1I/AAAAAAAAG3s/G1iTgS1cdFE/s1600/aa1.gif";
+            var saleOnly = "https://az480170.vo.msecnd.net/6faae9aa-6b4a-4e9e-9280-75cc14565cb8/img/orig/ff9b515a-8334-4e7e-a69f-7fb4c6b07b15/bluepin.png";
+            var leaseOnly = "https://az480170.vo.msecnd.net/6faae9aa-6b4a-4e9e-9280-75cc14565cb8/img/orig/4ec6ceb3-bc23-41b9-b058-041bd402592d/greenpin.png";
+            var both = "https://az480170.vo.msecnd.net/6faae9aa-6b4a-4e9e-9280-75cc14565cb8/img/orig/27621a7d-edfe-476e-95cf-ee5bdbf72b1a/darkgreenpin.png";
             var question = "http://images.clipartpanda.com/blue-question-mark-icon-question_mark_blue_23x23.jpg";
 
             if (null != address) {
@@ -237,17 +290,16 @@
                 if (null != attr) {
                     console.log(address.name + ": " + attr.value + "\r\nProperty: " + pType.value);
 
-                    if (attr.value == "For Sale") {
+                    if (pType.value == "Development") {
                         return saleOnly;
                     }
 
-                    if (attr.value == "For Lease") {
+                    if (pType.value == "Acquisition") {
                         return leaseOnly;
                     }
 
-                    if (attr.value != null && attr.value.indexOf("Sale") > -1 && attr.value.indexOf("Lease") > -1) {
-                        return both;
-                    }
+                    return both;
+
                 }
             }
 
@@ -282,6 +334,36 @@
 
                     $(".property-view").append(html);
                 }
+
+                $('.property .prop-img img').each(function() {
+                    if ($(this).attr('src') == '') {
+                        $(this).attr('src','https://az480170.vo.msecnd.net/6faae9aa-6b4a-4e9e-9280-75cc14565cb8/img/orig/8a7d168a-438a-4cb8-8ed6-3972a6086ef9/noimage.jpg');
+                    }
+                });
+
+                // Sorting the Properties
+                    $('.property-item').each(function(i){
+                        if ( $(this).data('order') === '') {
+                            var numb = 900 + i;
+                            $(this).attr('data-order', numb);
+                        }
+                    });
+
+                    $('.property-item').sort(sorted).appendTo('.property-view');
+
+                    function sorted(a, b) {
+                            var aVal = parseInt(a.getAttribute('data-order'));
+                            var bVal = parseInt(b.getAttribute('data-order'));
+                        return aVal -bVal;
+                    }
+                // End Sorting
+
+                $('.property-view .property:gt(8)').hide();
+
+                $('.show-button').click(function() {
+                    $('.property-view .property:gt(8)').show();
+                    $('.show-button').hide();
+                });
             }
             catch (e) {
                 alert(e);
@@ -316,7 +398,7 @@
 
                 if (map == null) {
                     map = new google.maps.Map(document.getElementById('property-map'), {
-                        zoom: GetNonNullValue(zoom, 8)
+                        zoom: GetNonNullValue(zoom, 7)
                     });
 
                     //Set center of map
@@ -515,7 +597,7 @@
                     if (condition.isArray) {
                         //debugger;
                         //var pieces = condition.value.split(',');
-                        var pieces = (condition.value != null) ? condition.value.split(',') : [];
+                        var pieces = (condition.value != null) ? condition.value.split('|') : [];
 
                         if (GetNonNullValue(attr.value, null) != null) {
                             for (var p = 0; p < pieces.length; p++) {
@@ -537,7 +619,10 @@
                     }
                 }
                 else {
-                    return attr.value == condition.value && !condition.excludePositiveResults;
+                    if(!condition.excludePositiveResults)
+                        return attr.value == condition.value;
+                    else
+                        return attr.value != condition.value;
                 }
             };
             this.getDistanceFromOrigin = function () {
@@ -563,55 +648,60 @@
         /////////////////////////////////////////////////////////////////
     </script>
 
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSn84J20LozLBAHXZ3VJ814qrf-lEjqfY&callback=MainMidlandMap"></script>
-        <!-- Main Content -->
-
-        <div class="page-content">
-
-            <div class="row">
-
-                <!-- Left Side Main Content -->
-
-                <div class="large-12 medium-12 columns">
-
-                    <main>
-
-                        <!-- Property Search -->
-
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSn84J20LozLBAHXZ3VJ814qrf-lEjqfY&callback=AdvancedMidlandMap"></script>
                         <script id="results-template" type="text/x-handlebars-template">
-                            <div class="large-6 medium-6 columns">
-                                <div class="property-search-wrap {{directoryEntry.state}} {{directoryEntry.property-type}} {{directoryEntry.sale-type}}">
-                                    <div class="property-search-img">
-                                        <img src="{{directoryEntry.imgsrc}}" alt="{{directoryEntry.title}}" />
+                            <div class="large-4 medium-4 columns property-item" data-order="{{directoryEntry.sort}}">
+                                <div class="property">
+                                    <div class="prop-img">
+                                        <a href="{{directoryEntry.pageurl}}"><img src="{{directoryEntry.imgsrc}}" alt="{{directoryEntry.title}}" /></a>
                                     </div>
-                                    <div class="property-search-text">
-                                        <div class="property-search-title">
-                                            <a href="{{directoryEntry.pageurl}}">{{directoryEntry.title}}</a>
-                                        </div>
-                                        <div class="property-search-address">
-                                            {{directoryEntry.street-address}}, {{directoryEntry.city}}, {{directoryEntry.state}} {{directoryEntry.zip-code}}
-                                        </div>
-                                        <div class="property-type">
-                                            <i class="fa fa-map-marker">&nbsp;</i>{{directoryEntry.sale-type}}<br/>
-                                            <!--<i class="fa fa-map-marker">&nbsp;</i>%%property-type%%-->
-                                        </div>
-                                        <div class="property-read-more">
-                                            <a href="{{pageurl}}">
-                                                <span class="MPStyle_GreenButton"> Read More </span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <p>
+                                        <a href="{{directoryEntry.pageurl}}"><span class="MPStyle_PropertyDevTitle">{{directoryEntry.title}}</span></a><br/>
+                                        {{directoryEntry.city}}, {{directoryEntry.state}}
+                                    </p>
                                 </div>
                             </div>
                         </script>
 
-                        <div class="property-view"></div>
+                </div>
 
-                    </main>
+                <!-- Properties -->
+                <div class="large-12 logo-float">
+
+                    <div class="property-view"></div>
 
                 </div>
 
-            </div>
+                <div class="large-12 columns more-properties">
+                    <div class="show-button MPStyle_GreenButton">Show All Properties</div>
+                </div>
+
+            </main>
+
+        </div>
 
     </div>
+
+</div>
+
+
+$(document).ready(function() {
+
+$('.inside-banner-txt h1').html($('.mp-list-title h1').html());
+
+});
+
+    var cincy = $('.cincy');
+
+    do $(cincy.slice(0,5)).wrapAll('<div class="large-12 employees" />');
+    while((cincy = cincy.slice(5)).length>0)
+
+   var indy = $('.indy');
+
+    do $(indy.slice(0,5)).wrapAll('<div class="large-12 employees" />');
+    while((indy = indy.slice(5)).length>0)
+
+
+   $('.biodetails .close').click(function() {
+        $('.biowrap').slideUp();
+    });

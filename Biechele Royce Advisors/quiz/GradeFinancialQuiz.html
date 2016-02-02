@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+        <script src="handlebars-v4.0.5.js"></script>
+        <script src="quiz.js"></script>
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="threshold-display"></div>
+        <div id="service-container"></div>
+
+        <script id="service-template" type="text/x-handlebars-template">
+            <div class="service" id="question-{{Index}}">
+                <div>You answered no to: <br />
+                    <span class="" id="">{{Text}}</span>
+                </div>
+                
+                <span class="" id="">Find out more about our: <a href="{{Service.URL}}">{{Service.Name}} Service</a></span>
+            </div>
+        </script>
+
+        <script>
+            TallyResults();
+        </script>
+    </body>
+</html>
