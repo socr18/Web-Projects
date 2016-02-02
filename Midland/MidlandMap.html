@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 80%; width:80%; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="options">
+        <div id="">
+            For Sale: <input type="checkbox" id="forSale" value="For Sale" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"/><br />
+            For Lease: <input type="checkbox" id="forLease" value="For Lease" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"/> <br />
+            For Sale/Lease: <input type="checkbox" id="both" value="" onclick="SetFilterValue(this.value, 'sale-type', this.checked)"/>
+            <input type="hidden" id="sale-type" value="" />
+        </div>
+        <div id="">
+            Development: <input type="checkbox" value="true" id="Development" onclick="SetFilterValue(this.id, 'property-type', this.checked)"/><br />
+            Acquisition: <input type="checkbox" value="true" id="Acquisition" onclick="SetFilterValue(this.id, 'property-type', this.checked)" /><br />
+            Sold: <input type="checkbox" value="true" id="Sold" onclick="SetFilterValue(this.id, 'property-type', this.checked)" /><br />
+            Other: <input type="checkbox" value="true" id="Other" onclick="SetFilterValue(this.id, 'property-type', this.checked)" />
+            <input type="hidden" id="property-type" value="" />
+        </div>
+        <div id="">
+            <button onclick="SetFilters()">Apply Filter</button>
+        </div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="https://az480170.vo.msecnd.net/6faae9aa-6b4a-4e9e-9280-75cc14565cb8/docs/4c7e21f7-7f74-4f72-b38b-c4675ecc31a3/functions.js"></script>
+
+    <script title="Midland Atlantic Code">
+        /////////////////////////////////////////////////////////////////
+        ///* Begin Midland Atlantic *///
+        /////////////////////////////////////////////////////////////////
+        var midlandAddresses = [];
+
+        //TODO: Come up with some better exception handling
+        function SetFilterValue(val, hdn, checked) {
+            var pieces = $("#" + hdn).val().split(',');
+
+            var index = pieces.indexOf(val);
+
+            if (index > -1) {
+                pieces.splice(index, 1);
+            }
+
+            index = pieces.indexOf('');
+            if (index > -1) {
+                pieces.splice(index, 1);
+            }
+
+            if(checked)
+                pieces.push(val);
+
+            var newVal = pieces.join(',');
+
+            if (newVal[0] == ",") {
+                newVal = newVal.substr(1, newVal.length - 1);
+            }
+
+            $("#" + hdn).val(newVal);
+        }
+
+        function SetFilters() {
+            var conditions = [];
+            var saleType = $("#sale-type").val();
+            var propType = $("#property-type").val();
+
+
+            if (saleType != "") {
+                conditions.push(new PropertyAttribute("sale-type", saleType, false, true));//Contains the value
+            }
+
+            if (propType != "") {
+                conditions.push(new PropertyAttribute("property-type", propType, false, true)); //Only show developed options or something
+            }
+
+            ClearMarkers();
+            //debugger;
+            RenderMap(conditions);
+        }
+
+        function GetMapEntries() {
+            var directoryURL = "http://midland.dynamic.marketpath.com/get/directory-data/f28bc9af-5d5a-4cfc-bc24-6890652c5efd";
+
+            var setMapEntries = function (resp, a, b) {
+                //console.log(resp);
+                //console.log(a);
+                //console.log(b);
+
+                for (var n = 0; n < resp.length; n++) {
+                    var address = resp[n];
+
+                    var name = address["title"];
+                    if(name == "" || name == null)
+                    {
+                        name = address["street-address"];
+                    }
+
+                    var prop = new Property(new Address(address["street-address"], "", address["city"], address["state"], address["zip-code"]), name, "http://www.google.com");
+
+                    var lat = address["latitude"];
+                    var long = address["longitude"];
+
+                    if (GetNonNullValue(lat) != null)
+                        prop.latitude = parseFloat(lat);
+                    else {
+                        console.log(JSON.stringify(address));
+                        console.log("Lat 1: " + lat);
+                        console.log("Lat 2: " + prop.latitude);
+                    }
+
+                    if (GetNonNullValue(long) != null)
+                        prop.longitude = parseFloat(long);
+                    else {
+                        console.log("Long 1: " + long);
+                        console.log("Long 2: " + prop.longitude);
+                    }
+
+                    prop.attributes.push(new PropertyAttribute("property-type", address["property-type"]));
+                    prop.attributes.push(new PropertyAttribute("sale-type", address["sale-type"]));
+
+                    mapAddresses.push(prop);
+                }
+
+                RenderMap();
+            };
+
+            $.getJSON(directoryURL, null, setMapEntries);
+        }
+
+        function MainMidlandMap() {
+            Initialize();
+
+            GetMapEntries();
+
+            baseConditions.push(new PropertyAttribute("property-type", "Sold", false, true, true));
+
+            RenderMap(null, 8);
+        }
+
+        function AdvancedMidlandMap() {
+            Initialize();
+
+            GetMapEntries();
+
+            RenderMap(null, 6);
+        }
+
+        /////////////////////////////////////////////////////////////////
+        ///* End Midland Atlantic *///
+        /////////////////////////////////////////////////////////////////
+    </script>
+    <script title="Required Custom Functionality">
+        /////////////////////////////////////////////////////////////////
+        ///* Begin Customer Specific Code/Properties *///
+        /////////////////////////////////////////////////////////////////
+        function Initialize() {
+            apiKey = "AIzaSyBv9vEKWRF1SrRtWL2WN8GeDRHUa3YVTHY";
+            primaryAddress = new Property(new Address("6850 Priority Way South Drive", "Suite 100", "Indianapolis", "IN", "46240"), "Marketpath, Inc", "http://www.marketpath.com");
+        }
+
+        function GetIcon(address) {
+            //Customer specific logic
+            var saleOnly = "http://www.propertypigeon.co.uk/content/images/for-sale-icon-small.gif";
+            var leaseOnly = "http://www.propertypigeon.co.uk/content/images/for-rent-icon-small.gif";
+            var both = "http://2.bp.blogspot.com/-6APSO8qI3kE/U-7FHBtnr1I/AAAAAAAAG3s/G1iTgS1cdFE/s1600/aa1.gif";
+            var question = "http://images.clipartpanda.com/blue-question-mark-icon-question_mark_blue_23x23.jpg";
+
+            if (null != address) {
+                var attr = address.getAttribute("sale-type");
+                var pType = address.getAttribute("property-type");
+
+                if (null != attr) {
+                    console.log(address.name + ": " + attr.value + "\r\nProperty: " + pType.value);
+
+                    if (attr.value == "For Sale") {
+                        return saleOnly;
+                    }
+
+                    if (attr.value == "For Lease") {
+                        return leaseOnly;
+                    }
+
+                    if (attr.value != null && attr.value.indexOf("Sale") > -1 && attr.value.indexOf("Lease") > -1) {
+                        return both;
+                    }
+                }
+            }
+
+            return question;
+        }
+
+        //Here's where we do something once a marker gets clicked
+        function ActivateMarker(index, item) {
+            //Customer Specific logic
+
+            var address = mapAddresses[index];
+            //console.log(item);
+            //console.log(JSON.stringify(item));
+            alert(address.name + "\r\n" + address.link);
+            window.open(address.link, "_blank");
+        }
+
+        function GetUserLocation() {
+            //prompt user for their current location or a starting address
+            //store the value in userOriginLocation as a Property
+        }
+
+        /////////////////////////////////////////////////////////////////
+        ///* End Customer Specific Code/Properties *///
+        /////////////////////////////////////////////////////////////////
+    </script>
+    <script title="Base Functionality">
+        /////////////////////////////////////////////////////////////////
+        ///* Begin Base Functionality *///
+        /////////////////////////////////////////////////////////////////
+        var map;
+        var geocoder;
+        var markers = [];
+        var userOriginLocation = {};
+        var baseConditions = [];
+
+        //List of addresses
+        var mapAddresses = [];
+
+        var apiKey = null;
+
+        //Where the map centers
+        var primaryAddress = new Property();
+
+        function RenderMap(requiredConditions, zoom) {
+            try {
+
+                if (map == null) {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: GetNonNullValue(zoom, 8)
+                    });
+
+                    //Set center of map
+                    geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({ 'address': primaryAddress.address.fullAddress() }, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+                        }
+                    });
+                }
+
+                var tempAddresses = [];
+
+                if (baseConditions != null && baseConditions.length > 0) {
+                    if (requiredConditions == null) {
+                        requiredConditions = baseConditions;
+                    }
+                    else {
+                        requiredConditions = requiredConditions.concat(baseConditions);
+                    }
+                }
+
+                if (requiredConditions != null && requiredConditions.length > 0) {
+                    for (var a = 0; a < mapAddresses.length; a++) {
+                        var entry = mapAddresses[a];
+                        var valid = true;
+
+                        for (var c = 0; c < requiredConditions.length; c++) {
+                            valid &= entry.matchesFilter(requiredConditions[c]); //Verify all conditions are met
+                        }
+
+                        if (valid)//Only add the address if all conditions are met
+                            tempAddresses.push(a); //Push the index of the address
+                    }
+                }
+                else {
+                    //No conditions, add all of them
+                    for (var a = 0; a < mapAddresses.length; a++) {
+                        tempAddresses.push(a); //Push the index of the address
+                    }
+                }
+
+                //Add all addresses to the map
+                for (var n = 0; n < tempAddresses.length; n++) {
+                    var address = mapAddresses[tempAddresses[n]];
+
+                    var fn = function () { //It wasn't passing the index properly, so had to create a wrapper function
+                        var index = tempAddresses[n];//Pulling the index from the counter so that the value doesn't change
+
+                        if (address.latitude == 0 && address.longitude == 0) {
+                            GetAddress(index);
+                        }
+                        else {
+                            //AddMarker(address.geolocation, index);
+                            AddMarker({ lat: address.latitude, lng: address.longitude }, index);
+                        }
+                    };//end fn
+
+                    fn();
+                }
+            }
+            catch (e) {
+                console.log(e);
+                alert(e);
+            }
+        }
+
+        function GetAddress(index, loop) {
+            var address = mapAddresses[index];
+
+            if (!loop) {
+                loop = 0;
+            }
+
+            if (loop < 100) {//Don't want to try too many times
+                var postProcess = function (results, status) {
+
+                    console.log(JSON.stringify(address));
+                    console.log("Item #" + index);
+                    if (status == google.maps.GeocoderStatus.OK) {//If it found it okay
+                        var result = results[0]; //Only display the first matching result
+
+                        //debugger;
+                        //Update the object so the call doesn't need to be done twice
+                        mapAddresses[index].latitude = result.geometry.location.lat;
+                        mapAddresses[index].longitude = result.geometry.location.lng;
+                        mapAddresses[index].geolocation = result.geometry.location;
+
+                        AddMarker(result.geometry.location, index);
+                    }
+                    else {
+                        if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+                            console.log("Over query limit. Trying again in: " + (loop + 250) + "ms");
+
+                            setTimeout(function () { GetAddress(index, loop + 1) }, loop + 250);
+                        }
+                        else {
+                            console.log(google.maps.GeocoderStatus);
+                            console.warn("Address not found - [" + address.address.fullAddress() + "]");
+                        }
+                    }
+                };
+
+                geocoder.geocode({ 'address': address.address.fullAddress() }, postProcess);//end geocode
+            }//loop checker
+        }
+
+        function AddMarker(location, index) {
+            //console.log(JSON.stringify(location));
+            var add = mapAddresses[index];
+            var title = add.name + "\r\n" + add.address.address1;
+            title += "\r\n" + add.address.city + ", " + add.address.state + " " + add.address.zip;
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: location,
+                clickable: true,
+                visible: true,
+                icon: GetIcon(mapAddresses[index]),
+                title: title,
+            });
+
+            marker.addListener('click', function (a) {
+                ActivateMarker(index, a);
+            });
+
+            markers.push(marker);
+        }
+
+        function ClearMarkers() {
+            if (null != markers && markers.length > 0) {
+                for (var n = 0; n < markers.length; n++) {
+                    markers[n].setMap(null);
+                }
+
+                markers = [];
+            }
+        }
+
+        function GetNonNullValue(item, defaultValue) {
+            if (item == null || item == "") {
+                return defaultValue;
+            }
+
+            return item;
+        }
+
+        /////////////////////////////////////////////////////////////////
+        ///* End Base Functionality *///
+        /////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////
+        ///* Begin Base Class Declarations *///
+        /////////////////////////////////////////////////////////////////
+        function PropertyAttribute(name, value, useExactMatch, isArray, excludePositiveResults) {
+            this.name = name;
+            this.value = value;
+            this.exactMatch = GetNonNullValue(useExactMatch, false);
+            this.isArray = GetNonNullValue(isArray, false);
+            this.excludePositiveResults = GetNonNullValue(excludePositiveResults, false);
+        }
+
+        function Property(address, name, link) {
+            this.address = GetNonNullValue(address, new Address());
+            this.name = GetNonNullValue(GetNonNullValue(name, this.address.fullAddress()), "Property");
+            this.latitude = 0;
+            this.longitude = 0;
+            this.distanceFromOrigin = 0;
+            this.geolocation = {};
+            this.attributes = [];
+            this.link = GetNonNullValue(link, "");
+            this.getAttribute = function (name) {
+                if (this.attributes != null) {
+                    if (this.attributes.length > 0) {
+                        for (var n = 0; n < this.attributes.length; n++) {
+                            if (this.attributes[n].name == name) {
+                                return this.attributes[n];
+                            }
+                        }
+                    }
+                }
+                return null;
+            };
+            this.matchesFilter = function (condition) {
+                var attr = this.getAttribute(condition.name);
+                //debugger;
+
+                if (attr == null)
+                    return false;
+
+                if (condition.exactMatch == false) {
+                    if (condition.isArray) {
+                        var pieces = condition.value.split(',');
+
+                        if (GetNonNullValue(attr.value, null) != null) {
+                            for (var p = 0; p < pieces.length; p++) {
+                                var v = pieces[p];
+
+                                if (attr.value.toString().indexOf(v) > -1) {
+                                    return true && !condition.excludePositiveResults;
+                                }
+                            }
+                        }
+
+                        return false || condition.excludePositiveResults;
+                    }
+                    else {
+                        if (GetNonNullValue(attr.value, null) != null)
+                            return attr.value.toString().indexOf(condition.value) > -1 && !condition.excludePositiveResults;
+                        else
+                            return false || condition.excludePositiveResults;
+                    }
+                }
+                else {
+                    return attr.value == condition.value && !condition.excludePositiveResults;
+                }
+            };
+            this.getDistanceFromOrigin = function () {
+                //TODO: Do this later
+            };
+        }
+
+        function Address(address1, address2, city, state, zip, country) {
+            this.address1 = GetNonNullValue(address1, "");
+            this.address2 = GetNonNullValue(address2, "");
+            this.city = GetNonNullValue(city, "");
+            this.state = GetNonNullValue(state, "");
+            this.zip = GetNonNullValue(zip, "");
+            this.country = GetNonNullValue(country, "");
+            this.fullAddress = function () {
+                return this.address1 + " " + this.address2 + ", " +
+                    this.city + ", " + this.state + " " + this.zip + " " + this.country;
+            };
+        }
+
+        /////////////////////////////////////////////////////////////////
+        ///* End Base Class Declarations *///
+        /////////////////////////////////////////////////////////////////
+    </script>
+
+    <!--<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSn84J20LozLBAHXZ3VJ814qrf-lEjqfY&callback=AdvancedMidlandMap">
+    </script>-->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSn84J20LozLBAHXZ3VJ814qrf-lEjqfY&callback=MainMidlandMap">
+    </script>
+</html>
