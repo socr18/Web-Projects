@@ -246,6 +246,7 @@
                     <div class="blog-wrap">
                         <div class="large-6 medium-6 columns">
                             <div class="blog-bg">
+                                <h2>News</h2>
                                 <div class="blog-entry">
                                     <div class="blog-img"><img src="img/blog-1.jpg" alt="" /></div>
                                     <div class="blog-text">
@@ -274,7 +275,8 @@
                     <!-- Events -->
                     <div class="calendar-wrap">
                         <div class="large-6 medium-6 columns">
-                            <div class="calendar-event">
+                            <h2>Events</h2>
+                            <div class="calendar-event flex">
                                 <div class="calendar-date">
                                     <div class="calendar-day">15</div>
                                     <div class="calendar-month">March</div>
@@ -284,7 +286,7 @@
                                     <div class="calendar-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum lobortis ante, vitae consectetur tellus luctus vitae.</div>
                                 </div>
                             </div>
-                            <div class="calendar-event">
+                            <div class="calendar-event flex">
                                 <div class="calendar-date">
                                     <div class="calendar-day">29</div>
                                     <div class="calendar-month">March</div>
@@ -294,7 +296,7 @@
                                     <div class="calendar-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum lobortis ante, vitae consectetur tellus luctus vitae.</div>
                                 </div>
                             </div>
-                            <div class="calendar-event">
+                            <div class="calendar-event flex">
                                 <div class="calendar-date">
                                     <div class="calendar-day">03</div>
                                     <div class="calendar-month">April</div>
@@ -310,12 +312,92 @@
                 </div>
             </div>
 
+            <!-- Arrow -->
+            <div class="down-arrow"><img src="img/down-arrow.png" alt="" /></div>
+
         </main>
 
         <!-- Footer -->
         <footer>
 
+            <!-- Footer Social -->
+            <div class="row">
+                <div class="large-12 medium-12 columns">
+                    <div class="footer-social">
+                        <p>get social with us</p>
+                        <p><i class="fa fa-facebook-official">&nbsp;</i> <i class="fa fa-twitter-square">&nbsp;</i> <i class="fa fa-linkedin-square">&nbsp;</i> <i class="fa fa-google-plus-square">&nbsp;</i> <i class="fa fa-pinterest-square">&nbsp;</i></p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Horizontal Rule -->
+            <div class="row">
+                <div class="large-12 medium-12 columns">
+                    <div class="hr-rule"></div>
+                </div>
+            </div>
+
+            <!-- Footer Menu -->
+            <div class="row">
+                <div class="large-12 medium-12 columns footer">
+                    <nav class="nav">
+                        <div id="FooterMenu">
+                            <ul>
+                                <li><a href="#">About</a>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Sub Menu Item</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Join</a>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Sub Menu Item</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Undergraduates</a>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Sub Menu Item</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Alumni</a>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Sub Menu Item</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Foundation</a>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Sub Menu Item</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
 
         </footer>
 
@@ -344,6 +426,11 @@
 
             });
 
+            // Org Chart Accordion
+              $(function() {
+                $( "#org-chart" ).accordion();
+              });
+
             // Tabs
               $(".tab").hide();
               $(".tab-links li:first").addClass("active").show();
@@ -366,8 +453,7 @@
                 var scroll = $(this).scrollTop();
 
                 if (scroll >= 100 || $(window).width() < 640) {
-                    $('.header-section').css('background','rgba(0,0,0,.5)');
-                    $('.nav').css('padding','30px 40px 0 0');
+                    $('.header-section .nav').css('padding','30px 0 0 0');
                     $('.logo img').css('height','80px');
                     $('.logo img').css('width','auto');
                 } else {

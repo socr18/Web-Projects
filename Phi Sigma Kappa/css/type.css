@@ -8,7 +8,7 @@ h1 {
   color: #f4f4f4;
   font-size: 40px;
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0;
 }
 @media screen and (max-width: 965px) {
   h1 {
@@ -33,7 +33,7 @@ h2 {
 }
 h3 {
   color: #4a4a4a;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0 0 15px 0;
   text-transform: uppercase;
@@ -59,15 +59,17 @@ h4 {
   }
 }
 h5 {
-  color: #50a1e2;
-  font-size: 22px;
+  color: #9e2828;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 22px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1.2em 0;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 965px) {
   h5 {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 a {
@@ -93,6 +95,31 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+.calendar-day {
+  color: #9e2828;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 12px 0 0 0;
+  text-align: center;
+}
+.calendar-descr {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  overflow: hidden;
+}
+.calendar-month {
+  color: #9e2828;
+  font-size: 21px;
+  text-align: center;
+}
+.calendar-title {
+  color: #4a4a4a;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 10px 0 0 0;
+}
 .fa-facebook-official,
 .fa-facebook-official a {
   color: #3a5b98;
@@ -113,14 +140,64 @@ a {
   color: #25abe1;
   font-size: 58px;
 }
+#FooterMenu {
+  display: block;
+  width: 100%;
+}
+#FooterMenu ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#FooterMenu ul li {
+  float: left;
+  padding: 0 15px 0 0;
+  width: 20%;
+}
+#FooterMenu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+}
+#FooterMenu ul ul {
+  display: block;
+}
+#FooterMenu ul ul li {
+  width: 100%;
+}
+#FooterMenu ul ul li a {
+  font-weight: 400;
+}
+.footer-social {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.footer-social .fa,
+.footer-social .fa a {
+  color: #ffffff;
+  font-size: 32px;
+}
 input[type=button] {
   float: left;
   width: 30%;
 }
 input[type=text] {
+  background: rgba(244, 244, 244, 0.25);
   float: left;
   padding: 10px;
-  width: 50%;
+  width: 100%;
+}
+label {
+  color: #4a4a4a;
+  font-size: 18px;
+  float: left;
+  width: 100%;
 }
 .members ul {
   list-style: none;
@@ -147,6 +224,13 @@ input[type=text] {
   font-weight: 400;
   text-align: center;
   width: 100%;
+}
+.MPStyle_ClearButton {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .MPStyle_RedButton {
   background-color: #9e2828;
@@ -181,7 +265,7 @@ input[type=text] {
   color: #887777;
   float: left;
   font: 700 17px 'HelveticaNeueW01-65Medi';
-  padding: 0 9px;
+  padding: 0 8px;
   text-transform: uppercase;
 }
 .nav ul li a:hover {
@@ -216,6 +300,23 @@ input[type=text] {
 .sec-menu ul li a .fa {
   color: #887777;
 }
+.sm-right .blog-entry .blog-text .blog-title {
+  font-size: 18px;
+}
+.sm-right .calendar-day {
+  font-size: 50px;
+  line-height: 45px;
+  padding: 20px 0 0 0;
+}
+.sm-right .calendar-title {
+  padding: 0;
+}
+.support-us {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .social-newsletter {
   color: #d9d9d9;
   font-size: 27px;
@@ -239,4 +340,11 @@ input[type=text] {
 .tab-links .active a {
   color: #4a4a4a;
   background: #f2f2f2;
+}
+textarea {
+  background-color: rgba(244, 244, 244, 0.25);
+  float: left;
+  height: 150px;
+  padding: 10px;
+  width: 100%;
 }
