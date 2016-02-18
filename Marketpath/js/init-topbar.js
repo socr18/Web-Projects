@@ -5,6 +5,7 @@ $(window).scroll(function() {
     if (scroll >= 100 || $(window).width() < 640) {
         $('.logo img').css('height', '55px');
         $('.logo img').css('padding', '10px 0');
+        $('.logo img').css('width','auto!important');
         $('.topmenu').css('background','#122355');
         $('.fixed-menu-padding').slideUp();
         $('.default-menu ul li').css('padding','18px 0');

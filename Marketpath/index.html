@@ -401,8 +401,16 @@
     <script>
         $(document).ready(function () {
             $('.bxslider').bxSlider({
-                auto: true,
-                speed: 5000
+                auto: false,
+                mode: 'horizontal',
+                adaptiveHeight: true,
+                slideWidth: '220',
+                hideControlOnEnd: true,
+                responsive: true,
+                infiniteLoop: false,
+                minSlides: 1,
+                maxSlides: 5,
+                moveSlides: 1
             });
 
             $('#Default ul li').hover(function() {
