@@ -1,3 +1,76 @@
+.accordion-chart .hide {
+    display: none;
+}
+.accordion-chart ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.accordion-chart ul li {
+    border-left: 5px solid #4a4a4a;
+    float: left;
+    width: 100%;
+}
+.accordion-chart ul li .org-title {
+    background: #4a4a4a;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    display: block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.org-title .fa-plus {
+    float: right;
+    padding: 5px 0;
+}
+.org-title .fa-minus {
+    display: none;
+    float: right;
+    padding: 5px 0;
+}
+.ui-accordion-header-active .fa-plus {
+    display: none;
+}
+.ui-accordion-header-active .fa-minus {
+    display: block;
+}
+.accordion-chart ul li .org-desc {
+    background: #f4f4f4;
+    color: #4a4a4a;
+    display: block;
+    padding: 15px;
+    width: 100%;
+}
+.accordion-chart ul li .group-level {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    padding: 10px;
+}
+.accordion-chart ul ul {
+    padding: 0;
+}
+.accordion-chart ul ul li {
+    border: none;
+}
+.accordion-chart ul ul li .org-title {
+    background: #9e2828;
+    font-size: 18px;
+}
+.accordion-chart ul ul ul {
+    padding: 0 0 0 15px;
+}
+.accordion-chart ul ul ul li {
+    margin: 0 0 15px 0;
+}
+.accordion-chart ul ul ul li .org-title {
+    background: #e1e1e1;
+    font-size: 18px;
+}
 .banner {
   float: left;
   padding: 145px 0 0 0;
@@ -166,6 +239,9 @@ footer .nav {
   padding: 0;
   width: 100%;
 }
+.footer-social {
+    width: 100%;
+}
 .google-maps {
   position: relative;
   padding-bottom: 75%;
@@ -245,6 +321,12 @@ main {
 #MPCMSContent_inner #tab1,#MPCMSContent_inner #tab2,#MPCMSContent_inner #tab3,#MPCMSContent_inner #tab4 {
     float: left;
     width: 100%;
+}
+#MPCMSContent_inner footer {
+    background: #9e2828;
+}
+#MPCMSContent_inner .footer-social {
+    padding: 140px 0 0 0;
 }
 .relative {
   position: relative;

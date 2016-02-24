@@ -241,6 +241,9 @@ label {
   border-color: #9e2828;
   text-transform: uppercase;
 }
+.MPStyle_RedButton a {
+    color: #ffffff;
+}
 .MPStyle_RedText {
   color: #9e2828;
 }
