@@ -1,10 +1,11 @@
 var baseURL = "financial-health-results";
 var quizURL = "financial-health-checklist";
 
-var threshold1 = new Threshold(0, 3, "You got #1.");
-var threshold2 = new Threshold(4, 7, "You got #2.");
-var threshold3 = new Threshold(8, 10, "You got #3.");
-var defThreshold = new Threshold(-100000, 100000, "You got #4.");
+var threshold1 = new Threshold(0, 3, "You need lots of help, but don't despair! It's never too late to take action to improve your finances & future.");
+var threshold2 = new Threshold(4, 5, "You need an objective checkup to help raise your score! Now is the time to take action to reverse the trend");
+var threshold3 = new Threshold(6, 7, "You're above average, but may want to follow up on some of your nos.");
+var threshold4 = new Threshold(8, 10, "You are in excellent financial shape!  Congratulations!");
+var defThreshold = new Threshold(-100000, 100000, "Please try again.");
 
 var estateRetirement = new Service("Estate & Retirement Planning", "/estate-retirement-planning");
 var wealthManagement = new Service("Wealth Management", "/wealth-management");
@@ -22,7 +23,7 @@ var questions = [
     new Question("I'm taking full advantage of alternative investments.", alternativeInvestments),
     new Question("I'm certain that if I died prematurely, my family would be financially safe.", insurancePlanning),
     new Question("I am confident I'm taking full advantage of investments to help me pay less taxes.", customPortfolios),
-    new Question("My investments are coordinated with my estate plan.", estateRetirement),
+    new Question("My investments are coordinated with my estate plan.", estateRetirement)
 ];
 
 function ProcessQuiz() {
@@ -33,7 +34,7 @@ function ProcessQuiz() {
 
         for (var n = 0; n < checks.length; n++) {
             var value = checks[n].value;
-            console.log(value);
+            //console.log(value);
 
             url += "q" + n + "=" + value + "&";
         }
@@ -82,6 +83,9 @@ function TallyResults() {
                 }
                 else if (tally >= threshold3.MinValue && tally <= threshold3.MaxValue) {
                     text = (threshold3.Text);
+                }
+                else if (tally >= threshold4.MinValue && tally <= threshold4.MaxValue) {
+                    text = (threshold4.Text);
                 }
                 else {
                     text = (defThreshold.Text);
@@ -149,7 +153,7 @@ function Question(text, service) {
     this.Index = 0;
     this.Visible = "hidden";
     this.Service = service;
-};
+}
 
 function Threshold(min, max, text) {
     this.Text = text;
