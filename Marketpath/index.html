@@ -171,6 +171,8 @@
         <div class="icon ic-ig"><a href="#"><i class="fa fa-instagram">&nbsp;</i></a></div>
     </div>
 
+
+
 </header>
 
 <!-- Main Content -->
@@ -179,23 +181,14 @@
 
     <!-- Banner/Gallery -->
     <div class="banner">
-        <ul class="bxslider">
+        <ul class="bxslider huelp">
             <li>
-                <a href="#"><img src="img/banner.png" alt="banner" /> </a>
-                <div class="bannerwrap">
-                    <div class="text"><a href="#">We do web.</a></div>
-                    <div class="banner-lines"><img src="img/banner-lines.png" alt="" /></div>
-                    <div class="banner-services">
-                        <div class="ds"><a href="#">design.</a></div>
-                        <div class="dp"><a href="#">development.</a></div>
-                        <div class="dg"><a href="#">strategy.</a></div>
-                        <div class="ct"><a href="#">content.</a></div>
-                    </div>
-                    <a href="#"><div class="button bbanner">start project</div></a>
-                </div>
+                <a href="#"><img src="img/banner.png" alt="banner" /></a>
             </li>
         </ul>
     </div>
+
+    <div class="button MPStyle_BlueButton awsbutton">Test Button</div>
 
     <!-- Flexibale Content Area -->
     <section class="flex-area">
@@ -401,8 +394,16 @@
     <script>
         $(document).ready(function () {
             $('.bxslider').bxSlider({
-                auto: true,
-                speed: 5000
+                auto: false,
+                mode: 'horizontal',
+                adaptiveHeight: true,
+                slideWidth: '220',
+                hideControlOnEnd: true,
+                responsive: true,
+                infiniteLoop: false,
+                minSlides: 1,
+                maxSlides: 5,
+                moveSlides: 1
             });
 
             $('#Default ul li').hover(function() {

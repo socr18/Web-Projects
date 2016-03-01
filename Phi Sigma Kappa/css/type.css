@@ -1,0 +1,359 @@
+/*** font-family:'HelveticaNeueW01-75Bold';
+     font-family:'HelveticaNeueW01-65Medi';
+     font-family:'Helvetica LT W01 Bold';
+     font-family:'Helvetica LT W01 Light';
+     font-family:'Helvetica LT W01 Roman'; ***/
+h1 {
+  color: #f4f4f4;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+@media screen and (max-width: 965px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+h1 a {
+  color: #ffffff;
+}
+h2 {
+  color: #4a4a4a;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 965px) {
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+h3 {
+  color: #4a4a4a;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 965px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+h4 {
+  color: #4a4a4a;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 965px) {
+  h4 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+h5 {
+  color: #9e2828;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+  padding: 0 0 1.2em 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 965px) {
+  h5 {
+    font-size: 15px;
+  }
+}
+a {
+  color: #404040;
+}
+.banner-text {
+  text-align: center;
+}
+.blog-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.blog-title {
+  color: #4a4a4a;
+  font-size: 21px;
+  font-weight: 700;
+}
+.box {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.calendar-day {
+  color: #9e2828;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 12px 0 0 0;
+  text-align: center;
+}
+.calendar-descr {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  overflow: hidden;
+}
+.calendar-month {
+  color: #9e2828;
+  font-size: 21px;
+  text-align: center;
+}
+.calendar-title {
+  color: #4a4a4a;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 10px 0 0 0;
+}
+.ckeditor_contentArea {
+    background: #ffffff;
+    color: #000000;
+}
+.fa.fa-facebook-official,
+.fa.fa-facebook-official a {
+  color: #3a5b98;
+  font-size: 58px;
+}
+.fa.fa-google-plus-square,
+.fa.fa-google-plus-square a {
+  color: #e14a2f;
+  font-size: 58px;
+}
+.fa.fa-linkedin-square,
+.fa.fa-linkedin-square a {
+  color: #117cba;
+  font-size: 58px;
+}
+.fa.fa-twitter-square,
+.fa.fa-twitter-square a {
+  color: #25abe1;
+  font-size: 58px;
+}
+#FooterMenu {
+  display: block;
+  width: 100%;
+}
+#FooterMenu ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#FooterMenu ul li {
+  float: left;
+  padding: 0 15px 0 0;
+  width: 20%;
+}
+#FooterMenu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+}
+#FooterMenu ul ul {
+  display: block;
+}
+#FooterMenu ul ul li {
+  width: 100%;
+}
+#FooterMenu ul ul li a {
+  font-weight: 400;
+}
+.footer-social {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.footer-social .fa,
+.footer-social .fa a {
+  color: #ffffff;
+  font-size: 32px;
+}
+input[type=button],#Submit_0-1 {
+  float: left;
+  width: auto;
+}
+input[type=text],#E-mail-Address_6507-1 {
+  background: rgba(244, 244, 244, 0.25);
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+label {
+  color: #4a4a4a;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+}
+.members ul {
+  list-style: none;
+}
+.members ul li {
+  background: url('../img/member-li.png') 0 12px no-repeat;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 0 25px;
+  text-transform: uppercase;
+}
+.mission-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.mission-text {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+.MPStyle_ClearButton {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.MPStyle_RedButton {
+  background-color: #9e2828;
+  font-size: 21px;
+  font-weight: 700;
+  border-color: #9e2828;
+  text-transform: uppercase;
+}
+.MPStyle_RedButton a {
+    color: #ffffff;
+}
+.MPStyle_RedText {
+  color: #9e2828;
+}
+.MPStyle_ImgOutline {
+    outline: 1px solid #ffffff;
+    outline-offset: -5px;
+}
+.MPStyle_WhiteText {
+  color: #ffffff;
+  font-weight: 700;
+}
+.nav {
+  float: right;
+  padding: 50px 0 0 0;
+}
+.nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.nav ul li {
+  float: left;
+  position: relative;
+}
+.nav ul li a {
+  color: #887777;
+  float: left;
+  font: 700 17px 'HelveticaNeueW01-65Medi';
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+.nav ul li a:hover {
+  color: #b1a19f;
+}
+.nav ul li ul {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 45px;
+}
+.nav ul li ul li {
+  width: 250px;
+}
+.nav ul li ul li a {
+  text-transform: capitalize;
+}
+.nav ul li ul li:last-child {
+  background: none;
+}
+.nav ul li:hover ul {
+  display: block;
+}
+.sec-menu ul li a {
+  color: #9e2828;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0 10px 30px;
+  text-transform: uppercase;
+}
+.sec-menu ul li a .fa {
+  color: #887777;
+}
+.sm-right .blog-entry .blog-text .blog-title {
+  font-size: 18px;
+}
+.sm-right .calendar-day {
+  font-size: 50px;
+  line-height: 45px;
+  padding: 20px 0 0 0;
+}
+.sm-right .calendar-title {
+  padding: 0;
+}
+.support-us {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social-newsletter {
+  color: #d9d9d9;
+  font-size: 27px;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+.tab-list a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.tab-links a {
+  color: #f2f2f2;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 56px;
+  transition: all linear 0.15s;
+  width: 100%;
+}
+.tab-links .active a {
+  color: #4a4a4a;
+  background: #f2f2f2;
+}
+textarea {
+  background-color: rgba(244, 244, 244, 0.25);
+  float: left;
+  height: 150px;
+  padding: 10px;
+  width: 100%;
+}
