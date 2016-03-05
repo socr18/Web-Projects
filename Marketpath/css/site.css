@@ -1,5 +1,10 @@
 .banner {
   border-bottom: 10px solid #ee7f34;
+    position: relative;
+}
+.banner p {
+    margin: 0;
+    padding: 0;
 }
 .banner img {
     height: auto!important;
@@ -33,16 +38,21 @@
 }
 .bannerwrap {
     position: absolute;
-    top: 0;
+    top: 30%;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
 }
+@media screen and (max-width: 640px) {
+    .bannerwrap {
+        display: none;
+    }
+}
 .bannerwrap .text {
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 15%;
   width: 100%;
 }
 .bannerwrap
@@ -50,13 +60,35 @@
   background: #ee7f34;
 }
 .bg-blue {
-  background: #004576;
+  background: #004576!important;
 }
 .bg-gray {
-  background: #f0f0f0;
+  background: #f0f0f0!important;
 }
 .bg-white {
   background: #ffffff;
+}
+.blog-landing-page {
+    float: left;
+    padding: 0 0 15px 0;
+}
+.blog-landing-page .blog-detail {
+    background: #e6e6e6;
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+.blog-landing-page .blog-detail .button {
+    margin: 0;
+}
+.blog-landing-page .blog-img {
+    float: left;
+    height: 200px;
+    width: 100%;
+}
+.blog-landing-page .blog-img img {
+  height: auto;
+  width: 100%;
 }
 .blogwrap .blog-img {
   text-align: center;
@@ -64,7 +96,8 @@
 }
 .blogwrap .blog-img img {
   border: 5px solid #004576;
-  width: 100%;
+  max-height: 277px;
+  min-width: 100%;
 }
 .button {
   padding: .5rem 2rem .5625rem 2rem;
@@ -85,17 +118,41 @@
 .bxslider .banner-lines img {
   width: auto;
 }
+.case-study {
+    background: #004576;
+    float: left;
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+}
 .ckeditor_contentArea {
     background: #ffffff;
     color: #000000;
+}
+@media screen and (max-width: 965px) {
+    .columns .columns {
+        padding: 0;
+     }
+}
+.double-padding {
+  padding: 0 1.875em;
 }
 .header-section {
   min-width: 100%;
   position: fixed;
   z-index: 999;
 }
+.fa-side {
+    float: left;
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+}
 .fixed-menu-padding {
   padding: 23px 0;
+}
+@media screen and (max-width: 965px) {
+    .fixed-menu-padding {
+        padding: 0;
+    }
 }
 .flex-area {
   background: #ebebeb;
@@ -136,6 +193,9 @@ footer .social .icon {
   float: left;
   margin: 0 8px 0 0;
 }
+.gallery {
+    background: #fff;
+}
 header .social {
   background-color: #7e8da3;
   left: 0;
@@ -175,26 +235,74 @@ header .social .title {
   clear: both;
   padding: 0 5px;
 }
-.search {
-  color: #ffffff;
-  float: right;
-  position: relative;
-  top: 15%;
+@media screen and (max-width: 965px) {
+    .logo {
+        padding: 55px 0 0 0;
+    }
+    .logo-padding {
+        padding: 0 0 0 45px;
+    }
 }
-.search a {
-  color: #ffffff;
+.menu-logo {
+    float: left;
+    padding: 0 0 10px 0;
+}
+.menu-logo img {
+    height: auto;
+    width: 75%;
+}
+.mobile-menu-icon {
+    display: none;
+    float: left;
+    padding: 0 0 10px 0;
+}
+@media screen and (max-width: 965px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-right {
+        float: none;
+        padding: 10px 5px 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+     }
+}
+.mp-list-entry {
+    border-bottom: 1px solid #e1e1e1;
+    float: left;
+    padding: 10px 0;
+}
+.mp-list-entry-posted-info {
+    float: left;
+    padding: 5px 0;
+    width: 100%;
 }
 #MPCMSContent_inner main {
     padding: 100px 0 0 0;
 }
+#MPCMSContent_inner .service-detail {
+    display: block;
+}
 .MPStyle_BlueButton {
   background: #004576;
+  padding:15px;
 }
 .MPStyle_OrangeButton {
   background: #ee7f34;
+  padding:15px;
+}
+.my-5 {
+    width: 20%;
+}
+@media screen and (max-width: 965px) {
+    .my-5 {
+        width: 50%;
+    }
 }
 .new-cms {
   padding: 25px 0;
+  background-image: url("https://az480170.vo.msecnd.net/e2ce2d76-02ff-4ebc-8e64-519164387db4/img/orig/885d84fd-2324-4dd3-8829-a40d2273165b/bluebg.png")
 }
 .project-detail p {
     margin: 0;
@@ -229,11 +337,30 @@ header .social .title {
 .ourwork .ourwork-title {
   width: 100%;
 }
+.over-flow {
+    overflow: hidden;
+}
+.search {
+  color: #ffffff;
+  float: right;
+  position: relative;
+  top: 15%;
+}
+.search a {
+  color: #ffffff;
+}
 .service-detail {
     display: none;
 }
 .show {
     display: block;
+}
+.sitemap {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    z-index: 1000;
 }
 .slide-down-menu {
   display: none;
@@ -266,6 +393,70 @@ header .social .title {
   padding: .5rem 2rem .5625rem 2rem;
   width: auto;
 }
+
+/*-- Tabs --*/
+.tabs {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+}
+.tab-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+/*-- Tab Links --*/
+/* Clearfix */
+.tab-links:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.tab-links img {
+    margin: 0 auto!important;
+}
+@media screen and (max-width: 965px) {
+    .tab-links img {
+        height: auto!important;
+        width: 100%!important;
+    }
+
+    .tab-links .my-5 {
+        min-height: 295px;
+    }
+}
+.tab-links img.himg {
+    display: none;
+}
+.tab-links .hoverimg .simg {
+    display: none;
+}
+.tab-links .hoverimg .himg {
+    display: block;
+}
+.tab-links .active img.simg {
+    display: none;
+}
+.tab-links .active img.himg {
+    display: block;
+}
+.tab-links .active.hoverimg img.simg {
+    display: block;
+}
+.tab-links .active.hoverimg img.himg {
+    display: none;
+}
+.tab-links li {
+  margin: 0;
+  float: left;
+  list-style: none;
+}
+/*-- Tab Content --*/
+.tab-content {
+  background: #ffffff;
+  padding: 20px 0;
+}
 .topmenu {
   background: -webkit-linear-gradient(#122355, transparent);
   /* For Safari 5.1 to 6.0 */
@@ -276,10 +467,20 @@ header .social .title {
   background: linear-gradient(#122355, transparent);
   /* Standard syntax */
 }
+.toppost {
+    background: #004576;
+    float: left;
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+}
 .web-services {
   background: #ee7f34;
   color: #ffffff;
   padding: 25px 0;
+}
+.web-services img {
+    height: auto!important;
+    width: 100%!important;
 }
 .web-services .web-title hr {
   width: 30%;
@@ -288,4 +489,7 @@ header .social .title {
   margin: 48px 0 0 0;
   background: #fff;
   height: 1px;
+}
+.web-title p {
+  display: none;
 }
