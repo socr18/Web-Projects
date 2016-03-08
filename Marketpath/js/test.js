@@ -15,19 +15,29 @@ function gallery(filter) {
         var json = $.parseJSON(data);
         arr = $.parseJSON(data);
 
-        filter = 'healthcare';
+        filter = 'design';
 
         for (var i = 0; i < json.length; i++) {
 
             //add images to gallery
 
-            if (JSON.stringify(arr[i]['industry']).indexOf(filter) > 0) {
+            if (JSON.stringify(arr[i]['services']).indexOf(filter) > 0 && arr[i]['sort-service'] > 0) {
 
-                $('.bxslider2').append('<li> <a href="' + json[i]['page-url'] + '"><img src="' + json[i]['website-url'] + '" alt="' + json[i]['client-name'] + '" /> </a></li>');
+                    $('.featured-logo').append('<div class="my-5 columns" data-order="' + arr[i]['sort-industry'] + '"><a href="/' + arr[i]['page-url'] + '"><img src="' + arr[i]['logo-url'] + '" alt="" /><h2>' + arr[i]['client-name'] + '</h2></a></div>');
 
             }
 
         }
+
+        var $logos = $('.featured-logo');
+
+             $logos.find('div').sort(function (a, b) {
+                return +a.getAttribute('data-order') - +b.getAttribute('data-order');
+            })
+            .appendTo($logos);
+
+        $('.featured-logo div:gt(4)').remove();
+
 
         $('.bxslider2').bxSlider({
             auto: true,
@@ -47,7 +57,13 @@ function gallery(filter) {
 
             if (JSON.stringify(arr[i]['industry']).indexOf(filter) > 0) {
 
-                $('.bxslider2').append('<li> <a href="' + arr[i]['page-url'] + '"><img src="' + arr[i]['website-url'] + '" alt="' + arr[i]['client-name'] + '" /> </a></li>');
+                $('.bxslider2').append('<li> <a href="' + arr[i]['page-url'] + '"><img src="' + arr[i]['website-url'] + '" alt="' + arr[i]['client-name'] + '" /><h2>' + arr[i]['client-name'] + '</h2></a></li>');
+
+                if (JSON.stringify(arr[i]['sort-industry']) > 0) {
+
+                    $('.featured-logo').append('<div class="my-5 columns"><a href="/' + arr[i]['page-url'] + '"><img src="' + arr[i]['logo-url'] + '" alt="" /></a></div>');
+
+                }
             }
         }
 
