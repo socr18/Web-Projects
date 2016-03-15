@@ -17,25 +17,33 @@ h6 {
 }
 h1 {
   color: #ffffff;
-  font: 700 32px 'FrutigerNeue1450W01-Reg';
-  margin: 0 0 2rem 0;
+  font: 700 42px 'FrutigerNeue1450W01-Reg';
+  margin: 0 0 1rem 0;
   text-align: center;
   text-transform: uppercase;
-  /* Mobile Screen Size */
+}
+@media screen and (min-width: 641px) and (max-width: 965px) {
+    h1 {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 26px;
+        margin: 0;
+    }
 }
 h2 {
   color: #004576;
-  font: 700 24px / 18.667px 'FrutigerNeue1450W01-Reg';
+  font: 700 24px / 24px 'FrutigerNeue1450W01-Reg';
   text-transform: lowercase;
   width: 100%;
-  /* Mobile Screen Size */
 }
 h3 {
   color: #004576;
   font: 700 21.33px 'FrutigerNeue1450W01-Reg';
   margin: 25px 0;
   text-transform: lowercase;
-  /* Mobile Screen Size */
 }
 h4 {
   color: #ee7f34;
@@ -43,7 +51,6 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 2.5rem 0;
-  /* Mobile Screen Size */
 }
 h5 {
   color: #ffffff;
@@ -52,6 +59,12 @@ h5 {
   padding: 0;
   text-transform: uppercase;
 }
+blockquote {
+    background: url("https://az480170.vo.msecnd.net/e2ce2d76-02ff-4ebc-8e64-519164387db4/img/orig/78752896-2566-4932-9c6b-78efde1f319b/quotebg.png");
+    min-height:203px;
+    padding:40px 60px;
+    color:#004576;
+}
 button,
 .button,
 #Submit_0-1,
@@ -59,14 +72,17 @@ button,
   color: #ffffff;
   font: 700 16px 'FrutigerNeue1450W01-Reg';
   text-transform: lowercase;
-  /* Mobile Screen Size */
 }
 /* Site Specific Styles*/
 .bannerwrap .text {
     color: #ffffff;
-    font: 700 48px 'FrutigerNeue1450W01-Reg';
+    font: 700 32px 'FrutigerNeue1450W01-Reg';
 }
-
+@media screen and (min-width: 641px) and (max-width: 965px) {
+    .bannerwrap .text {
+        font-size: 26px;
+    }
+}
 .banner-services a {
   color: #ffffff;
   font: 400 22px 'FrutigerNeue1450W01-Reg';
@@ -75,6 +91,13 @@ button,
   color: #014272;
   font: 300 13.33px 'FrutigerNeue1450W01-Reg';
 }
+.blog-landing-page .blog-title {
+    color: #004576;
+    font: 700 18px / 21px 'FrutigerNeue1450W01-Reg';
+    padding: 0 0 5px 0;
+    text-transform: lowercase;
+    width: 100%;
+        }
 .blogwrap .blog-readmore {
   text-align: center;
 }
@@ -85,12 +108,36 @@ button,
   text-align: center;
   text-transform: uppercase;
 }
+.bxslider2 h2 {
+    color: #004576;
+    font: 700 24px / 34px 'FrutigerNeue1450W01-Reg';
+    padding: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.case-study,.case-study a,.case-study h2 {
+    color: #ffffff;
+}
 .cke_skin_mpcustom .cke_rcombo .cke_text {
     height: 26px;
 }
-.flex-area {
-  text-align: center;
+.contact-form .mp-form-field-label {
+    color: #06315d;
+    font-size: 18px;
+    font-weight: normal;
 }
+.contact-form input {
+    color: #06315d;
+}
+.contact-form #Submit_0-2 {
+    color: #ffffff;
+    text-transform: lowercase;
+}
+.flex-area h1 {
+    color: #004576;
+    margin: 0;
+ }
 .flex-area .flex-text {
   text-align: left;
 }
@@ -111,11 +158,62 @@ footer .social .icon a {
   font-size: 20px;
   width: 35px;
 }
+@media screen and (max-width: 965px) {
+    .logo {
+        text-align: center;
+    }
+}
+.mobile-menu-icon {
+    color: #ffffff;
+    padding: 5px 0 0 5px;
+    font-size: 42px;
+}
+.mobile-menu-icon.mobile-right {
+    background: #122355;
+    color: #ee7f34;
+    font-size: 24px;
+    padding: 0 0 5px 0;
+    position: absolute;
+    right: -22px;
+ }
+.mobile-web-services .mobile-icon {
+    color: #ee7f34;
+    text-align: center;
+}
+.mobile-web-services .mobile-text {
+    color: #ffffff;
+}
+.mp-list-entry-posted-info {
+    font-size: 14px;
+}
+.mp-list-paging-wrapper {
+    float: left;
+    font-size: 14px;
+    padding: 5px 0;
+    width: 100%;
+}
+.MPStyle_CapBlueFont h3 {
+  color: #004576;
+  font: 700 21.33px 'FrutigerNeue1450W01-Reg';
+  text-transform: uppercase;
+}
 .MPStyle_ProjectDetails {
     color: #004172;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+}
+#MPCMSContent_inner .service-detail h2 {
+    display: block;
+ }
+.mp-list-categories-title {
+    font-size: 125%;
+    font-weight: bold;
+}
+@media screen and (max-width: 965px) {
+    nav.default-menu {
+        display: none;
+    }
 }
 nav ul {
   font: 300 18.67px 'FrutigerNeue1450W01-Reg';
@@ -134,6 +232,9 @@ nav #Default ul li {
 nav #Default ul li a {
   color: #ffffff;
   padding: 0 20px;
+}
+nav #Default ul li a:hover {
+  color: #ee7f34;
 }
 nav #Default ul ul {
   display: none;
@@ -164,6 +265,9 @@ nav.sd-menu ul li a {
   text-transform: uppercase;
   width: 100%;
 }
+nav.sd-menu ul li a:hover {
+  color: #ee7f34;
+}
 nav.sd-menu ul ul {
   margin: 0 0 0.9375em 0;
   padding: 0;
@@ -181,6 +285,75 @@ nav.sd-menu ul ul li a {
   font: 18.67px / 36px 'FrutigerNeue1450W01-Reg';
   text-transform: none;
   width: 100%;
+}
+nav.sd-menu ul ul li a:hover {
+  color: #ee7f34;
+}
+nav.mobile-menu {
+    background: #122355;
+    display: none;
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+nav.mobile-menu .fa {
+    color: #fff;
+    padding: 6px 0 0 0;
+    float: right;
+}
+nav.mobile-menu .fa-arrow-circle-up {
+    display: none;
+}
+nav.mobile-menu .sub-menu .fa-arrow-circle-up {
+    display: block;
+}
+nav.mobile-menu .sub-menu .fa-arrow-circle-down {
+    display: none;
+}
+nav.mobile-menu ul {
+    float: left;
+    width: 100%;
+}
+nav.mobile-menu ul li {
+    border-top: 1px solid #004576;
+    float: left;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+nav.mobile-menu ul ul li:last-child {
+    border-bottom: 1px solid #004576;
+}
+nav.mobile-menu ul ul li a {
+    color: #ffffff;
+    float: left;
+    padding: 10px;
+    width: 90%;
+}
+nav.mobile-menu ul ul {
+    display: none;
+    margin: 0;
+}
+nav.mobile-menu ul ul ul {
+    display: none;
+}
+nav.mobile-menu ul li.sub-menu ul {
+    display: block;
+}
+nav.mobile-menu ul ul ul li {
+    border: none;
+    padding: 0;
+}
+nav.mobile-menu ul ul  li:last-child {
+    border: none;
+}
+nav.mobile-menu ul ul ul li a {
+    border-top: 1px solid #004576;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 10px;
 }
 .new-cms {
   color: #ffffff;
@@ -216,12 +389,61 @@ nav.sd-menu ul ul li a {
   margin: 0 0 0.9375em 0;
   text-transform: uppercase;
 }
-.sd-menu-form form input {
+.sd-menu-form .mp-form-field {
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+.sd-menu-form .mp-form-wrapper {
+    width: 100%;
+}
+.sd-menu-form form input,.sd-menu-form .mp-form-field-input input {
   color: #ffffff;
 }
-.sd-menu-form form input[type='submit'] {
+.sd-menu-form form input[type='submit'],.sd-menu-form #Submit_0-1 {
   font: 700 16px 'FrutigerNeue1450W01-Reg';
   text-transform: lowercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-color: #ee7f34;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+  background: #ee7f34;
+}
+.service-detail h2 {
+    display: none;
+}
+#Submit_0-1 {
+    color: #ffffff;
+    font: 700 16px 'FrutigerNeue1450W01-Reg';
+    text-transform: lowercase;
+    margin: 0 auto;
+    background: #004576;
+    padding: 10px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #007095;
+    transition: background-color 300ms ease-out;
 }
 .social {
   text-align: center;
@@ -231,6 +453,19 @@ nav.sd-menu ul ul li a {
   display: block;
   font-size: 25px;
   padding: 5px 0;
+}
+.tab-links a {
+    color: #ffffff;
+}
+.tab-links .active {
+    text-transform: uppercase;
+}
+.team-bio .social li,.team-bio .social li a {
+    color: #ee7f34;
+    font-size: 45px;
+}
+.toppost,.toppost a, .toppost h2 {
+    color: #ffffff;
 }
 .web-services {
   text-align: center;
@@ -248,6 +483,14 @@ nav.sd-menu ul ul li a {
 .web-services .marketing a:hover {
   font: 700 18.67px 'FrutigerNeue1450W01-Reg';
 }
+.web-services  .web-service-detail .active a {
+  color: #ee7f34;
+  font: 300 18.67px 'FrutigerNeue1450W01-Reg';
+}
+.web-services .web-service-detail .active a:hover {
+  color: #ffffff;
+  font: 700 18.67px 'FrutigerNeue1450W01-Reg';
+}
 .web-title {
   margin: 0 auto;
 }
@@ -256,5 +499,27 @@ nav.sd-menu ul ul li a {
   float: left;
   padding: 10px 15px;
   text-align: center;
-  width: 39%;
+  width: 42%;
+}
+@media screen and (max-width: 965px) {
+    .web-title h3 {
+        width: 100%;
+    }
+}
+.web-services.bg-blue .tab-links .hoverimg a {
+    color: #ee7f34;
+    text-transform: uppercase;
+}
+.web-services.bg-blue .web-title h3 {
+  border: 2px solid #ee7f34;
+  color: #ee7f34;
+  text-transform: uppercase;
+}
+.web-services.home-page .web-title h3 {
+  color: #004576;
+}
+.web-services .blue-text.active,.web-services .blue-text.active a {
+  color: #004576;
+  font-weight: 700;
+  text-transform: uppercase;
 }
