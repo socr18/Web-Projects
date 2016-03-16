@@ -149,6 +149,9 @@ img.pika {
   outline: 1px solid #ffffff!important;
   outline-offset: -10px !important;
 }
+.my-5 {
+  width: 20%;
+}
 .project {
   background-color: #f1f1f1;
   float: left;
@@ -204,4 +207,26 @@ img.pika {
 .social-media p:last-child {
   margin: 0;
   padding: 0;
+}
+.team-title {
+  float: left;
+}
+.team-member {
+  float: left;
+  padding: 25px 0.9375em 0 0.9375em;
+}
+.team-member img {
+  height: auto!important;
+  margin: 0 0 10px 0;
+  outline: 1px solid #ffffff;
+  outline-offset: -10px;
+  width: 100%!important;
+}
+.team-member p {
+  margin: 0;
+  padding: 0;
+}
+.team-wrap {
+  float: left;
+  margin: 0 0 40px 0;
 }

@@ -55,7 +55,7 @@ h4 {
   }
 }
 h5 {
-  color: #9e2828;
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -145,6 +145,16 @@ a {
     text-transform: uppercase;
   transition: background-color 300ms ease-out;
 }
+.MPStyle_TeamName {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 18px;
+
+    a {
+        color: #000000;
+    }
+}
 .MPStyle_YellowButton {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -198,7 +208,6 @@ nav.nav ul li a {
   color: #ffffff;
     font-size: 22px;
     font-weight: 500;
-  float: left;
     line-height: 26px;
   padding: 0 10px;
   text-transform: uppercase;
@@ -214,16 +223,36 @@ nav.nav ul li a:hover {
   color: #b1a19f;
 }
 nav.nav ul li ul {
+    background: #f1f1f1;
   display: none;
-  left: 0;
   position: absolute;
-  top: 45px;
+    right: -50%;
+  top: 29px;
+    width: 500px;
+}
+nav.nav > ul > li:hover > {
+    a {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    ul {
+        display: block;
+    }
 }
 nav.nav ul li ul li {
-  width: 250px;
+    border-bottom: 1px solid #cecece;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+  width: 100%;
 }
 nav.nav ul li ul li a {
-  text-transform: capitalize;
+    background-color: inherit;
+    color: #2e2e2e;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
 }
 nav.nav ul li ul li:last-child {
   background: none;
@@ -268,4 +297,22 @@ nav.nav ul li:hover ul {
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
+}
+.team-member {
+    color: #717171;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+        color: #717171;
+    }
+
+    .fa {
+        color: #7c88c8;
+        font-size: 28px;
+    }
+}
+.team-wrap h3 {
+    padding: 0 0 10px 0;
 }
