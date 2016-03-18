@@ -4,8 +4,12 @@
   position: relative;
 }
 .banner .banner-img img {
-  height: auto;
-  width: 100%;
+  height: auto!important;
+  width: 100%!important;
+}
+.banner .banner-img p {
+  margin: 0;
+  padding: 0;
 }
 .banner .banner-txt {
   left: 0;
@@ -17,6 +21,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 5;
 }
 .banner .banner-txt.inside {
   top: 75%;
@@ -82,8 +87,11 @@
   padding: 25px 0 30px 0;
   width: 100%;
 }
+.ckeditor_contentArea {
+  background: #ffffff;
+}
 .cta {
-  background: #ffffff url(../img/bg-cta.png);
+  background: #ffffff url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/794c42aa-0ef0-4eda-a84e-c0003cbf7494/bg-cta.png);
   background-size: cover;
   border-top: 5px solid #cccccc;
   padding: 45px 0;
@@ -100,7 +108,7 @@
   list-style: none;
 }
 .content ul li {
-  background: url(../img/bg-li.png) 0 7px no-repeat;
+  background: url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/1fcc5ee3-b070-452b-ba5a-59bcbe51b657/bg-li.png) 0 7px no-repeat;
   float: left;
   padding: 0 0 0 30px;
   width: 100%;
@@ -145,6 +153,9 @@ img.pika {
   float: left;
   padding: 0 1.875em 0 0;
 }
+#MPCMSContent_inner .banner {
+  padding: 140px 0 0 0;
+}
 .MPStyle_ImgOutline {
   outline: 1px solid #ffffff!important;
   outline-offset: -10px !important;
@@ -157,6 +168,7 @@ img.pika {
   float: left;
   margin: 0 0 25px 0;
   padding: 25px 20px;
+  width: 100%;
 }
 .project-page {
   float: left;
