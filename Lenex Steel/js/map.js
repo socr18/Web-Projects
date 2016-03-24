@@ -1,7 +1,7 @@
                     var mapLocation = "countries/us/custom/us-all-mainland";
                     var baseVal = 5;
-                    var stateColor = "#d3a9a9";//"#B12616";//
-                    var statelineColor = "#9b4a43";
+                    var stateColor = "rgb(248, 248, 248)";//"#B12616";//
+                    var statelineColor = "#ffdf1b";
                     var hoverColor = "#ededed";//"#FFF";//
                     var textColor = "#FFF";
                     var defaultURL = "https://intelliapp2.driverapponline.com/c/venturelog?uri_b=ia_venturelog_1174961385";
@@ -33,123 +33,63 @@
 
                         // Prepare demo data
                         var data = [{
-                            "hc-key": "us-al",
-                            "value": baseVal,
-                            "url": "/alabama"
-                        }, {
-                            "hc-key": "us-az",
-                            "value": baseVal,
-                            "url": "/arizona"
-                        }, {
-                            "hc-key": "us-ar",
-                            "value": baseVal,
-                            "url": "/arkansas"
-                        }, {
-                            "hc-key": "us-ca",
-                            "value": baseVal,
-                            "url": "/california"
-                        }, {
-                            "hc-key": "us-dc",
-                            "value": baseVal,
-                            "url": "/district-columbia"
-                        }, {
-                            "hc-key": "us-fl",
-                            "value": baseVal,
-                            "url": "/florida"
-                        }, {
-                            "hc-key": "us-ga",
-                            "value": baseVal,
-                            "url": "/georgia"
-                        }, {
                             "hc-key": "us-il",
+                            "color": "#ffdf1b",
                             "value": baseVal,
                             "url": "/illinois"
                         }, {
                             "hc-key": "us-in",
+                            "color": "#ffdf1b",
                             "value": baseVal,
                             "url": "/indiana"
                         }, {
-                            "hc-key": "us-ks",
-                            "value": baseVal,
-                            "url": "/kansas"
-                        }, {
                             "hc-key": "us-ky",
+                            "color": "#ffdf1b",
                             "value": baseVal,
                             "url": "/kentucky"
                         }, {
-                            "hc-key": "us-md",
-                            "value": baseVal,
-                            "url": "/maryland"
-                        }, {
-                            "hc-key": "us-ma",
-                            "value": baseVal,
-                            "url": "/massachusetts"
-                        }, {
                             "hc-key": "us-mi",
+                            "color": "#ffdf1b",
                             "value": baseVal,
                             "url": "/michigan"
                         }, {
-                            "hc-key": "us-mn",
-                            "value": baseVal,
-                            "url": "/minnesota"
-                        }, {
-                            "hc-key": "us-mo",
-                            "value": baseVal,
-                            "url": "/missouri"
-                        }, {
-                            "hc-key": "us-nj",
-                            "value": baseVal,
-                            "url": "/new-jersey"
-                        }, {
-                            "hc-key": "us-ny",
-                            "value": baseVal,
-                            "url": "/new-york"
-                        }, {
-                            "hc-key": "us-nc",
-                            "value": baseVal,
-                            "url": "/north-carolina"
-                        }, {
                             "hc-key": "us-oh",
+                            "color": "#ffdf1b",
                             "value": baseVal,
                             "url": "/ohio"
                         }, {
-                            "hc-key": "us-ok",
+                            "hc-key": "us-ia",
+                            "color": "#fff3ac",
                             "value": baseVal,
-                            "url": "/oklahoma"
+                            "url": "/iowa"
+                        }, {
+                            "hc-key": "us-mo",
+                            "color": "#fff3ac",
+                            "value": baseVal,
+                            "url": "/missouri"
                         }, {
                             "hc-key": "us-pa",
+                            "color": "#fff3ac",
                             "value": baseVal,
                             "url": "/pennsylvania"
                         }, {
-                            "hc-key": "us-ri",
-                            "value": baseVal,
-                            "url": "/rhode-island"
-                        }, {
-                            "hc-key": "us-sc",
-                            "value": baseVal,
-                            "url": "/south-carolina"
-                        }, {
                             "hc-key": "us-tn",
+                            "color": "#fff3ac",
                             "value": baseVal,
                             "url": "/tennessee"
                         }, {
-                            "hc-key": "us-tx",
-                            "value": baseVal,
-                            "url": "/texas"
-                        }, {
                             "hc-key": "us-va",
+                            "color": "#fff3ac",
                             "value": baseVal,
                             "url": "/virgiana"
                         }, {
-                            "hc-key": "us-wa",
-                            "value": baseVal,
-                            "url": "/washington"
-                        }, {
                             "hc-key": "us-wv",
+                            "color": "#fff3ac",
                             "value": baseVal,
                             "url": "/west-viginia"
                         }, {
                             "hc-key": "us-wi",
+                            "color": "#fff3ac",
                             "value": baseVal,
                             "url": "/wisconsin"
                         },
