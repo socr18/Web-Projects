@@ -58,7 +58,7 @@ body {
   font-size: 100%; }
 
 body {
-  background: #2e2e2e;
+  background: #333333;
   cursor: auto;
   color: #2d2d2d;
   font-family: "brandon-grotesque",sans-serif;
@@ -1156,7 +1156,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "brandon-grotesque",sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1915,10 +1915,10 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
-  /** font-size: 1rem;**/
+  /**font-family: inherit;
+  /** font-size: 1rem;
   font-weight: normal;
-  /** line-height: 1.6; **/
+  line-height: 1.6; **/
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
@@ -1932,7 +1932,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -2005,7 +2005,6 @@ code {
 ul,
 ol,
 dl {
-  font-family: inherit;
   /**font-size: 1rem;
   line-height: 1.6;**/
   list-style-position: outside;

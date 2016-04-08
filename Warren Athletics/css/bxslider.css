@@ -6,8 +6,6 @@
 }
 .bx-wrapper img {
   width: 100%;
-  overflow: hidden;
-  display: block;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
@@ -27,6 +25,10 @@ ul.bxslider {
   z-index: 1;
 }
 .bx-wrapper .bx-pager {
+  position: absolute;
+  bottom: 90px;
+  right: 20px;
+  left: 20px;
   z-index: 9999;
   text-align: center;
   font-size: 1em;
@@ -40,17 +42,18 @@ ul.bxslider {
   *display: inline;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: url('../img/bx-page.png') 0 0 no-repeat;
+  border: 1px solid #808080;
   text-indent: -9999px;
   display: block;
   width: 15px;
   height: 15px;
-  margin: 15px 0 0 0;
+  margin: 0 0 0 4px;
   outline: 0;
+  background: none;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: url('../img/bx-page-active.png') 0 0 no-repeat;
+  border: 1px solid #8d1812;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
@@ -66,9 +69,6 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next:hover {
   background-position: -43px 0;
-}
-.bx-wrapper .bx-controls-direction {
-    display: none;
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -139,40 +139,47 @@ ul.bxslider {
   padding: 10px;
 }
 /* HOME SLIDER SIZE */
-.bxslider p {
+ul.bxslider, ul.bxslider2 {
+    list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
-ul.bxslider {
+.bxslider li,.bxslider2 li {
+    float: left;
+    font-size: 18px;
+  position: relative;
+    text-transform: lowercase;
+}
+.banner .bxslider2 li {
+    margin: 0 auto;
+    text-align: center;
     width: 100%!important;
 }
-.bxslider li {
+.web-services .bxslider li {
+    float: left;
+    font-size: 18px;
+    height: 210px;
   position: relative;
-  padding: 0 0.9375em 0 0;
-  width: 100%!important;
+  margin: 0 2.1em;
+    text-transform: lowercase;
+  width: 130px!important;
 }
 .bxslider li img {
     width: 100%!important;
     height: auto!important;
 }
-.bxslider .bx-txt {
-    background-color: #f1f1f1;
-    outline: 1px solid #d5d5d5;
-    outline-offset: -10px;
-  display: none;
+.bxslider .text {
   left: 0;
-    padding: 20px;
-    font-size: 13px;
   position: absolute;
   text-align: center;
-  top: 0;
+  top: 30%;
   width: 100%;
-  height: 100%;
 }
-.bx-txt .title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 30px;
+
+.bxslider .text a {
+    color: #ffffff;
+    font: 700 48px 'FrutigerNeue1450W01-Reg';
 }
 
     /* Mobile Screen Size */
@@ -183,7 +190,7 @@ ul.bxslider {
     }
 .bxslider .bbanner {
     bottom: 10%;
-    left: 45%;
+    left: 41%;
     position: absolute;
 }
 
@@ -231,4 +238,7 @@ ul.bxslider {
   display: block;
   width: 100%;
   height: auto;
+}
+.bx-pager {
+  display: none;
 }

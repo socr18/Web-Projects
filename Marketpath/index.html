@@ -147,13 +147,17 @@
                 </nav>
                 <div class="sd-menu-form">
                     <p><span class="sd-form-title">Tell us about your project</span></p>
-                    <form>
+                    <form action="http://post.marketpath.com/EmailPostAll.aspx" enctype="application/x-www-form-urlencoded" method="post" name="CEContact">
+                        <input name="MPFormName" type="hidden" value="Newsletter Sign-Up" />
+                        <input name="MPFormSubject" type="hidden" value="Newsletter Sign-Up" />
+                        <input name="MPFormEmail" type="hidden" value="jpolson@marketpath.com,mwessel@marketpath.com" />
+                        <input name="MPSuccessURL" type="hidden" value="http://www.marketpath.com/thank-you" />
                         <input type="text" onfocus="if(this.value == 'NAME') { this.value = ''; }" name="name" value="NAME" />
                         <input type="email" onfocus="if(this.value == 'EMAIl') { this.value = ''; }" name="name" value="EMAIL" />
                         <input type="text" onfocus="if(this.value == 'PHONE') { this.value = ''; }" name="name" value="PHONE" />
                         <input type="text" onfocus="if(this.value == 'COMMENT') { this.value = ''; }" name="name" value="Comment" />
                         <input type="submit" name="submit" value="Submit" class="button MPStyle_OrangeButton" />
-                        </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -324,9 +328,13 @@
                     <div class="form-wrap">
                         <h5>Stay Connected</h5>
                         <p>Sign up for Our Newsletter</p>
-                        <form>
-                            <input type="text" onfocus="if(this.value == 'NAME:') { this.value = ''; }" name="name" value="NAME:" />
-                            <input type="email" onfocus="if(this.value == 'EMAIL:') { this.value = ''; }" name="name" value="EMAIL:" />
+                        <form action="http://post.marketpath.com/EmailPostAll.aspx" enctype="application/x-www-form-urlencoded" method="post" name="CEContact">
+                            <input name="MPFormName" type="hidden" value="Newsletter Sign-Up" />
+                            <input name="MPFormSubject" type="hidden" value="Newsletter Sign-Up" />
+                            <input name="MPFormEmail" type="hidden" value="jpolson@marketpath.com" />
+                            <input name="MPSuccessURL" type="hidden" value="http://www.marketpath.com/thank-you" />
+                            <input type="text" onfocus="if(this.value == 'NAME:') { this.value = ''; }" name="Name" value="NAME:" />
+                            <input type="email" onfocus="if(this.value == 'EMAIL:') { this.value = ''; }" name="Email" value="EMAIL:" />
                             <input type="submit" name="submit" value="" />
                         </form>
                     </div>
