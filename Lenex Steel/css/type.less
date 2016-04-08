@@ -6,7 +6,7 @@ h1 {
   margin: 0;
     text-transform: uppercase;
 }
-@media screen and (max-width: 965px) {
+@media only screen and (max-width: 965px) {
   h1 {
     font-size: 34px;
   }
@@ -20,14 +20,14 @@ h2 {
   margin: 0 0 .5em 0;
   text-transform: uppercase;
 }
-@media screen and (max-width: 965px) {
+@media only screen and (max-width: 965px) {
   h2 {
     font-size: 24px;
     line-height: 24px;
   }
 }
 h3 {
-    background: url(../img/feature-titlebars.png) bottom repeat-x;
+    background: url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/5bed1c81-ecd0-44a5-92af-96762728850f/feature-titlebars.png) bottom repeat-x;
     color: #2d2d2d;
     font-size: 24px;
     font-weight: 700;
@@ -35,35 +35,35 @@ h3 {
     padding: 0 30px 10px;
     text-transform: uppercase;
 }
-@media screen and (max-width: 965px) {
+@media only screen and (max-width: 965px) {
   h3 {
     font-size: 24px;
   }
 }
 h4 {
     color: #2d2d2d;
-  font-size: 22px;
+  font-size: 21.33px;
   font-weight: 700;
   margin: 0 0 1em 0;
   padding: 0;
   text-transform: uppercase;
 }
-@media screen and (max-width: 965px) {
+@media only screen and (max-width: 965px) {
   h4 {
     font-size: 18px;
     line-height: 30px;
   }
 }
 h5 {
-  color: #9e2828;
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 21.33px;
   margin: 0;
   padding: 0 0 1.2em 0;
   text-transform: uppercase;
 }
-@media screen and (max-width: 965px) {
+@media only screen and (max-width: 965px) {
   h5 {
     font-size: 15px;
   }
@@ -78,6 +78,15 @@ a {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
+
+    a {
+        color: #ffffff;
+    }
+
+    @media only screen and (max-width: 640px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 .blog-title {
     color: #2d2d2d;
@@ -95,7 +104,7 @@ a {
 }
 .contact-wrap {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 21.33px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -109,7 +118,7 @@ a {
 }
 .ft-logo {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 21.33px;
     width: 100%;
 
     a {
@@ -117,6 +126,21 @@ a {
         text-transform: uppercase;
     }
 }
+.mobile-menu-icon .fa-bars {
+    background: #e0e0e0;
+    color: #000000;
+    font-size: 42px;
+    font-weight: 400;
+    padding: 0 5px;
+}
+.mobile-menu-icon.mobile-right {
+    background: #e0e0e0;
+    color: #ee7f34;
+    font-size: 24px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+ }
 .MPStyle_BlueText {
     color: #7c88c8;
     font-weight: 300;
@@ -144,6 +168,16 @@ a {
     font-weight: 700;
     text-transform: uppercase;
   transition: background-color 300ms ease-out;
+}
+.MPStyle_TeamName {
+    color: #717171;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 18px;
+
+    a {
+        color: #000000;
+    }
 }
 .MPStyle_YellowButton {
   -webkit-appearance: none;
@@ -183,6 +217,11 @@ nav.nav {
   float: right;
   padding: 50px 0 0 0;
 }
+@media only screen and (max-width: 965px) {
+    nav.nav {
+        display: none;
+    }
+}
 nav.nav ul {
   float: right;
   list-style: none;
@@ -196,16 +235,35 @@ nav.nav ul li {
 }
 nav.nav ul li a {
   color: #ffffff;
-    font-size: 22px;
+    font-size: 21.33px;
     font-weight: 500;
-  float: left;
     line-height: 26px;
-  padding: 0 10px;
+  padding: 15px;
   text-transform: uppercase;
+
+    @media only screen and (min-width: 641px) and (max-width: 1299px) {
+        font-size: 19px;
+        padding: 10px;
+    }
+}
+nav.nav ul > li:hover {
+    background: url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/a7acbddd-121c-42c4-97d2-5a27c4388985/menu-arrow.png) bottom center no-repeat;
+    padding: 0 0 45px 0;
+}
+nav.nav ul > li:last-child:hover {
+    background: none;
+}
+nav.nav ul > li:hover > a {
+    background: rgba(31, 28, 18, 0.5) url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/757a156a-6127-4b3d-96ff-d0ec618ec875/menu-bottom-border.png) bottom repeat-x;
+    padding: 15px 15px 25px 15px;
+
+    @media only screen and (min-width: 641px) and (max-width: 1299px) {
+        padding: 10px 10px 20px 10px;
+    }
 }
 nav.nav ul li.phone-number {
     color: #ffdf1b;
-    font-size: 22px;
+    font-size: 21.33px;
     font-weight: 700;
     line-height: 26px;
     padding: 0 0 0 10px;
@@ -213,17 +271,62 @@ nav.nav ul li.phone-number {
 nav.nav ul li a:hover {
   color: #b1a19f;
 }
-nav.nav ul li ul {
+nav.nav ul li > ul {
+  background-color: #f1f1f1;
+  border-top: 5px solid #ffdf1b;
   display: none;
-  left: 0;
+  padding: 0 25px;
   position: absolute;
-  top: 45px;
+  right: -180px;
+  top: 72px;
+  width: 500px;
 }
-nav.nav ul li ul li {
-  width: 250px;
+nav.nav ul li {
+    &:nth-child(2) > ul {
+        right: -135px;
+    }
+
+    &:nth-child(3) > ul {
+        right: -197px;
+    }
+
+    &:nth-child(4) > ul {
+        right: -197px;
+    }
+
+    &:nth-child(5) > ul {
+        right: -171px;
+    }
+}
+nav.nav ul ul li {
+    border-bottom: 1px solid #cecece;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+        background: none;
+        padding: 0;
+
+        & > a {
+            background: none;
+            padding: 10px 0;
+        }
+    }
+
 }
 nav.nav ul li ul li a {
-  text-transform: capitalize;
+    background-color: inherit;
+    color: #2e2e2e;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
+
+    @media only screen and (min-width: 641px) and (max-width: 1299px) {
+        font-size: 21px;
+    }
 }
 nav.nav ul li ul li:last-child {
   background: none;
@@ -231,8 +334,92 @@ nav.nav ul li ul li:last-child {
 nav.nav ul li:hover ul {
   display: block;
 }
+nav.mobile-menu {
+    background: #e0e0e0;
+    display: none;
+    float: left;
+    padding: 10px;
+    width: 88%;
+}
+nav.mobile-menu .fa {
+    color: #fff;
+    padding: 6px 0 0 0;
+    float: right;
+}
+nav.mobile-menu .fa-arrow-circle-up {
+    display: none;
+}
+nav.mobile-menu .sub-menu .fa-arrow-circle-up {
+    display: block;
+}
+nav.mobile-menu .sub-menu .fa-arrow-circle-down {
+    display: none;
+}
+nav.mobile-menu ul {
+    background-color: #e0e0e0;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav.mobile-menu ul li {
+    border-bottom: 1px solid #7c88c8;
+    float: left;
+    color: #2f2f2f;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+nav.mobile-menu ul ul li:last-child {
+    border-bottom: 1px solid #004576;
+}
+nav.mobile-menu ul ul li a {
+    color: #2f2f2f;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 90%;
+}
+nav.mobile-menu ul ul {
+    display: none;
+    margin: 0;
+}
+nav.mobile-menu ul ul ul {
+    display: none;
+}
+nav.mobile-menu ul li.sub-menu ul {
+    display: block;
+}
+nav.mobile-menu ul ul ul li {
+    border: none;
+    padding: 0;
+}
+nav.mobile-menu ul ul  li:last-child {
+    border: none;
+}
+nav.mobile-menu ul ul ul li a {
+    border-top: 1px solid #7c88c8;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+.phone-number {
+    color: #ffdf1b;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 10px 0;
+    text-align: center;
+}
 .project-detail {
-    font-size: 22px;
+    font-size: 21.33px;
     line-height: 28px;
 }
 .project-detail-text {
@@ -250,7 +437,7 @@ nav.nav ul li:hover ul {
 .service-area {
     color: #ffffff;
     float: left;
-    font-size: 22px;
+    font-size: 21.33px;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -265,7 +452,25 @@ nav.nav ul li:hover ul {
     }
 }
 .social-media {
-    font-size: 22px;
+    font-size: 21.33px;
     text-align: center;
     text-transform: uppercase;
+}
+.team-member {
+    color: #717171;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+        color: #717171;
+    }
+
+    .fa {
+        color: #7c88c8;
+        font-size: 28px;
+    }
+}
+.team-wrap h3 {
+    padding: 0 0 10px 0;
 }

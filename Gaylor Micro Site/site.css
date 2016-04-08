@@ -1,0 +1,50 @@
+.button,#Submit_0-1 {
+  background: #f07900;
+  padding: 10px 15px;
+}
+.button p {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+  padding: 18px 0;
+  min-height:75px;
+  color:#54534f;
+  background:#d3cfc6;
+  float: left;
+  width: 100%;
+}
+.header {
+  background: url("https://az480170.vo.msecnd.net/de4fb8c7-3611-4d11-8cb1-7bd236cd5457/img/orig/9d475f34-3726-4e92-8f16-a0a676b6dc2f/gaylor_header.png") repeat-x;
+  position: relative;
+  float: left;
+  width:100%;
+  z-index: 100;
+}
+@media screen and (max-width: 640px) {
+    .header {
+        background: #404040;
+        }
+}
+.logo p {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    margin-top:150px;
+    clear:both;
+    }
+.mobile-menu-icon {
+    display: none;
+}
+@media screen and (max-width: 640px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+.wrapper{
+    clear:both;
+    padding: 6px 18px 10px 17px;
+    overflow:auto;
+    background-color:#fff;
+    }
