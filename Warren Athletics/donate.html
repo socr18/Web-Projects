@@ -88,51 +88,141 @@
         <div class="row">
             <div class="large-8 medium-8 small-12 columns">
                 <div class="upcoming-events">
-                    <div class="event-title">
-                        <h2><i class="fa fa-gavel"></i> Academic Services</h2>
-                    </div>
-                    <div class="academic-wrap">
-                        <div class="academic-title"><i class="fa fa-plus">&nbsp;</i><i class="fa fa-minus">&nbsp;</i> Academic Policy</div>
-                        <div class="academic-detail">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex odio, feugiat eget ipsum sed, placerat dignissim felis. Quisque nec aliquet metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer posuere quis mi et accumsan. Proin cursus interdum purus, et feugiat augue mattis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin nunc a felis facilisis egestas. Morbi ut consectetur eros, eu faucibus nibh. Donec leo lorem, sollicitudin eget eros ac, ullamcorper placerat nulla. Pellentesque erat purus, imperdiet non commodo vitae, vulputate vel leo. Donec in semper mi. In augue nisi, vulputate et faucibus nec, malesuada quis sapien:</p>
+                    <h3>
+    Donate Below</h3>
+<p>
+    Your donation goes to help the various sports programs at Warren Central High School. We appreciate anything that you can provide.&nbsp;</p>
+<form id="donate-form">
+    <div class="form-main">
+        <ul>
+            <li>
+                <input id="ApiKey" name="" type="hidden" value="" />
+                <input id="TransactionKey" name="" type="hidden" value="" />
+                <input id="BaseURL" type="hidden" value="https://prd-mpsecurepayment.azurewebsites.net/" />
+                <label class="title">Name</label>
+                    <span class="full-name">
+                        <span class="name">
+                            <label for="first-name">First</label>
+                            <input id="FirstName" name="first-name" type="text" value="" />
+                        </span>
+                        <span class="name">
+                            <label for="last-name">Last</label>
+                            <input id="LastName" name="last-name" tabindex="2" type="text" value="" />
+                        </span>
+                        <span class="phone">
+                            <label for="phone">Phone</label>
+                            <input id="Phone" name="phone" tabindex="2" type="text" value="" />
+                        </span>
+                        <span class="email-wrap">
+                            <label>Email</label>
+                            <input id="email" name="email" tabindex="10" type="text" value="" />
+                        </span>
+                </span>
+            </li>
+            <li>
+                <label class="title">Address</label>
+                    <span class="full-address">
+                        <span class="street-wrap">
+                            <label for="street-address" id="street-address-label">Street Address</label>
+                            <input id="Address1" name="street-address" tabindex="3" type="text" value="" />
+                            <label for="address-two" id="address-two-label">Address Line 2</label>
+                            <input id="Address2" name="address-two" tabindex="4" type="text" value="" />
+                        </span>
+                        <span class="city-wrap">
+                            <span class="city">
+                                <label for="city" id="city-label">City</label>
+                                <input id="City" name="city" tabindex="5" type="text" value="" />
+                            </span>
+                            <span class="state">
+                                <label for="state" id="state-label">State / Province / Region</label>
+                                <input id="State" name="state" tabindex="7" type="text" value="" />
+                            </span>
+                            <span class="zipcode">
+                                <label for="zip" id="zip-label">ZIP / Postal Code</label>
+                                <input id="ZipCode" name="zip" tabindex="8" type="text" value="" />
+                            </span>
+                        </span>
+                        <span class="country-wrap">
+                            <label for="country" id="country-label">Country</label>
+                            <select id="Country" name="country" tabindex="9">
+                                <option selected="selected" value="">Select</option>
+                                <option value="United States">United States</option>
+                            </select>
+                        </span>
+                </span>
+            </li>
+            <li>
+                <label class="title">Donate</label>
+                <span class="amount-wrap"> <label>Donation Amount<span class="required">*</span></label>
+                    <input id="donate-amount" name="donate-amount" tabindex="11" type="text" value="" />
+                </span>
+            </li>
+            <li>
+                <span class="card-wrap">
+                    <label class="title">Credit Card</label>
+                    <span class="card-type">
+                        <img alt="Credit Cards" src="https://az480170.vo.msecnd.net/3763f073-e97c-4317-b7c6-3d8db80bdc3c/img/orig/ae5f68fb-6082-4c0b-b6be-8345116ea746/credit-card.jpg" />
+                    </span>
+                    <span class="card-number">
+                        <label class="card-number-label" for="card-number">Card Number</label>
+                        <input id="CardNumber" name="card-number" tabindex="12" type="text" value="" />
+                    </span>
+                    <span class="expiration-date"> <label>Expiration Date</label>
+                        <select id="ExpirationMonth" name="credit-card-month" tabindex="13">
+                            <option value="">Month</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id="ExpirationYear" name="credit-card-year" tabindex="14">
+                            <option value="">Year</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                        </select>
+                    </span>
+                    <span class="security-code">
+                        <label class="security-code-label" for="security-code">Security Code</label>
+                        <input id="SecurityCode" name="security-code" tabindex="15" type="text" value="" />
+                    </span>
+                    <span class="cardholder-name">
+                        <label class="ch-name-label" for="ch-name">Cardholder Name</label>
+                        <input id="CardholderName" name="ch-name" tabindex="16" type="text" value="" />
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <input class="sm-donate" id="submit-donate" onclick="SendTransaction();" tabindex="17" type="button" value="Click to Donate!" />
+    </div>
+</form>
 
-                            <ul class="MPStyle_CheckMark">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Nullam fringilla odio vitae dui cursus dictum.</li>
-                                <li>Praesent eu risus venenatis ligula interdum sollicitudin ut in mauris.</li>
-                                <li>Aliquam a turpis non diam pretium porta.</li>
-                                <li>Nullam et orci ut ante semper pulvinar.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="academic-wrap">
-                        <div class="academic-title"><i class="fa fa-plus">&nbsp;</i><i class="fa fa-minus">&nbsp;</i> Academic Policy</div>
-                        <div class="academic-detail">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex odio, feugiat eget ipsum sed, placerat dignissim felis. Quisque nec aliquet metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer posuere quis mi et accumsan. Proin cursus interdum purus, et feugiat augue mattis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin nunc a felis facilisis egestas. Morbi ut consectetur eros, eu faucibus nibh. Donec leo lorem, sollicitudin eget eros ac, ullamcorper placerat nulla. Pellentesque erat purus, imperdiet non commodo vitae, vulputate vel leo. Donec in semper mi. In augue nisi, vulputate et faucibus nec, malesuada quis sapien:</p>
-
-                            <ul class="MPStyle_CheckMark">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Nullam fringilla odio vitae dui cursus dictum.</li>
-                                <li>Praesent eu risus venenatis ligula interdum sollicitudin ut in mauris.</li>
-                                <li>Aliquam a turpis non diam pretium porta.</li>
-                                <li>Nullam et orci ut ante semper pulvinar.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="academic-wrap">
-                        <div class="academic-title"><i class="fa fa-plus"></i><i class="fa fa-minus"></i> Academic Policy</div>
-                        <div class="academic-detail">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex odio, feugiat eget ipsum sed, placerat dignissim felis. Quisque nec aliquet metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer posuere quis mi et accumsan. Proin cursus interdum purus, et feugiat augue mattis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin nunc a felis facilisis egestas. Morbi ut consectetur eros, eu faucibus nibh. Donec leo lorem, sollicitudin eget eros ac, ullamcorper placerat nulla. Pellentesque erat purus, imperdiet non commodo vitae, vulputate vel leo. Donec in semper mi. In augue nisi, vulputate et faucibus nec, malesuada quis sapien:</p>
-
-                            <ul class="MPStyle_CheckMark">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Nullam fringilla odio vitae dui cursus dictum.</li>
-                                <li>Praesent eu risus venenatis ligula interdum sollicitudin ut in mauris.</li>
-                                <li>Aliquam a turpis non diam pretium porta.</li>
-                                <li>Nullam et orci ut ante semper pulvinar.</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="large-4 medium-4 small-12 columns">

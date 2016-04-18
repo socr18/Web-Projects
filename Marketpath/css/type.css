@@ -29,7 +29,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
     h1 {
-        font-size: 26px;
+        font-size: 20px;
         margin: 0;
     }
 }
@@ -39,11 +39,23 @@ h2 {
   text-transform: lowercase;
   width: 100%;
 }
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 19px;
+        margin: 0;
+    }
+}
 h3 {
   color: #004576;
   font: 700 21.33px 'FrutigerNeue1450W01-Reg';
   margin: 25px 0;
   text-transform: lowercase;
+}
+@media screen and (max-width: 640px) {
+    h3 {
+        font-size: 18px;
+        margin: 0;
+    }
 }
 h4 {
   color: #ee7f34;
@@ -52,12 +64,24 @@ h4 {
   text-transform: uppercase;
   margin: 0 0 2.5rem 0;
 }
+@media screen and (max-width: 640px) {
+    h4 {
+        font-size: 17px;
+        margin: 0;
+    }
+}
 h5 {
   color: #ffffff;
   font: 700 24px 'FrutigerNeue1450W01-Reg';
   margin: 0 0 1.0rem 0;
   padding: 0;
   text-transform: uppercase;
+}
+@media screen and (max-width: 640px) {
+    h5 {
+        font-size: 16px;
+        margin: 0;
+    }
 }
 blockquote {
     background: url("https://az480170.vo.msecnd.net/e2ce2d76-02ff-4ebc-8e64-519164387db4/img/orig/78752896-2566-4932-9c6b-78efde1f319b/quotebg.png");
@@ -73,10 +97,16 @@ button,
   font: 700 16px 'FrutigerNeue1450W01-Reg';
   text-transform: lowercase;
 }
+.MPStyle_OrangeButton a {
+    color: #ffffff;
+}
 /* Site Specific Styles*/
 .bannerwrap .text {
     color: #ffffff;
     font: 700 32px 'FrutigerNeue1450W01-Reg';
+}
+.bannerwrap .text h1 a {
+    color: #ffffff;
 }
 @media screen and (min-width: 641px) and (max-width: 965px) {
     .bannerwrap .text {
@@ -110,8 +140,9 @@ button,
 }
 .bxslider2 h2 {
     color: #004576;
+    float: left;
     font: 700 24px / 34px 'FrutigerNeue1450W01-Reg';
-    padding: 0 0 15px 0;
+    padding: 0;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -124,8 +155,10 @@ button,
 }
 .contact-form .mp-form-field-label {
     color: #06315d;
+    float: left;
     font-size: 18px;
     font-weight: normal;
+    padding-bottom: 4px;
 }
 .contact-form input {
     color: #06315d;
@@ -174,7 +207,7 @@ footer .social .icon a {
     font-size: 24px;
     padding: 0 0 5px 0;
     position: absolute;
-    right: -22px;
+    right: 0;
  }
 .mobile-web-services .mobile-icon {
     color: #ee7f34;
@@ -185,6 +218,9 @@ footer .social .icon a {
 }
 .mp-list-entry-posted-info {
     font-size: 14px;
+}
+.mp-list-entry-tags-title {
+    font-weight: 700;
 }
 .mp-list-paging-wrapper {
     float: left;
@@ -206,9 +242,25 @@ footer .social .icon a {
 #MPCMSContent_inner .service-detail h2 {
     display: block;
  }
+.mp-list-by-category .mp-list-area-entries {
+    float: left;
+    padding: 0 0.9375em 0 0;
+    width: 66.66667%;
+}
+.mp-list-by-category .mp-list-area-archive {
+    float: left;
+    padding: 0 0 0 0.9375em;
+    width: 33.33333%;
+}
 .mp-list-categories-title {
     font-size: 125%;
     font-weight: bold;
+}
+.mp-list-by-category > h1 {
+        display: none;
+}
+.mp-list-archive,.mp-list-archive a,.mp-list-categories,.mp-list-categories a {
+    color: #ffffff;
 }
 @media screen and (max-width: 965px) {
     nav.default-menu {
@@ -223,8 +275,14 @@ nav ul {
 }
 nav #Default {
   float: right;
+
   position: relative;
   top: 15%;
+}
+nav #Default ul {
+    float: left;
+    min-height: 80px;
+    width: 100%;
 }
 nav #Default ul li {
   float: left;
@@ -233,7 +291,10 @@ nav #Default ul li a {
   color: #ffffff;
   padding: 0 20px;
 }
-nav #Default ul li a:hover {
+nav #Default ul:hover li {
+    background: url(https://az480170.vo.msecnd.net/e2ce2d76-02ff-4ebc-8e64-519164387db4/img/orig/4b3aa5fb-b2f3-484f-ad39-46c5a2c762ff/evensmall-downarrow.png) right no-repeat;
+}
+nav #Default ul:hover li a {
   color: #ee7f34;
 }
 nav #Default ul ul {
@@ -273,6 +334,7 @@ nav.sd-menu ul ul {
   padding: 0;
   display: flex;
   flex-flow: wrap;
+  width: 100%;
 }
 nav.sd-menu ul ul li {
   border: none;
@@ -294,7 +356,7 @@ nav.mobile-menu {
     display: none;
     float: left;
     padding: 10px;
-    width: 100%;
+    width: 94%;
 }
 nav.mobile-menu .fa {
     color: #fff;
@@ -470,6 +532,12 @@ nav.mobile-menu ul ul ul li a {
 .web-services {
   text-align: center;
 }
+.web-services .challenge{
+    text-align:left;
+        }
+.web-services .results{
+    text-align:left;
+        }
 .web-services .webdesign a,
 .web-services .webapp a,
 .web-services .cms a,

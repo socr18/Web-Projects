@@ -1,0 +1,7 @@
+[0413/142223:ERROR:tcp_socket_win.cc(360)] bind() returned an error: Only one usage of each socket address (protocol/network address/port) is normally permitted. (0x2740)
+[0413/142223:ERROR:devtools_http_handler_impl.cc(728)] Cannot start http server for devtools. Stop devtools.
+[0413/142223:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[0413/142225:INFO:CONSOLE(544)] "Spaces plugin version: %d.%d.%d", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%20CC%202015/Required/Plug-Ins/Spaces2//www/src/js/main-en.js (544)
+[0413/142225:INFO:CONSOLE(544)] "Startup complete: %dms", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%20CC%202015/Required/Plug-Ins/Spaces2//www/src/js/main-en.js (544)
+[0413/142230:INFO:CONSOLE(544)] "WebSocket connection to 'ws://localhost:59596/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%20CC%202015/Required/Plug-Ins/Spaces2//www/src/js/main-en.js (544)
+[0413/142231:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
