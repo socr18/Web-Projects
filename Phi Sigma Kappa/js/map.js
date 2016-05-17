@@ -1,7 +1,7 @@
                     var mapLocation = "countries/us/custom/us-all-mainland";
                     var baseVal = 5;
-                    var stateColor = "#d3a9a9";//"#B12616";//
-                    var statelineColor = "#9b4a43";
+                    var stateColor = "rgb(147,115,115)";//"#B12616";//
+                    var statelineColor = "#a14c4f";
                     var hoverColor = "#ededed";//"#FFF";//
                     var textColor = "#FFF";
                     var defaultURL = "https://intelliapp2.driverapponline.com/c/venturelog?uri_b=ia_venturelog_1174961385";
@@ -34,122 +34,152 @@
                         // Prepare demo data
                         var data = [{
                             "hc-key": "us-al",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/alabama"
                         }, {
                             "hc-key": "us-az",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/arizona"
                         }, {
                             "hc-key": "us-ar",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/arkansas"
                         }, {
                             "hc-key": "us-ca",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/california"
                         }, {
                             "hc-key": "us-dc",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/district-columbia"
                         }, {
                             "hc-key": "us-fl",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/florida"
                         }, {
                             "hc-key": "us-ga",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/georgia"
                         }, {
                             "hc-key": "us-il",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/illinois"
                         }, {
                             "hc-key": "us-in",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/indiana"
                         }, {
                             "hc-key": "us-ks",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/kansas"
                         }, {
                             "hc-key": "us-ky",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/kentucky"
                         }, {
                             "hc-key": "us-md",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/maryland"
                         }, {
                             "hc-key": "us-ma",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/massachusetts"
                         }, {
                             "hc-key": "us-mi",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/michigan"
                         }, {
                             "hc-key": "us-mn",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/minnesota"
                         }, {
                             "hc-key": "us-mo",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/missouri"
                         }, {
                             "hc-key": "us-nj",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/new-jersey"
                         }, {
                             "hc-key": "us-ny",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/new-york"
                         }, {
                             "hc-key": "us-nc",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/north-carolina"
                         }, {
                             "hc-key": "us-oh",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/ohio"
                         }, {
                             "hc-key": "us-ok",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/oklahoma"
                         }, {
                             "hc-key": "us-pa",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/pennsylvania"
                         }, {
                             "hc-key": "us-ri",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/rhode-island"
                         }, {
                             "hc-key": "us-sc",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/south-carolina"
                         }, {
                             "hc-key": "us-tn",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/tennessee"
                         }, {
                             "hc-key": "us-tx",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/texas"
                         }, {
                             "hc-key": "us-va",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/virgiana"
                         }, {
                             "hc-key": "us-wa",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/washington"
                         }, {
                             "hc-key": "us-wv",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/west-viginia"
                         }, {
                             "hc-key": "us-wi",
+                            "color": "#D3A9A9",
                             "value": baseVal,
                             "url": "/wisconsin"
                         },
@@ -187,6 +217,7 @@
 
                             chart: {
                                 backgroundColor: null,
+                                selectionMarkerFill: '#937373',
                                 resetZoomButton: {
                                     enabled: false,
                                     position: {

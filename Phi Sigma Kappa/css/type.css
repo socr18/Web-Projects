@@ -73,6 +73,9 @@ h5 {
 a {
   color: #404040;
 }
+a .MPStyle_ClearButton {
+    color: #ffffff;
+}
 .banner-text {
   text-align: center;
 }
@@ -93,6 +96,9 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+.box a {
+    color: #ffffff;
+}
 .calendar-day {
   color: #9e2828;
   font-size: 60px;
@@ -112,11 +118,19 @@ a {
   font-size: 21px;
   text-align: center;
 }
+@media screen and (max-width: 965px) {
+    .calendar-month {
+        font-size: 16px;
+    }
+}
 .calendar-title {
   color: #4a4a4a;
   font-size: 21px;
   font-weight: 700;
   padding: 10px 0 0 0;
+}
+.chapter-detail h3 {
+    font-size: 24px;
 }
 .ckeditor_contentArea {
     background: #ffffff;
@@ -141,6 +155,11 @@ a {
 .fa.fa-twitter-square a {
   color: #25abe1;
   font-size: 58px;
+}
+@media screen and (max-width: 965px) {
+    .footer .nav {
+        display: none;
+    }
 }
 #FooterMenu {
   display: block;
@@ -185,15 +204,132 @@ a {
   color: #ffffff;
   font-size: 32px;
 }
+.header-section .nav {
+  float: right;
+  padding: 65px 0 0 0;
+}
+@media screen and (max-width: 965px) {
+    .header-section .nav {
+        display: none;
+    }
+}
+.header-section .nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.header-section .nav ul li {
+  float: left;
+}
+.header-section .nav ul li a {
+  color: #887777;
+  float: left;
+  font: 700 18px 'HelveticaNeueW01-65Medi';
+  padding: 10px 8px;
+  text-transform: uppercase;
+}
+.header-section .nav ul > li:hover {
+    background: url(https://az480170.vo.msecnd.net/58912e01-b7b5-436d-a39b-4c419cbe7d66/img/prd/a0201bef-4d1a-40e8-ab70-9a7681429738/menu-arrow.png) bottom center no-repeat;
+    display: inline-block;
+    padding: 0 0 19px 0;
+}
+.header-section .nav ul li:nth-child(7):hover {
+    background-image: none;
+    background: #9e2828;
+    padding: 10px;
+}
+.header-section .nav ul li:nth-child(7) a {
+    color: #f4f4f4;
+    padding: 0;
+}
+.header-section .nav ul li:hover a {
+    background: #beb5b5;
+  color: #f4f4f4;
+}
+.header-section .nav ul li:nth-child(7):hover a {
+    background-image: none;
+    background: #9e2828;
+    color: #887777;
+}
+.header-section .nav ul ul {
+    background: #9f2929;
+    border-top: 1px solid #660d0d;
+  display: none;
+  left: 0;
+    padding: 20px 0;
+  position: absolute;
+    right: 0;
+  top: 134px;
+}
+.header-section .nav ul ul li {
+    float: left;
+  width: 25%;
+}
+.header-section .nav ul li:hover ul li {
+    background: none;
+    padding: 0;
+}
+.header-section .nav ul li:hover ul li a {
+    background: none;
+}
+.header-section .nav ul ul li a {
+    background: none;
+    color: #f4f4f4;
+    font-weight: 700;
+    padding: 10px 0;
+  text-transform: capitalize;
+}
+.header-section .nav ul ul li a:hover {
+    color: #887777;
+}
+.header-section .nav ul ul li:last-child {
+  background: none;
+}
+.header-section .nav ul li:hover ul {
+  display: block;
+}
+.header-section .nav ul ul ul {
+    background: none;
+    border: none;
+    float: left;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.header-section .nav ul ul ul li {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+.header-section .nav ul ul ul li a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px;
+}
 input[type=button],#Submit_0-1 {
   float: left;
   width: auto;
+}
+@media screen and (max-width: 965px) {
+    #Submit_0-1 {
+        font-size: 14px;
+        padding: 7px;
+    }
 }
 input[type=text],#E-mail-Address_6507-1 {
   background: rgba(244, 244, 244, 0.25);
   float: left;
   padding: 10px;
   width: 100%;
+}
+@media screen and (max-width: 965px) {
+    #E-mail-Address_6507-1 {
+        font-size: 14px;
+        padding: 5px;
+    }
 }
 label {
   color: #4a4a4a;
@@ -205,7 +341,7 @@ label {
   list-style: none;
 }
 .members ul li {
-  background: url('../img/member-li.png') 0 12px no-repeat;
+  background: url('https://az480170.vo.msecnd.net/58912e01-b7b5-436d-a39b-4c419cbe7d66/img/prd/c1f61ece-b1c7-4e6e-8b29-faa143933cc6/member-li.png') 0 12px no-repeat;
   font-size: 24px;
   font-weight: 700;
   padding: 0 0 0 25px;
@@ -230,17 +366,44 @@ label {
 .MPStyle_ClearButton {
   background-color: transparent;
   border: 1px solid #ffffff;
+  padding: 5px 10px;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.mobile-menu-icon {
+    display: none;
+}
+@media screen and (max-width: 965px) {
+    .mobile-menu-icon {
+        background: #9e2828;
+        color: #ffffff;
+        display: block;
+        float: left;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .mobile-menu-icon a {
+        color: #ffffff;
+    }
 }
 .MPStyle_RedButton {
   background-color: #9e2828;
   font-size: 21px;
   font-weight: 700;
   border-color: #9e2828;
+    padding: 10px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 965px) {
+    .MPStyle_RedButton {
+        font-size: 17px;
+        }
+    }
 .MPStyle_RedButton a {
     color: #ffffff;
 }
@@ -255,49 +418,6 @@ label {
   color: #ffffff;
   font-weight: 700;
 }
-.nav {
-  float: right;
-  padding: 50px 0 0 0;
-}
-.nav ul {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 100;
-}
-.nav ul li {
-  float: left;
-  position: relative;
-}
-.nav ul li a {
-  color: #887777;
-  float: left;
-  font: 700 17px 'HelveticaNeueW01-65Medi';
-  padding: 0 8px;
-  text-transform: uppercase;
-}
-.nav ul li a:hover {
-  color: #b1a19f;
-}
-.nav ul li ul {
-  display: none;
-  left: 0;
-  position: absolute;
-  top: 45px;
-}
-.nav ul li ul li {
-  width: 250px;
-}
-.nav ul li ul li a {
-  text-transform: capitalize;
-}
-.nav ul li ul li:last-child {
-  background: none;
-}
-.nav ul li:hover ul {
-  display: block;
-}
 .sec-menu ul li a {
   color: #9e2828;
   float: left;
@@ -309,6 +429,69 @@ label {
 .sec-menu ul li a .fa {
   color: #887777;
 }
+.sitemap {
+    display: none;
+}
+@media screen and (max-width: 965px) {
+    .sitemap {
+        display: block;
+        padding: 0;
+    }
+    .sitemap .nav ul {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 220px;
+  }
+  .sitemap .nav ul li {
+    border: none;
+    float: left;
+    margin: 0 0 5px 0;
+    padding: 0;
+    width: 100%;
+  }
+  .sitemap .nav ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .sitemap .nav ul li a:hover {
+    color: #b1b1b1;
+  }
+  .sitemap .nav ul ul {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .sitemap .nav ul ul li {
+    margin: 0;
+  }
+  .sitemap .nav ul ul li a {
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 5px;
+    text-transform: none;
+  }
+  .sitemap .nav ul ul ul li {
+    border: none;
+    margin: 0;
+  }
+  .sitemap .nav ul ul ul li a {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+}
 .sm-right .blog-entry .blog-text .blog-title {
   font-size: 18px;
 }
@@ -316,6 +499,13 @@ label {
   font-size: 50px;
   line-height: 45px;
   padding: 20px 0 0 0;
+}
+@media screen and (max-width: 965px) {
+    .sm-right .calendar-day {
+      font-size: 37px;
+      line-height: 30px;
+      padding: 12px 0 0 0;
+    }
 }
 .sm-right .calendar-title {
   padding: 0;
@@ -346,9 +536,22 @@ label {
   transition: all linear 0.15s;
   width: 100%;
 }
+@media screen and (max-width: 965px) {
+    .tab-links a {
+        font-size: 15px;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
 .tab-links .active a {
   color: #4a4a4a;
   background: #f2f2f2;
+}
+@media screen and (max-width: 965px) {
+    .tab-links .active a {
+        background: #ffffff;;
+        font-weight: 700;
+    }
 }
 textarea {
   background-color: rgba(244, 244, 244, 0.25);

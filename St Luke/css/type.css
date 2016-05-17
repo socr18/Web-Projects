@@ -6,9 +6,9 @@ h1 {
   margin: 0;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
 }
 h1 a {
@@ -22,7 +22,7 @@ h2 {
   text-transform: uppercase;
   width: 100%;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   h2 {
     font-size: 24px;
     line-height: 24px;
@@ -39,9 +39,9 @@ h3 {
   text-transform: uppercase;
   width: 100%;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   h3 {
-    font-size: 24px;
+    font-size: 19px;
   }
 }
 h4 {
@@ -52,7 +52,7 @@ h4 {
   text-transform: uppercase;
   width: 100%;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   h4 {
     font-size: 18px;
     line-height: 30px;
@@ -67,7 +67,7 @@ h5 {
   text-transform: uppercase;
   width: 100%;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   h5 {
     font-size: 15px;
   }
@@ -81,9 +81,19 @@ a {
   font-size: 24px;
   line-height: 36px;
 }
+@media only screen and (max-width: 640px) {
+  .banner-txt {
+    font-size: 20px;
+  }
+}
 .banner-txt h1 {
   color: #f2f2f2;
   font-size: 32px;
+}
+@media only screen and (max-width: 640px) {
+  .banner-txt h1 {
+    font-size: 28px;
+  }
 }
 .banner-txt h2 {
   color: #f2f2f2;
@@ -91,6 +101,11 @@ a {
 .bg-school h1 {
   color: #003f86;
   font-size: 41.33px;
+}
+@media only screen and (max-width: 640px) {
+  .bg-school h1 {
+    font-size: 28px;
+  }
 }
 .bg-school .MPStyle_LPBlueLeftBtn,
 .bg-school .MPStyle_LPBlueRightBtn {
@@ -105,6 +120,11 @@ a {
   color: #f2f2f2;
   font-size: 32px;
 }
+@media only screen and (max-width: 640px) {
+  .bg-school .banner-txt h1 {
+    font-size: 28px;
+  }
+}
 .blog-article-title {
   color: #243b54;
   float: left;
@@ -117,6 +137,29 @@ a {
 .blog-author {
   font-size: 14px;
   font-weight: 300;
+}
+.calendar-day {
+  color: #3e3e3e;
+  font-size: 25.33px;
+  line-height: inherit;
+  padding: 5px 0 0 0;
+  text-align: center;
+}
+.calendar-location {
+  font-size: 16px;
+  padding: 0 0 5px 0;
+  overflow: hidden;
+}
+.calendar-month {
+  color: #3e3e3e;
+  font-size: 13.33px;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+.calendar-title {
+  color: #000000;
+  font-size: 24px;
+  padding: 5px 0 0 0;
 }
 .header-section {
   font-family: "imperial-urw", sans-serif;
@@ -137,20 +180,32 @@ a {
 .ft-address a {
   color: #ffffff;
 }
-.mobile-menu-icon .fa-bars {
-  background: #e0e0e0;
-  color: #000000;
+.mobile-menu-icon {
+  background: #003f86;
+  color: #ffffff;
+  padding: 5px;
   font-size: 42px;
-  font-weight: 400;
-  padding: 0 5px;
+}
+.mobile-menu-icon.school {
+  background: #2067b4;
 }
 .mobile-menu-icon.mobile-right {
-  background: #e0e0e0;
-  color: #ee7f34;
-  font-size: 24px;
-  padding: 0;
+  background: #003f86;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 5px;
   position: absolute;
   right: 0;
+}
+.mobile-menu-icon.mobile-right.school {
+  background: #2067b4;
+}
+.mobile-web-services .mobile-icon {
+  color: #ee7f34;
+  text-align: center;
+}
+.mobile-web-services .mobile-text {
+  color: #ffffff;
 }
 .MPStyle_LGBlueBtn {
   -webkit-appearance: none;
@@ -272,6 +327,11 @@ a {
   font: 85.02px "imperial-urw", sans-serif;
   line-height: 1.3em;
 }
+@media only screen and (max-width: 640px) {
+  .MPStyle_LGYellowText {
+    font-size: 62px;
+  }
+}
 .MPStyle_SMYellowBtn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -345,6 +405,12 @@ a {
   text-transform: uppercase;
   transition: background-color 300ms ease-out;
 }
+@media only screen and (max-width: 640px) {
+  .MPStyle_YellowOutline {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+}
 .mp-search-results-item-url {
   font-size: 16px;
   padding: 5px 0;
@@ -354,7 +420,7 @@ nav.nav {
   float: left;
   width: 100%;
 }
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 640px) {
   nav.nav {
     display: none;
   }
@@ -458,11 +524,14 @@ nav.nav ul li:hover ul {
   display: block;
 }
 nav.mobile-menu {
-  background: #e0e0e0;
+  background: #003f86;
   display: none;
   float: left;
   padding: 10px;
-  width: 88%;
+  width: 94%;
+}
+nav.mobile-menu.school {
+  background: #2067b4;
 }
 nav.mobile-menu .fa {
   color: #fff;
@@ -479,16 +548,19 @@ nav.mobile-menu .sub-menu .fa-arrow-circle-down {
   display: none;
 }
 nav.mobile-menu ul {
-  background-color: #e0e0e0;
+  background: #003f86;
   float: left;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
+nav.mobile-menu ul.school {
+  background: #2067b4;
+}
 nav.mobile-menu ul li {
   border-bottom: 1px solid #7c88c8;
-  color: #2f2f2f;
+  color: #ffffff;
   cursor: pointer;
   float: left;
   font-size: 16px;
@@ -497,11 +569,14 @@ nav.mobile-menu ul li {
   text-transform: uppercase;
   width: 100%;
 }
+nav.mobile-menu ul.school ul {
+  background: #2067b4;
+}
 nav.mobile-menu ul ul li:last-child {
   border-bottom: 1px solid #004576;
 }
 nav.mobile-menu ul ul li a {
-  color: #2f2f2f;
+  color: #ffffff;
   float: left;
   font-size: 16px;
   font-weight: 400;

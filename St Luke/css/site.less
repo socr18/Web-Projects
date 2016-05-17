@@ -10,7 +10,6 @@
 
         @media only screen and (max-width: 640px) {
             background: #231f20;
-            padding: 167px 0 0 0;
 
             &.home-page {
                 display: none;
@@ -46,8 +45,7 @@
         z-index: 5;
 
         @media only screen and (max-width: 640px) {
-            bottom: 5%;
-            top: inherit;
+            bottom: -57px;
         }
     }
 
@@ -68,9 +66,8 @@
         }
      }
 
-    .banner-txt.inside {
-        text-align: left;
-        width: 100%;
+    .banner-txt.inside-landing,.banner-txt.inside {
+        bottom: 0;
     }
 
 }
@@ -152,6 +149,23 @@
         }
     }
 }
+.calendar-date {
+  background: #f0f0f0;
+  float: left;
+  outline: 1px solid #ffffff;
+  outline-offset: -5px;
+  width: 20%;
+}
+.calendar-event {
+  float: left;
+  padding: 9px;
+  width: 100%;
+}
+.calendar-text {
+  float: left;
+  padding: 0 0 0 15px;
+  width: 80%;
+}
 .ckeditor_contentArea {
     background: #ffffff;
 }
@@ -175,7 +189,9 @@
 }
 .flex-area {
     background-color: #f5f5f5;
+    float: left;
     padding: 30px 0;
+    width: 100%;
 }
 footer {
     float: left;
@@ -222,13 +238,64 @@ footer {
     }
 }
 .large-left {
+    border-right: 1px solid #e0e0e0;
     float: left;
     padding: 0 1.875em 0 0;
+
+    @media only screen and (max-width: 640px) {
+        padding: 0 0.9375em;
+    }
 }
 .logo {
     p {
         margin: 0;
         padding: 0;
+    }
+}
+.menu-logo {
+    float: left;
+    padding: 0 0 10px 0;
+}
+.menu-logo img {
+    height: auto;
+    width: 75%;
+}
+.mobile-menu-icon {
+    display: none;
+    float: left;
+    padding: 0 0 10px 0;
+}
+@media screen and (max-width: 640px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-right {
+        float: none;
+        padding: 10px 5px 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+     }
+}
+.mobile-web-services {
+    display: none;
+}
+.mobile-web-services .mobile-flex {
+    display: flex;
+}
+.mobile-web-services .mobile-icon, .mobile-web-services .mobile-text {
+    margin: 10px 0;
+}
+.mobile-web-services img {
+    height: auto!important;
+    width: 80%!important;
+}
+.mobile-web-services img.himg {
+    display: none;
+}
+@media screen and (max-width: 640px) {
+    .mobile-web-services {
+        display: block;
     }
 }
 .MPStyle_ImgBorder {
@@ -275,6 +342,11 @@ footer {
 .my-5 {
     width: 20%;
 }
+@media only screen and (max-width: 965px) {
+    .my-5 {
+        width: 50%;
+    }
+}
 .pika-scrollable-bottom .pika-thumbs li {
     background: none;
     padding: 0;
@@ -317,19 +389,14 @@ footer {
 }
 .rt-content {
     float: left;
+    margin: 10px 0;
     width: 100%;
 }
 .sitemap {
-    display: none;
     left: 0;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
-
-    @media only screen and (max-width: 640px) {
-        display: block;
-    }
 }
 .school-church {
     float: left;
@@ -365,8 +432,17 @@ footer {
     max-height: 98px;
     padding: 0 0 15px 0;
     width: 100%;
+
+    @media only screen and (max-width: 640px) {
+        max-height: inherit;
+    }
 }
 .why-content {
     float: left;
     padding: 0 0.9375em;
+}
+@media only screen and (max-width: 640px) {
+    .why-content {
+        min-height: 200px;
+    }
 }

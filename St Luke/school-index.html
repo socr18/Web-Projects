@@ -133,6 +133,7 @@
 
     <div class="sitemap">
         <nav class="mobile-menu">
+            <div class="menu-logo"><img alt="" src="img/logo-school.png" /></div>
             <ul>
                 <li>about<i class="fa fa-arrow-circle-down">&nbsp;</i><i class="fa fa-arrow-circle-up">&nbsp;</i>
                     <ul></ul>
@@ -149,7 +150,6 @@
             </ul>
         </nav>
         <div class="mobile-menu-icon"><i class="fa fa-bars"></i></div>
-        <div class="phone-number"><p>317.818.1622</p></div>
     </div>
 
 </header>
@@ -255,9 +255,42 @@
     <div class="bg-page">
         <div class="row">
             <div class="large-4 medium-4 small-12 columns">
-                <h5><img src="img/icon-lovinghand.png" alt="" /> In Fellowship</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed elit risus. Aenean scelerisque nunc sit amet tortor dictum ornare.  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla at ligula at mauris aliquam pretium eget nec lacus.</p>
-                <p style="text-align: center;"><a href="#"><span class="MPStyle_SMYellowBtn">Online Giving</span></a></p>
+                <!-- Events -->
+                <div class="calendar-wrap">
+                    <div class="large-12 medium-12 columns">
+                        <h5><img src="img/icon-blcalendar.png" alt="" /> Upcoming St. Luke Events</h5>
+                        <div class="calendar-event">
+                            <div class="calendar-date">
+                                <div class="calendar-day">15</div>
+                                <div class="calendar-month">March</div>
+                            </div>
+                            <div class="calendar-text">
+                                <div class="calendar-title">Founder's Day</div>
+                                <div class="calendar-descr">at tellus luctus vitae.</div>
+                            </div>
+                        </div>
+                        <div class="calendar-event">
+                            <div class="calendar-date">
+                                <div class="calendar-day">29</div>
+                                <div class="calendar-month">March</div>
+                            </div>
+                            <div class="calendar-text">
+                                <div class="calendar-title">Grand National</div>
+                                <div class="calendar-location">at tellus luctus vitae.</div>
+                            </div>
+                        </div>
+                        <div class="calendar-event">
+                            <div class="calendar-date">
+                                <div class="calendar-day">03</div>
+                                <div class="calendar-month">April</div>
+                            </div>
+                            <div class="calendar-text">
+                                <div class="calendar-title">Man of Character</div>
+                                <div class="calendar-descr">at tellus luctus vitae.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="large-8 medium-8 small-12 columns">
                 <div class="blog-feedtitle">
@@ -300,8 +333,11 @@
         <div class="large-4 medium-4 small-12 columns">
             <div class="social-media">
                 <p>LIKE & FOLLOW US:</p>
-                <p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true">&nbsp;</i> Facebook <i class="fa fa-google-plus-square" aria-hidden="true"&nbsp;</i> Google +<br>
-                    <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;</i> LinkedIn <i class="fa fa-twitter-square" aria-hidden="true">&nbsp;</i> Twitter</a>
+                <p><a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true">&nbsp;</i> Facebook
+                    <i class="fa fa-google-plus-square" aria-hidden="true">&nbsp;</i> Google + <br/>
+                    <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;</i> LinkedIn
+                    <i class="fa fa-twitter-square" aria-hidden="true">&nbsp;</i> Twitter</a>
                 </p>
             </div>
         </div>
@@ -331,6 +367,36 @@
                 maxSlides: 5,
                 moveSlides: 1
             });
+
+            $('nav.mobile-menu > ul > li').click(function() {
+
+                if ($(this).hasClass('sub-menu')) {
+                    $(this).removeClass('sub-menu');
+                } else {
+                    $(this).addClass('sub-menu');
+                }
+            });
+
+            var clickCount = 0;
+
+            $('.mobile-menu-icon').click(function() {
+
+                clickCount = (clickCount == 2) ? 0:clickCount;
+
+                if (clickCount == 0) {
+                    $('nav.mobile-menu').toggle();
+                    $('.mobile-menu-icon').addClass('mobile-right');
+                } else {
+                    $('nav.mobile-menu').toggle();
+                    $('.mobile-menu-icon').removeClass('mobile-right');
+                }
+                clickCount++;
+            });
+
+            $('#Default > ul > li:first-child').clone().appendTo('nav.mobile-menu > ul > li:first-child ul');
+            $('#Default > ul > li:nth-child(2)').clone().appendTo('nav.mobile-menu > ul > li:nth-child(2) ul');
+            $('#Default > ul > li:nth-child(3)').clone().appendTo('nav.mobile-menu > ul > li:nth-child(3) ul');
+            $('#Default > ul > li:last-child').clone().appendTo('nav.mobile-menu > ul > li:last-child ul');
 
         });
 
