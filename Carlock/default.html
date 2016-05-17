@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="css/normalize.css" property="">
+    <link rel="stylesheet" href="css/foundation.css" property="">
+    <link rel="stylesheet" href="css/default.css" property="">
+
+</head>
+<body>
+    <header>
+        <!--Page Wrapper-->
+        <div class="row">
+            <!--Header Wrapper-->
+            <div id="ccHeader">
+                <!--Logo-->
+                <div class="large-4 medium-4 small-12">
+                    <div id="ccLogo"><Marketpath:ContentArea ID="ContentArea1" /></div>
+                </div>
+                <div class="large-8 medium-8 small-12">
+                    <div id="SearchMenuWrap">
+                        <div id="PhoneNumber"><Marketpath:ContentArea ID="ContentArea4" /></div>
+                        <!--Search-->
+                        <div id="ccSearch">
+                            <div id="SearchButton" onclick="MPGlobalSearch($('#inputSearch').val(), 'global');"></div>
+                            <div id="SearchContent"><input type="text" value="SEARCH" onkeypress="if (event.keyCode == 13) MPGlobalSearch($('#inputSearch').val(), 'global');" id="inputSearch" /></div>
+                        </div>
+                        <div id="TopMenuWrap"><Marketpath:Menu Version="2" Name="TopMenu" ID="TopMenu"></Marketpath:Menu></div>
+                        <!--Menu-->
+                        <div id="MenuWrap"><Marketpath:Menu Version="2" Name="Default" ID="Default"></Marketpath:Menu></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  <main>
+    <!--Content Wrap-->
+            <div class="row">
+                <div id="ContentWrap">
+                    <!--Left Column-->
+                    <div class="large-8 medium-8 small-12 columns">
+                        <div id="LeftColumn">
+                            <!--Gallery-->
+                            <div id="ccImageGallery"><Marketpath:ContentArea ID="ContentArea1" /></div>
+                            <!--Luncheon Section-->
+                            <div id="LeftContent">
+                                <div id="LeftTitle"><Marketpath:ContentArea ID="ContentArea2" /></div>
+                            </div>
+                            <div class="large-6 medium-6 small-12 columns">
+                                <div id="LeftContent1"><Marketpath:ContentArea ID="ContentArea3" /></div>
+                            </div>
+                            <div class="large-6 medium-6 small-12 columns">
+                                <div id="LeftContent2"><Marketpath:ContentArea ID="ContentArea4" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Right Column-->
+                    <div class="large-4 medium-4 small-12 columns">
+                        <div id="RightColumn">
+                            <div id="GetHelp"><Marketpath:ContentArea ID="ContentArea5" /></div>
+                            <div id="RightColumnContent">
+                                <div id="BlogWrapHome">
+                                    <h2 style="padding-left: 10px;"><a href="%%ROOT-URL%%indiana-worker-s-comp-blog">Worker's Comp Blog</a></h2>
+                                    <ul>
+                                      <marketpath:token type="list-listentries" id="348" repeat="4">
+                                          <li><a href="%%LIST-FULL-URL%%/%%LIST-ENTRY-TITLE-URL%%"><div class="blogurl">%%LIST-ENTRY-TITLE%%</div></a></li>
+                                      </marketpath:token>
+                                    </ul>
+                                </div>
+                                <div style="float: left; width: 100%;"><Marketpath:ContentArea ID="ContentArea6" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</main>
+    <footer>
+        <!--Footer-->
+        <div class="row">
+            <div class="large-12 medium-12 small-12 columns">
+                <div id="ccFooter">
+                    <div id="FooterLeft"><Marketpath:ContentArea ID="ContentArea2" /></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

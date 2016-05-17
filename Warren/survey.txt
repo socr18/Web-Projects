@@ -1,0 +1,80 @@
+    <!-- Survey Pop Up -->
+    <div class="popalert">
+        <h2>
+            Let us know</h2>
+        <p>
+            We are always looking to improve the way we communicate what is happening at Warren Township Schools. Please take the opportunity to complete this short survey to help us continue improving.</p>
+        <p style="text-align: center;"><a href="//www.surveymonkey.com/r/95KY75L" target="_blank"><span class="MPStyle_SurveyButton">Take A Survey</span></a></p>
+        <p class="paclose">
+            Close</p>
+    </div>
+    <!-- End Survey -->
+
+
+        // survey
+        if (sessionStorage.firstVisit !== 'true') {
+         // Stores visit
+             $('.popalert').slideDown(2000);
+        }
+
+         $('.paclose').click(function() {
+             sessionStorage.firstVisit = true;
+             $('.popalert').hide();
+             window.location = window.location.pathname;
+         });
+
+         $('.MPStyle_SurveyButton').click(function() {
+             sessionStorage.firstVisit = true;
+             $('.popalert').hide();
+             window.location = window.location.pathname;
+         });
+
+.MPStyle_SurveyButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+    text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem 1.0625rem 2rem;
+  font-size: 1rem;
+    background-color: #f4c740;
+  border-color: #007095;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+}
+.popalert {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4%;
+  border: 1px solid #dddddd;
+  background: #45aab8;
+    color: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  width: 600px;
+  z-index: 150;
+  margin: 0 auto;
+}
+.popalert h2 {
+    color: #fff;
+    }
+.popalert .paclose {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}

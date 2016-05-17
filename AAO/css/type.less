@@ -1,0 +1,165 @@
+@import (less,reference) 'foundation.css';
+
+h1 {
+  color: #9f2633;
+    font-size: 37.33px;
+    font-weight: normal;
+    line-height: inherit;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 965px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+h1 a {
+  color: #ffffff;
+}
+h2 {
+   color: #4a4a4a;
+    font-size: 28px;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 965px) {
+  h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+h3 {
+    background: url(https://az480170.vo.msecnd.net/4f15b379-a245-467c-ac0a-5bd78facf7ea/img/prd/5bed1c81-ecd0-44a5-92af-96762728850f/feature-titlebars.png) bottom repeat-x;
+    color: #2d2d2d;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 0 30px 10px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 965px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+h4 {
+    color: #2d2d2d;
+  font-size: 21.33px;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 965px) {
+  h4 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+h5 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.33px;
+  margin: 0;
+  padding: 0 0 1.2em 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 965px) {
+  h5 {
+    font-size: 15px;
+  }
+}
+a {
+  color: #404040;
+}
+
+/*** Site Styles **/
+.banner-txt {
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+}
+.member-login {
+    color: #4a4a4a;
+    font-size: 16px;
+    text-align: right;
+
+    a {
+        color: #9f2633;
+        font-weight: 700;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}
+.MPStyle_RedButton {
+    .button;
+    background-color: #9f2633;
+    font-size: 18.67px;
+    margin: 0;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+.MPStyle_RedOutline {
+    .button;
+    background: transparent;
+    border: 1px solid #9f2633;
+    color: #9f2633;
+    text-transform: uppercase;
+}
+.MPStyle_LGRedText {
+    color: #9f2633;
+    font-size: 37.33px;
+    text-transform: uppercase;
+}
+nav ul {
+  font: 300 18.67px 'FrutigerNeue1450W01-Reg';
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .nav {
+  float: right;
+  position: relative;
+}
+nav .nav ul {
+    float: left;
+    width: 100%;
+    z-index: 10;
+}
+nav .nav #Default > ul > li {
+    background: url(../img/menu-downarrow.png) right no-repeat;
+    padding: 0 5px 0 0;
+  float: left;
+}
+nav .nav #Default > ul > li:last-child {
+    background: none;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+nav .nav ul li a {
+  color: #000000;
+    float: left;
+  padding: 13px 10px;
+    text-transform: uppercase;
+}
+nav .nav > #Default > ul > li:last-child a {
+    background: #9f2633;
+    color: #ffffff;
+}
+nav .nav ul:hover li a {
+  color: #ee7f34;
+}
+nav .nav ul ul {
+    background: #dedede url(../img/bg-menu.png);
+    left: 0;
+  display: none;
+    position: absolute;
+    top: 48px;
+}
+nav .nav ul li:hover ul {
+    display: block;
+}
+nav .nav ul ul li {
+    float: left;
+    width: 100%;
+}
