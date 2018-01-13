@@ -1,14 +1,22 @@
 COLORS
 ---------------------
-Headlines: #829b9e
-Body Copy: #333333
-Content Links: #81302a
+
+	Headlines: #829b9e
+
+	Body Copy: #333333
+
+        Content Links: #81302a
+	
 Footer BG: #464646
+
+
 
 
 FONT
 ---------------------
 Open Sans google font
+
+
 
 
 
@@ -22,45 +30,87 @@ Resources
 Careers
 Contact
 
+
+
 BUSINESS PROCESS SOLUTIONS THAT ACCELERATE YOUR GROWTH.
+
+
 We will take care of your back office,so you can focus on amplifying your companies revenue, people and services.
+
+
 
 WORK WITH US
 
+
+
 Entrepreneur Headline.
+
 Probo abdo olim roto utrum macto ventosus sed. Abigo et verto delenit ymo sit tamen ratis eligo. Pertineo cui imputo nisl singularis vel euismod odio. Augue epulae eros bis vero iriure abigo.
 
+
+
 Managers Headline.
+
 Vero antehabeo facilisi eu consectetuer consectetuer nonummy caecus neque modo. Ut typicus luptatum indoles jus. Accumsan dignissim acsi imputo zelus. Consequat feugait usitas caecus molior modo hos multo minim dolor in appellatio. Esse diam premo.
 
+
+
 Investor Headline.
+
 Paratus aliquip velit nullus neo dolore at gravis sagaciter at jumentum. Quadrum neque usitas dolor quod. Enim cui interdico commodo dolore demoveo fatua valde euismod saluto opes.
 
+
+
 LOGIN
+
 HOME
+
 ABOUT
+
 SERVICES
+
 NEWS
+
 CAPITAL
+
 RESOURCES
+
 CAREERS
+
 CONTACT
+
+
 NEWS
+
+
 
 OCT. 31, 2016
+
 NEWS HEADLINE ABICO COMMOVEO PNEUM SUSCIPIT AUG
 
+
 OCT. 27, 2016
+
 PERTINEO UT TRANSVERBERO FEUGAIT DOLOR MAGNANOSTRU
 
+
 OCT. 09, 2016
+
 AT LUDUS WISI EA PERTINEO VERO QUIA WISI
 
+
+
 CONTACT
+
 700 12th Ave
 Suite 400
+
 Nashville, TN 37203
 
+
+
 615-244-1818
+
+
 
 info@website.com
