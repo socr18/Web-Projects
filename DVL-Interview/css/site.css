@@ -1,0 +1,90 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: #ffffff;
+}
+h1 {
+    color: #829b9e;
+}
+body {
+    background: #464646;
+}
+#header {
+    background-image: url(../img/buildings.jpg);
+    text-align: center;
+}
+#header .button {
+    border-radius: 2rem;
+}
+.logo {
+    margin: 2% auto 15% auto;
+    text-align: center;
+}
+.logo img {
+    height: auto;
+    width: 10%;
+}
+.menu {
+    background: #fff;
+    border-bottom: #000;
+    padding: 0;
+}
+nav {
+    display: block;
+    width: 100%;
+}
+nav[role="main"] #Default ul,
+nav[role="main"] #Default ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav[role="main"] #Default ul li {
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+}
+nav[role="main"] #Default ul li a {
+    color: #333333;
+    display: inline-block;
+    font-size: 1.3em;
+}
+nav[role="main"] #Default ul ul {
+    display: none;
+}
+.headline-text {
+   /*** background: #fff; ***/
+    color: #000;
+    padding: 0 10%!important;
+}
+.headline {
+    background: #fff;
+}
+.headline-img img {
+    width: 100%;
+    height: 100%;
+}
+.headline-img p {
+    margin: 0;
+}
+nav[role="footer"] #Footer ul,
+nav[role="footer"] #Footer ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav[role="footer"] #Footer ul li {
+    padding: 5px;
+    position: relative;
+}
+nav[role="footer"] #Footer ul li a {
+    color: #ffffff;
+    font-size: 1.0em;
+}
+nav[role="footer"] #Footer ul ul {
+    display: none;
+}
