@@ -10,8 +10,11 @@ h1, a {
     color: #829b9e;
 }
 @media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.7rem;
+    }
     h2 {
-        font-size: 2.63rem;
+        font-size: 2.6rem;
     }
     h3 {
         font-size: 1.5875rem;
@@ -37,18 +40,37 @@ body {
     }
 }
 .mobile-menu-icon {
-  display: none;
-  float: left;
-  padding: 0 0 10px 0;
+    display: none;
+    float: left;
+    padding: 0 0 10px 0;
+    z-index: 10;
 }
-@media screen and (max-width: 640px) {
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #464646;
+    width: 100%;
+}
+.mobile-menu ul {
+    list-style: none;
+}
+.mobile-menu ul li {
+    padding: 15px 0;
+}
+.mobile-menu ul li a {
+    color: #ffffff;
+}
+@media only screen and (max-width: 500px) {
   .mobile-menu-icon {
     display: block;
   }
    #header .mobile-menu-icon .button {
-        background: none;
-        border: 1px solid white;
-        border-radius: 6px;
+       background: none;
+       border: 1px solid white;
+       border-radius: 6px;
+       padding: 5px 10px;
        width: 100%;
     }
   .mobile-right {
@@ -151,6 +173,11 @@ nav[role="main"] #Default ul ul {
     color: #000;
     padding: 0 10%!important;
 }
+@media only screen and (max-width: 500px) {
+    .headline-text {
+        padding: 10% 5%!important;
+    }
+}
 .headline {
     background: #fff;
 }
@@ -163,6 +190,11 @@ nav[role="main"] #Default ul ul {
 }
 nav[role="footer"] {
     padding: 10%;
+}
+@media only screen and (max-width: 500px) {
+    nav[role="footer"] {
+        display: none;
+    }
 }
 nav[role="footer"] #Footer ul,
 nav[role="footer"] #Footer ul li {
@@ -187,6 +219,11 @@ nav[role="footer"] #Footer ul ul {
     padding: 10%;
     width: 100%;
 }
+@media only screen and (max-width: 500px) {
+    .news-feed {
+        padding: 10% 5% 5% 5%;
+    }
+}
 .news-article {
     padding: 5px 0;
     position: relative;
@@ -205,6 +242,21 @@ address {
     padding: 10%;
     color: #ffffff;
 }
+@media only screen and (max-width: 500px) {
+    address {
+        padding: 5%;
+        width: 100%
+    }
+}
+.footer-logo {
+    width: 100%;
+}
 .footer-logo .logo {
     margin: 2% auto;
+}
+@media only screen and (max-width: 500px) {
+    .footer-logo .log {
+        padding: 10% 5%;
+        width: 100%;
+    }
 }
