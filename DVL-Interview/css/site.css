@@ -1,0 +1,262 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: #ffffff;
+}
+h1, a {
+    color: #829b9e;
+}
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    h3 {
+        font-size: 1.5875rem;
+    }
+}
+body {
+    background: #464646;
+    font-family: 'Open Sans', sans-serif;
+}
+#header {
+    background-image: url(../img/buildings.jpg);
+    text-align: center;
+    color: #ffffff;
+}
+.social-media {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 500px) {
+    .social-media {
+        display: none;
+    }
+}
+.mobile-menu-icon {
+    display: none;
+    float: left;
+    padding: 0 0 10px 0;
+    z-index: 10;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #464646;
+    width: 100%;
+}
+.mobile-menu ul {
+    list-style: none;
+}
+.mobile-menu ul li {
+    padding: 15px 0;
+}
+.mobile-menu ul li a {
+    color: #ffffff;
+}
+@media only screen and (max-width: 500px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+   #header .mobile-menu-icon .button {
+       background: none;
+       border: 1px solid white;
+       border-radius: 6px;
+       padding: 5px 10px;
+       width: 100%;
+    }
+  .mobile-right {
+    float: none;
+    padding: 10px 10px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.social-media img {
+    padding: 20px 10px;
+}
+.social-media img:last-child {
+    padding: 20px 20px 20px 10px;
+}
+.slogan-text {
+    margin: 5% 31%;
+    width: 38%;
+    font-size: 18px;
+}
+@media only screen and (max-width: 500px) {
+    .slogan-text {
+        margin: 0;
+        padding: 5%;
+        width: 90%;
+        font-size: 14px;
+    }
+}
+#header .button {
+    background: #ffffff;
+    border-radius: 2rem;
+    color: #843935;
+    padding: 15px 35px;
+    font-size: 1.875rem;
+    margin: 0px 0 5% 0;
+}
+@media only screen and (max-width: 500px) {
+    #header .button {
+        margin: 5%;
+        padding: 3%;
+        width: 50%;
+        font-size: 1.275rem;
+    }
+}
+.logo {
+    margin: 2% auto 15% auto;
+    text-align: center;
+}
+.logo img {
+    height: auto;
+    width: 10%;
+}
+@media only screen and (max-width: 500px) {
+    .logo {
+        margin: 10% auto 5% auto;
+    }
+    .logo img {
+        width: 30%;
+    }
+}
+.menu {
+    background: #fff;
+    border-bottom: 2px solid #333333;
+    padding: 0;
+}
+nav {
+    display: block;
+    width: 100%;
+}
+nav[role="main"] #Default ul,
+nav[role="main"] #Default ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    nav[role="main"] {
+        display: none;
+    }
+}
+nav[role="main"] #Default ul li {
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+}
+nav[role="main"] #Default ul li a {
+    color: #333333;
+    display: inline-block;
+    font-size: 1.3em;
+}
+nav[role="main"] #Default ul ul {
+    display: none;
+}
+.headline-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    padding: 0 10%!important;
+}
+@media only screen and (max-width: 500px) {
+    .headline-text {
+        padding: 10% 5%!important;
+    }
+}
+.headline {
+    background: #fff;
+}
+.headline-img img {
+    width: 100%;
+    height: 100%;
+}
+.headline-img p {
+    margin: 0;
+}
+nav[role="footer"] {
+    padding: 10%;
+}
+@media only screen and (max-width: 500px) {
+    nav[role="footer"] {
+        display: none;
+    }
+}
+nav[role="footer"] #Footer ul,
+nav[role="footer"] #Footer ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav[role="footer"] #Footer ul li {
+    padding: 5px;
+    position: relative;
+}
+nav[role="footer"] #Footer ul li a {
+    color: #ffffff;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+nav[role="footer"] #Footer ul ul {
+    display: none;
+}
+.news-feed {
+    float: left;
+    padding: 10%;
+    width: 100%;
+}
+@media only screen and (max-width: 500px) {
+    .news-feed {
+        padding: 10% 5% 5% 5%;
+    }
+}
+.news-article {
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+}
+.news-date {
+    position: relative;
+    width: 100%;
+}
+.news-title {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+address {
+    float: left;
+    padding: 10%;
+    color: #ffffff;
+}
+@media only screen and (max-width: 500px) {
+    address {
+        padding: 5%;
+        width: 100%
+    }
+}
+.footer-logo {
+    width: 100%;
+}
+.footer-logo .logo {
+    margin: 2% auto;
+}
+@media only screen and (max-width: 500px) {
+    .footer-logo .log {
+        padding: 10% 5%;
+        width: 100%;
+    }
+}
