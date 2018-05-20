@@ -1,0 +1,126 @@
+body {
+	background: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 20px;
+}
+header {
+	background: #000000 url("../img/bg-top.png") no-repeat;
+}
+.logo img {
+	float: left;
+	padding: 15px 15px 0 15px;
+}
+.title {
+	float: left;
+	text-align: center;
+}
+.title h1 {
+	color: #ffffff;
+	padding: 15px 15px 0 15px;
+}
+.menu {
+	float: left;
+	padding: 15px 15px 0 15px;
+}
+.menu ul {
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+.menu ul ul {
+	display: none;
+	padding: 0 15px;
+}
+.menu ul li {
+	float: left;
+	padding: 15px;
+	list-style: none;
+	position: relative;
+}
+.menu ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.menu ul li a:hover {
+	color: #777777;
+}
+.menu ul li:hover ul {
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background: #000000;
+}
+.menu ul li:last-child:hover ul {
+	display: block;
+	float: left;
+	position: absolute;
+	left: -60px;
+	top: 40px;
+	background: #000000;
+}
+.menu ul ul li {
+	float: left;
+	width: 120px;
+	padding: 10px 0;
+}
+.menu ul li:last-child ul li {
+	width: 70px;
+}
+.bio {
+	float: left;
+	display: block;
+	padding: 15px;
+	width: 100%;
+}
+.bio-pic {
+	float: left;
+	display: block;
+	padding: 0 15px 0 75px;
+	width: 13%;
+}
+.bio-pic img {
+	height: auto;
+	width: 100%;
+}
+.bio-text {
+	float: left;
+	padding: 0 75px 0 0;
+	display: block;
+	width: 87%;
+}
+.portfolio {
+	float: left;
+	display: block;
+	border-top: 3px solid #000000;
+	padding: 15px 60px 15px 75px;
+	width: 100%;
+}
+.port-wrap {
+	float: left;
+	dispaly: block;
+	padding: 0 15px 0 0;
+}
+.port-title {
+	padding: 0 0 15px 0;
+}
+.port-title h2 {
+	text-align: center;
+}
+.port-img img {
+	height: auto;
+	padding: 0 0 15px 0;
+	width: 100%;
+}
+.port-name h3 {
+	text-align: center;
+}
